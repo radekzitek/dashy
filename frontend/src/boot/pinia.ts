@@ -1,8 +1,8 @@
-// filepath: /workspaces/insitu/qlab/qlab-project/src/boot/pinia.ts
-import { boot } from 'quasar/wrappers';
+import { defineBoot } from '#q-app/wrappers'
+
 import { createPinia } from 'pinia';
 
-export default boot(({ app }) => {
+export default defineBoot(({ app }) => {
   const pinia = createPinia();
   app.use(pinia);
 });

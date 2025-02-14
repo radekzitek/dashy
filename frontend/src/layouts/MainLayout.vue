@@ -113,27 +113,30 @@
 import { ref, computed } from 'vue'
 import { useQuasar } from 'quasar'
 import { useUiStore } from '../stores/uiStore'
-import { useAuthStore } from '../stores/authStore'
+// import { useAuthStore } from '../stores/authStore'
+import { useAuthStore } from '../stores/auth'
 
-const $q = useQuasar()
+
 const uiStore = useUiStore()
-
-const leftDrawerOpen = ref(true)
 
 const authStore = useAuthStore()
 const isAuthenticated = computed(() => authStore.isAuthenticated)
 
 // Function to toggle theme (light/dark)
+const $q = useQuasar()
+
 function toggleTheme() {
   $q.dark.toggle()
   uiStore.setFooterText('Theme changed to ' + ($q.dark.isActive ? 'dark' : 'light') + '.')
 }
+
+const leftDrawerOpen = ref(true)
 
 function toggleLeftDrawer() {
   leftDrawerOpen.value = !leftDrawerOpen.value
 }
 
 function handleLogout() {
-  authStore.doLogout()
+  authStore.logout()
 }
 </script>

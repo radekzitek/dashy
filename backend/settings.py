@@ -66,7 +66,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    # "http://localhost:9000",
+    "http://localhost:9000",
     "https://fictional-space-lamp-9xr9pxp7qpv2x5j6-9000.app.github.dev",  # Your Quasar/Vue dev server
     # "https://your-production-domain.com",
 ]

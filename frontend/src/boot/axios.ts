@@ -1,5 +1,7 @@
 import { defineBoot } from '#q-app/wrappers';
+
 import axios, { type AxiosInstance } from 'axios';
+import { useAuthStore } from 'src/stores/auth';
 
 declare module 'vue' {
   interface ComponentCustomProperties {
@@ -16,7 +18,39 @@ declare module 'vue' {
 // for each client)
 
 // https://fictional-space-lamp-9xr9pxp7qpv2x5j6-8000.app.github.dev/
-const api = axios.create({ baseURL: 'https://fictional-space-lamp-9xr9pxp7qpv2x5j6-8000.app.github.dev/' });
+const api = axios.create({ 
+  baseURL: 'http://localhost:8000',
+  timeout: 10000,
+});
+
+// Request interceptor to attach the access token
+api.interceptors.request.use(
+  (config) => {
+    const authStore = useAuthStore();
+    if (authStore.accessToken) {
+      config.headers.Authorization = `Bearer ${authStore.accessToken}`;
+    }
+    return config;
+  },
+  (error) => Promise.reject(error)
+);
+
+// Optional: interceptor for handling 401 responses to refresh token
+api.interceptors.response.use(
+  (response) => response,
+  async (error) => {
+    const authStore = useAuthStore();
+    const originalRequest = error.config;
+    if (error.response.status === 401 && !originalRequest._retry && authStore.refreshToken) {
+      originalRequest._retry = true;
+      await authStore.refreshAccessToken();
+      originalRequest.headers.Authorization = `Bearer ${authStore.accessToken}`;
+      return api(originalRequest);
+    }
+    return Promise.reject(error);
+  }
+);
+
 
 export default defineBoot(({ app }) => {
   // for use inside Vue files (Options API) through this.$axios and this.$api
