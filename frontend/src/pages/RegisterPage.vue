@@ -6,7 +6,8 @@
       </q-img>
       <q-card-section>
         <q-input filled v-model="username" label="Username" class="q-ma-sm" />
-        <q-input filled v-model="fullname" label="Full Name" class="q-ma-sm" />
+        <q-input filled v-model="firstname" label="First Name" class="q-ma-sm" />
+        <q-input filled v-model="lastname" label="Last Name" class="q-ma-sm" />
         <q-input filled v-model="email" label="e-Mail" class="q-ma-sm" />
         <q-input filled v-model="password" label="Password" type="password" class="q-ma-sm" />
         <q-input filled v-model="passwordVerify" label="Verify Password" type="password" class="q-ma-sm" />
@@ -20,11 +21,12 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
-import { useAuthStore } from '../stores/authStore'
+import { useAuthStore } from '../stores/auth'
 import { useUiStore } from '../stores/uiStore'
 
 const username = ref('')
-const fullname = ref('')
+const firstname = ref('')
+const lastname = ref('')
 const email = ref('')
 const password = ref('')
 const passwordVerify = ref('')
@@ -35,8 +37,8 @@ const uiStore = useUiStore()
 
 function handleRegister() {
   try {
-    //console.log('Login:', username.value, password.value)
-    authStore.doRegister(username.value, password.value, fullname.value, email.value)
+    console.log('Going to handle register:', username.value, password.value, firstname.value, lastname.value, email.value)
+    authStore.register(username.value, password.value, firstname.value, lastname.value, email.value)
     uiStore.setFooterText("Successfully registered.");
     void router.push('/')
   } catch (error: unknown) {

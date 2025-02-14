@@ -5,6 +5,10 @@ export const useAuthStore = defineStore('auth', {
   state: () => ({
     accessToken: localStorage.getItem('access_token') || null,
     refreshToken: localStorage.getItem('refresh_token') || null,
+    username: localStorage.getItem('username') || null,
+    first_name: localStorage.getItem('first_name') || null,
+    last_name: localStorage.getItem('last_name') || null,
+    email: localStorage.getItem('email') || null,
   }),
 
   actions: {
@@ -20,6 +24,7 @@ export const useAuthStore = defineStore('auth', {
         localStorage.setItem('access_token', this.accessToken as string);
         localStorage.setItem('refresh_token', this.refreshToken as string);
         // Optionally, fetch and set user data here
+        await this.profile();
       } catch (error) {
         throw new Error('Login failed', error as Error);
       }
@@ -40,6 +45,33 @@ export const useAuthStore = defineStore('auth', {
         throw new Error('Session expired. Please log in again.', error as Error);
       }
     },
+    async register(username: string, password: string, first_name: string, last_name: string, email: string) {
+      try {
+        console.log('About to call api.post with username, password, firstname, lastname, and email:', { username, password, first_name, last_name, email });
+        await api.post('/api/register/', { username, password, first_name, last_name, email });
+        console.log('Registration successful');
+      } catch (error) {
+        throw new Error('Registration failed', error as Error)
+      } 
+    },
+    async profile() {
+      try {
+        console.log('About to call api.get to get profile.');
+        const response = await api.get('/api/profile/');
+        console.log('Response from api.get:', response);
+        this.username = response.data.username;
+        localStorage.setItem('username', this.username as string);
+        this.first_name = response.data.first_name;
+        localStorage.setItem('first_name', this.first_name as string);
+        this.last_name = response.data.last_name;
+        localStorage.setItem('last_name', this.last_name as string);
+        this.email = response.data.email;
+        localStorage.setItem('email', this.email as string);
+        return response.data;
+      } catch (error) {
+        throw new Error('Failed to fetch user profile', error as Error);
+      }
+    }
   },
 
   getters: {
