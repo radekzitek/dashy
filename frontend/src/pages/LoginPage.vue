@@ -29,7 +29,7 @@ const uiStore = useUiStore()
 
 function handleLogin() {
   try {
-    //console.log('Login:', username.value, password.value)
+    // console.log('Login:', username.value, password.value)
     authStore.doLogin(username.value, password.value)
     if (authStore.isAuthenticated) {
       uiStore.setFooterText("Successfully logged in.");

@@ -39,10 +39,12 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
 
-    # Mine additions
-
+    # ... other apps ...
     'rest_framework',
+    # Optionally, if you want the browsable API:
     'rest_framework.authtoken',
+
+    'corsheaders',
 ]
 
 REST_FRAMEWORK = {
@@ -52,6 +54,8 @@ REST_FRAMEWORK = {
 }
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',  # Add this at the top
+
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -59,6 +63,12 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+]
+
+CORS_ALLOWED_ORIGINS = [
+    # "http://localhost:9000",
+    "https://fictional-space-lamp-9xr9pxp7qpv2x5j6-9000.app.github.dev",  # Your Quasar/Vue dev server
+    # "https://your-production-domain.com",
 ]
 
 ROOT_URLCONF = "backend.urls"

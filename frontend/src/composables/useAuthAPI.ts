@@ -1,10 +1,27 @@
+import { api } from '../boot/axios'
+
+// Define an interface for the response
+interface AuthResponse {
+  access: string
+  refresh: string
+}
+
 export function useAuthAPI() {
-  const loginAPICall = (username: string, password: string) => {
-    // Replace this with your actual API call
-    if (username === 'admin' && password === 'admin') {
-      return { success: true, user: { username: 'admin', fullname: 'Admin User' } }
-    } else {
-      throw new Error('Invalid credentials')
+  const loginAPICall = async (username: string, password: string): Promise<AuthResponse> => {
+    try {
+      console.log('Logging in:', username, password)
+      const response = await api.post('/api/token/', {
+        username,
+        password
+      })
+      console.log('Login successful:', response.data)
+      const { access, refresh } = response.data
+      console.log('Access token:', access)
+      console.log('Refresh token:', refresh)
+      return { access, refresh }
+    } catch (error) {
+      console.error('Login failed:', error)
+      throw error
     }
   }
 
