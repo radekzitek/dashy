@@ -12,6 +12,8 @@ pip install --upgrade pip
 pip install django djangorestframework psycopg2-binary python-decouple
 pip freeze > requirements.txt
 django-admin startproject backend .
+
+python manage.py migrate
 ```
 
 ## Node.js
