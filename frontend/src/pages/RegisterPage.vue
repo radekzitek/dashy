@@ -5,24 +5,43 @@
         <div class="text-h5 absolute-bottom text-right">Login</div>
       </q-img>
       <q-card-section>
-        <q-input filled v-model="username" label="Username" class="q-ma-sm" />
-        <q-input filled v-model="firstname" label="First Name" class="q-ma-sm" />
-        <q-input filled v-model="lastname" label="Last Name" class="q-ma-sm" />
-        <q-input filled v-model="email" label="e-Mail" class="q-ma-sm" />
-        <q-input filled v-model="password" label="Password" type="password" class="q-ma-sm" />
-        <q-input filled v-model="passwordVerify" label="Verify Password" type="password" class="q-ma-sm" />
-        <q-btn color="primary" label="Register" class="q-ma-sm" @click="handleRegister" />
+        <div class="row q-col-gutter-none">
+          <div class="col-6">
+            <q-input filled v-model="username" label="Username" class="q-ma-xs" />
+          </div>
+          <div class="col-6">
+            <q-input filled v-model="email" label="e-Mail" class="q-ma-xs" />
+          </div>
+        </div>
+        <div class="row q-col-gutter-none">
+          <div class="col-6">
+            <q-input filled v-model="firstname" label="First Name" class="q-ma-xs" />
+          </div>
+          <div class="col-6">
+            <q-input filled v-model="lastname" label="Last Name" class="q-ma-xs" />
+          </div>
+        </div>
+        <div class="row q-col-gutter-none">
+          <div class="col-6">
+            <q-input filled v-model="password" label="Password" type="password" class="q-ma-xs" />
+          </div>
+          <div class="col-6">
+            <q-input filled v-model="passwordVerify" label="Verify Password" type="password" class="q-ma-xs" />
+          </div>
+        </div>
+        <q-btn color="primary" label="Register" class="q-ma-sm" @click="handleRegister" :disabled="!passwordsMatch || !allFieldsValid" />
         <q-btn color="primary" label="Cancel" class="q-ma-sm" @click="$router.push('/')" />
+        <div v-if="!passwordsMatch" class="text-negative q-mt-sm">Passwords do not match</div>
       </q-card-section>
     </q-card>
   </q-page>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import { useRouter } from 'vue-router'
 import { useAuthStore } from '../stores/auth'
-import { useUiStore } from '../stores/uiStore'
+import { useUiStore } from '../stores/ui'
 
 const username = ref('')
 const firstname = ref('')
@@ -34,6 +53,29 @@ const passwordVerify = ref('')
 const router = useRouter()
 const authStore = useAuthStore()
 const uiStore = useUiStore()
+
+const passwordsMatch = computed(() => password.value === passwordVerify.value)
+
+const isUsernameValid = computed(() => username.value !== '')
+const isFirstnameValid = computed(() => firstname.value !== '')
+const isLastnameValid = computed(() => lastname.value !== '')
+const isEmailValid = computed(() => {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+  return emailRegex.test(email.value)
+})
+const isPasswordValid = computed(() => password.value !== '')
+const isPasswordVerifyValid = computed(() => passwordVerify.value !== '')
+
+const allFieldsValid = computed(() => {
+  return (
+    isUsernameValid.value &&
+    isFirstnameValid.value &&
+    isLastnameValid.value &&
+    isEmailValid.value &&
+    isPasswordValid.value &&
+    isPasswordVerifyValid.value
+  )
+})
 
 function handleRegister() {
   try {
@@ -58,5 +100,5 @@ function handleRegister() {
 <style lang="sass" scoped>
 .my-card
   width: 100%
-  max-width: 350px
+  max-width: 450px
 </style>

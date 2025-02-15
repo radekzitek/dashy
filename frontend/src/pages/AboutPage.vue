@@ -5,6 +5,71 @@
         <div class="text-h5 absolute-bottom text-right">About</div>
       </q-img>
       <q-card-section>
+        <q-list>
+          <q-item>
+            <q-item-section avatar>
+              <q-icon name="article" />
+            </q-item-section>
+            <q-item-section>
+              <q-item-label overline>ABOUT</q-item-label>
+              <q-item-label>Dashy</q-item-label>
+            </q-item-section>
+          </q-item>
+          <q-item>
+            <q-item-section avatar>
+              <q-icon name="info" />
+            </q-item-section>
+            <q-item-section>
+              <q-item-label overline>VERSION</q-item-label>
+              <q-item-label>0.1.0</q-item-label>
+            </q-item-section>
+          </q-item>
+          <q-item>
+            <q-item-section avatar>
+              <q-icon name="dashboard" />
+            </q-item-section>
+            <q-item-section>
+              <q-item-label overline>DESCRIPTION</q-item-label>
+              <q-item-label>Dashy is personal command center and dashboard. It is personal hobby project by <a
+                  href="mailto:radek.zitek@proton.me">Radek Zítek.</a></q-item-label>
+            </q-item-section>
+          </q-item>
+        </q-list>
+        <q-separator inset class="q-ma-md" />
+        It si built with the following technologies:
+        <q-list>
+          <q-item>
+            <q-item-section avatar>
+              <q-img src="images/vue.webp" style="width: 24px" />
+            </q-item-section>
+            <q-item-section>
+              <q-item-label overline>Vue 3</q-item-label>
+              <q-item-label><a href="https://vuejs.org/" target="_top">Vue 3</a> is a progressive JavaScript framework
+                for building user interfaces.</q-item-label>
+            </q-item-section>
+          </q-item>
+          <q-item>
+            <q-item-section avatar>
+              <q-img src="images/quasar.png" style="width: 24px" />
+            </q-item-section>
+            <q-item-section>
+              <q-item-label overline>Quasar</q-item-label>
+              <q-item-label><a href="https://quasar.dev/" target="_top">Quasar</a> is an MIT licensed open-source Vue.js
+                based framework, which allows you as a web developer to quickly create responsive++ websites/apps in
+                many flavours.</q-item-label>
+            </q-item-section>
+          </q-item>
+          <q-item>
+            <q-item-section avatar>
+              <q-img src="images/django.png" style="width: 24px" />
+            </q-item-section>
+            <q-item-section>
+              <q-item-label overline>Django</q-item-label>
+              <q-item-label><a href="https://www.djangoproject.com/" target="_top">Django</a> is a high-level Python web
+                framework that encourages rapid development and clean, pragmatic design.</q-item-label>
+            </q-item-section>
+          </q-item>
+        </q-list>
         {{ lorem }}
       </q-card-section>
     </q-card>
@@ -16,7 +81,7 @@ export default {
   setup() {
     return {
       lorem:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi cursus tincidunt condimentum. Sed imperdiet purus sapien, vel cursus massa luctus ac. Nunc ac ipsum magna. Cras et metus mattis, aliquam arcu sit amet, rutrum arcu. Quisque sit amet orci pharetra, eleifend magna ut, lacinia arcu. Donec nec velit tincidunt, placerat dui eu, pharetra ex. Mauris dictum, enim at pretium fermentum, lectus ipsum lacinia ex, sed placerat nisi elit at erat. Etiam sed eros eget neque vestibulum faucibus a sit amet eros. Suspendisse eget sapien ac purus dapibus dictum non in felis. Etiam vel elementum quam, efficitur venenatis augue. Phasellus lectus nibh, interdum eu nisi nec, aliquet volutpat ante. Praesent vestibulum molestie arcu ut venenatis. Sed et orci in magna fermentum faucibus sit amet vel nisl. Maecenas malesuada ex magna, a tristique mi dignissim ac. Donec mattis malesuada erat sed semper. Nam nec bibendum ligula.',
+        '',
     }
   },
 }

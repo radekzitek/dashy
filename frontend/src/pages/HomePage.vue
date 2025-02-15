@@ -5,7 +5,7 @@
         <div class="text-h5 absolute-bottom text-right">Home</div>
       </q-img>
       <q-card-section>
-        This is Quasar Laboratory application only. Use the tripple dot menu on the right side, navigate through the
+        This is Dashy application. Use the tripple dot menu on the right side to login or register, navigate through the
         drawer menu on the left and toggle the drawer with the button on the top of the page.
       </q-card-section>
     </q-card>
@@ -15,7 +15,7 @@
 
 <script setup lang="ts">
 import { computed } from 'vue'
-import { useAuthStore } from '../stores/authStore'
+import { useAuthStore } from '../stores/auth'
 import UserPage from './UserPage.vue';
 
 const authStore = useAuthStore()

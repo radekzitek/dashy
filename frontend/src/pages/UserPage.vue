@@ -1,12 +1,51 @@
 <template>
     <q-page class="q-pa-sm">
-        <div>
-            <h4>User Profile</h4>
-            <p><strong>Userame:</strong> {{ authStore.username }}</p>
-            <p><strong>First Name:</strong> {{ authStore.first_name }}</p>     
-            <p><strong>Last Name:</strong> {{ authStore.last_name }}</p>       
-            <p><strong>Email:</strong> {{ authStore.email }}</p>
-        </div>
+        <q-card bordered elevated class="my-card q-mx-auto">
+            <q-img src="images/profile.jpg">
+                <div class="text-h5 absolute-bottom text-right">Current User</div>
+            </q-img>
+            <q-card-section>
+                <q-list>
+                    <q-item>
+                        <q-item-section avatar>
+                            <q-icon name="perm_identity" />
+                        </q-item-section>
+                        <q-item-section>
+                            <q-item-label overline>Username</q-item-label>
+                            <q-item-label>{{ authStore.username }}</q-item-label>
+                        </q-item-section>
+                    </q-item>
+                    <q-item>
+                        <q-item-section avatar>
+                            <q-icon name="badge" />
+                        </q-item-section>
+                        <q-item-section>
+                            <q-item-label overline>First Name</q-item-label>
+                            <q-item-label>{{ authStore.first_name }}</q-item-label>
+                        </q-item-section>
+                    </q-item>
+                    <q-item>
+                        <q-item-section avatar>
+                            <q-icon name="badge" />
+                        </q-item-section>
+                        <q-item-section>
+                            <q-item-label overline>Last Name</q-item-label>
+                            <q-item-label>{{ authStore.last_name }}</q-item-label>
+                        </q-item-section>
+                    </q-item>
+                    <q-item>
+                        <q-item-section avatar>
+                            <q-icon name="email" />
+                        </q-item-section>
+                        <q-item-section>
+                            <q-item-label overline>eMail</q-item-label>
+                            <q-item-label>{{ authStore.email }}</q-item-label>
+                        </q-item-section>
+                    </q-item>
+                </q-list>
+            </q-card-section>
+        </q-card>
+
     </q-page>
 </template>
 

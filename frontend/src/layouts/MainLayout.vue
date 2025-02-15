@@ -70,9 +70,7 @@
     <q-drawer bordered v-model="leftDrawerOpen" show-if-above class="bg-primary text-white">
       <q-list>
         <q-toolbar class="glossy">
-          <q-toolbar-title class="text-weight-bold text-center text-uppercase"
-            >Quasar Laboratory</q-toolbar-title
-          >
+          <q-toolbar-title class="text-weight-bold text-center text-uppercase">D - A - S - H - Y</q-toolbar-title>
         </q-toolbar>
         <q-item clickable v-ripple @click="$router.push('/')">
           <q-item-section avatar>
@@ -112,7 +110,7 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 import { useQuasar } from 'quasar'
-import { useUiStore } from '../stores/uiStore'
+import { useUiStore } from '../stores/ui'
 // import { useAuthStore } from '../stores/authStore'
 import { useAuthStore } from '../stores/auth'
 
