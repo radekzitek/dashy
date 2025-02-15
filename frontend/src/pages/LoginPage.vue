@@ -19,6 +19,7 @@ import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { useAuthStore } from '../stores/auth'
 import { useUiStore } from '../stores/ui'
+import log from '../services/logger'
 
 const username = ref('')
 const password = ref('')
@@ -29,9 +30,9 @@ const uiStore = useUiStore()
 
 async function handleLogin() {
   try {
-    console.log('Goin to handle login:', username.value, password.value)
+    log.debug('Goin to handle login:', username.value, password.value)
     await authStore.login(username.value, password.value)
-    console.log('After login isAuthenticated:', authStore.isAuthenticated)
+    log.debug('After login isAuthenticated:', authStore.isAuthenticated)
     if (authStore.isAuthenticated) {
       uiStore.setFooterText("Successfully logged in.");
       void router.push('/')

@@ -31,3 +31,19 @@ class UserProfileUpdateSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ('first_name', 'last_name', 'email')
+
+
+class LogEntrySerializer(serializers.Serializer):
+    LEVEL_CHOICES = (
+        ('DEBUG', 'DEBUG'),
+        ('INFO', 'INFO'),
+        ('WARNING', 'WARNING'),
+        ('ERROR', 'ERROR'),
+        ('CRITICAL', 'CRITICAL'),
+    )
+
+    level = serializers.ChoiceField(choices=LEVEL_CHOICES, default='INFO')
+    message = serializers.CharField()
+    meta = serializers.DictField(child=serializers.JSONField(), required=False)
+    # meta = serializers.CharField(required=False)
+    timestamp = serializers.DateTimeField(required=False)

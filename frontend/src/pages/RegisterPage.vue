@@ -42,6 +42,7 @@ import { ref, computed } from 'vue'
 import { useRouter } from 'vue-router'
 import { useAuthStore } from '../stores/auth'
 import { useUiStore } from '../stores/ui'
+import log from '../services/logger'
 
 const username = ref('')
 const firstname = ref('')
@@ -79,7 +80,7 @@ const allFieldsValid = computed(() => {
 
 function handleRegister() {
   try {
-    console.log('Going to handle register:', username.value, password.value, firstname.value, lastname.value, email.value)
+    log.debug('Going to handle register:', username.value, password.value, firstname.value, lastname.value, email.value)
     authStore.register(username.value, password.value, firstname.value, lastname.value, email.value)
     uiStore.setFooterText("Successfully registered.");
     void router.push('/')

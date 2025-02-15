@@ -1,5 +1,6 @@
 import { defineStore } from 'pinia';
 import { api } from '../boot/axios';
+import log from '../services/logger';
 
 export const useAuthStore = defineStore('auth', {
   state: () => ({
@@ -26,13 +27,13 @@ export const useAuthStore = defineStore('auth', {
      */
     async login(username: string, password: string) {
       try {
-        console.log('About to call api.post with username and password:', username, password);
+        log.debug('About to call api.post with username and password:', username, password);
         const response = await api.post('/api/token/', { username, password });
-        console.log('Response from api.post:', response);
+        log.debug('Response from api.post:', response);
         this.accessToken = response.data.access;
-        console.log('this.accessToken:', this.accessToken);
+        log.debug('this.accessToken:', this.accessToken);
         this.refreshToken = response.data.refresh;
-        console.log('this.refreshToken:', this.refreshToken);
+        log.debug('this.refreshToken:', this.refreshToken);
         localStorage.setItem('access_token', this.accessToken as string);
         localStorage.setItem('refresh_token', this.refreshToken as string);
         // Optionally, fetch and set user data here
@@ -59,18 +60,18 @@ export const useAuthStore = defineStore('auth', {
     },
     async register(username: string, password: string, first_name: string, last_name: string, email: string) {
       try {
-        console.log('About to call api.post with username, password, firstname, lastname, and email:', { username, password, first_name, last_name, email });
+        log.debug('About to call api.post with username, password, firstname, lastname, and email:', { username, password, first_name, last_name, email });
         await api.post('/api/register/', { username, password, first_name, last_name, email });
-        console.log('Registration successful');
+        log.debug('Registration successful');
       } catch (error) {
         throw new Error('Registration failed', error as Error)
       } 
     },
     async updateProfile(first_name: string, last_name: string, email: string) {
       try {
-        console.log('About to call api.put with firstname, lastname, and email:', { first_name, last_name, email });
+        log.debug('About to call api.put with firstname, lastname, and email:', { first_name, last_name, email });
         const response = await api.put('/api/profile/update/', { first_name, last_name, email });
-        console.log('Update successful:', response);
+        log.debug('Update successful:', response);
         this.first_name = response.data.first_name;
         localStorage.setItem('first_name', this.first_name as string);
         this.last_name = response.data.last_name;
@@ -83,9 +84,9 @@ export const useAuthStore = defineStore('auth', {
     },
     async profile() {
       try {
-        console.log('About to call api.get to get profile.');
+        log.debug('About to call api.get to get profile.');
         const response = await api.get('/api/profile/');
-        console.log('Response from api.get:', response);
+        log.debug('Response from api.get:', response);
         this.username = response.data.username;
         localStorage.setItem('username', this.username as string);
         this.first_name = response.data.first_name;

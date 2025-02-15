@@ -33,6 +33,7 @@ import { ref, computed } from 'vue'
 import { useRouter } from 'vue-router'
 import { useAuthStore } from '../stores/auth'
 import { useUiStore } from '../stores/ui'
+import log from '../services/logger'
 
 const router = useRouter()
 const authStore = useAuthStore()
@@ -60,7 +61,7 @@ const allFieldsValid = computed(() => {
 
 function handleUpdateProfile() {
   try {
-    console.log('Going to handle update profile:', firstname.value, lastname.value, email.value)
+    log.debug('Going to handle update profile:', firstname.value, lastname.value, email.value)
     authStore.updateProfile( firstname.value as string, lastname.value as string, email.value as string)
     uiStore.setFooterText("Successfully updated profile.");
     void router.push('/')

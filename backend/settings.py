@@ -12,10 +12,120 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 from pathlib import Path
 from decouple import config
+import os
+from pythonjsonlogger import jsonlogger
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+
+    # Define a filter to exclude log messages from the frontend
+    'filters': {
+        'exclude_frontend': {
+            '()': 'django.utils.log.CallbackFilter',
+            # This lambda returns True only if the record's name does NOT start with 'frontend_logger'
+            'callback': lambda record: not record.name.startswith('frontend_logger'),
+        },
+    },
+
+    'formatters': {
+        'text': {
+            'format': '{asctime} - {levelname} - {message} - {meta}',
+            'style': '{',
+        },
+        'json': {
+            '()': jsonlogger.JsonFormatter,
+            'fmt': '%(asctime)s %(levelname)s %(message)s %(meta)s',
+        },
+    },
+
+    'handlers': {
+        'django_request_text': {
+            'level': 'DEBUG',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': os.path.join(BASE_DIR, 'logs/django_request_logs.txt'),
+            'maxBytes': 1024 * 1024 * 5,  # 5 MB
+            'backupCount': 5,
+            'formatter': 'text',
+        },
+        'root_file_text': {
+            'level': 'DEBUG',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': os.path.join(BASE_DIR, 'logs/root_logs.txt'),
+            'maxBytes': 1024 * 1024 * 5,  # 5 MB
+            'backupCount': 5,
+            'formatter': 'text',
+        },
+        'root_file_json': {
+            'level': 'DEBUG',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': os.path.join(BASE_DIR, 'logs/root_logs.json'),
+            'maxBytes': 1024 * 1024 * 5,
+            'backupCount': 5,
+            'formatter': 'json',
+        },
+        'backend_file_text': {
+            'level': 'DEBUG',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': os.path.join(BASE_DIR, 'logs/backend_logs.txt'),
+            'maxBytes': 1024 * 1024 * 5,  # 5 MB
+            'backupCount': 5,
+            'formatter': 'text',
+        },
+        'backend_file_json': {
+            'level': 'DEBUG',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': os.path.join(BASE_DIR, 'logs/backend_logs.json'),
+            'maxBytes': 1024 * 1024 * 5,
+            'backupCount': 5,
+            'formatter': 'json',
+        },
+        'frontend_file_text': {
+            'level': 'DEBUG',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': os.path.join(BASE_DIR, 'logs/frontend_logs.txt'),
+            'maxBytes': 1024 * 1024 * 5,  # 5 MB
+            'backupCount': 5,
+            'formatter': 'text',
+        },
+        'frontend_file_json': {
+            'level': 'DEBUG',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': os.path.join(BASE_DIR, 'logs/frontend_logs.json'),
+            'maxBytes': 1024 * 1024 * 5,
+            'backupCount': 5,
+            'formatter': 'json',
+        },
+    },
+
+    'loggers': {
+        'frontend_logger': {
+            # You can choose which handler to use; here, both handlers are attached.
+            'handlers': ['frontend_file_text', 'frontend_file_json'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+        'django.request': {
+            'handlers': ['django_request_text'],
+            'level': 'DEBUG',
+            'propagate': False,
+        },
+        'backend_logger': {
+            'handlers': ['backend_file_text', 'backend_file_json'],
+            'level': 'DEBUG',
+            'filters': ['exclude_frontend'],
+            'propagate': False,
+        },
+        # Optionally, you can configure the root logger (if you want all logs to be captured by the backend)
+        '': {
+            'handlers': ['root_file_text', 'root_file_json'],
+            'level': 'DEBUG',
+        },
+    },
+}
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
@@ -38,12 +148,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-
-    # ... other apps ...
     'rest_framework',
-    # Optionally, if you want the browsable API:
     'rest_framework.authtoken',
-
     'corsheaders',
 ]
 
@@ -55,7 +161,7 @@ REST_FRAMEWORK = {
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',  # Add this at the top
-
+    'backend.middleware.RequestLoggingMiddleware',
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",

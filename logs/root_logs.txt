@@ -1,0 +1,920 @@
+2025-02-15 18:32:40,811 - INFO - Watching for file changes with StatReloader
+2025-02-15 18:32:48,011 - INFO - Incoming Request:
+Method: POST
+Path: /api/logs/
+Headers: {
+  "Host": "localhost:8000",
+  "Connection": "keep-alive",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "application/json, text/plain, */*",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Origin": "http://localhost:9000",
+  "Sec-Fetch-Site": "same-site",
+  "Sec-Fetch-Mode": "cors",
+  "Sec-Fetch-Dest": "empty",
+  "Referer": "http://localhost:9000/",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Content-Type": "application/json",
+  "Content-Length": "140"
+}
+GET Data: {}
+POST Data: {
+  "level": "DEBUG",
+  "message": "Goin to handle login:",
+  "meta": {
+    "args": [
+      "rzitek",
+      "hXYSC&nc%K3ePzxWy6E5"
+    ]
+  },
+  "timestamp": "2025-02-15T18:32:48.007Z"
+}
+Files: {}
+
+2025-02-15 18:32:48,011 - INFO - Incoming Request:
+Method: POST
+Path: /api/logs/
+Headers: {
+  "Host": "localhost:8000",
+  "Connection": "keep-alive",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "application/json, text/plain, */*",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Origin": "http://localhost:9000",
+  "Sec-Fetch-Site": "same-site",
+  "Sec-Fetch-Mode": "cors",
+  "Sec-Fetch-Dest": "empty",
+  "Referer": "http://localhost:9000/",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Content-Type": "application/json",
+  "Content-Length": "169"
+}
+GET Data: {}
+POST Data: {
+  "level": "DEBUG",
+  "message": "About to call api.post with username and password:",
+  "meta": {
+    "args": [
+      "rzitek",
+      "hXYSC&nc%K3ePzxWy6E5"
+    ]
+  },
+  "timestamp": "2025-02-15T18:32:48.008Z"
+}
+Files: {}
+
+2025-02-15 18:32:48,012 - INFO - Incoming Request:
+Method: POST
+Path: /api/token/
+Headers: {
+  "Host": "localhost:8000",
+  "Connection": "keep-alive",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "application/json, text/plain, */*",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Origin": "http://localhost:9000",
+  "Sec-Fetch-Site": "same-site",
+  "Sec-Fetch-Mode": "cors",
+  "Sec-Fetch-Dest": "empty",
+  "Referer": "http://localhost:9000/",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Content-Type": "application/json",
+  "Content-Length": "55"
+}
+GET Data: {}
+POST Data: {
+  "username": "rzitek",
+  "password": "hXYSC&nc%K3ePzxWy6E5"
+}
+Files: {}
+
+2025-02-15 18:32:48,016 - WARNING - Bad Request: /api/logs/
+2025-02-15 18:32:48,017 - WARNING - Bad Request: /api/logs/
+2025-02-15 18:32:48,226 - INFO - Incoming Request:
+Method: POST
+Path: /api/logs/
+Headers: {
+  "Host": "localhost:8000",
+  "Connection": "keep-alive",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ0NjY4LCJpYXQiOjE3Mzk2NDQzNjgsImp0aSI6IjgwOGRmYzI5ZTA1NTQ0YWI5MWYzMzMwY2Q0NzA2ZTJiIiwidXNlcl9pZCI6N30.NqDOD2MiltDm78FJB6PZqD2OYtz_8h4LtpFl6jgv-fo",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "application/json, text/plain, */*",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Origin": "http://localhost:9000",
+  "Sec-Fetch-Site": "same-site",
+  "Sec-Fetch-Mode": "cors",
+  "Sec-Fetch-Dest": "empty",
+  "Referer": "http://localhost:9000/",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Content-Type": "application/json",
+  "Content-Length": "335"
+}
+GET Data: {}
+POST Data: {
+  "level": "DEBUG",
+  "message": "this.accessToken:",
+  "meta": {
+    "args": [
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ0NjY4LCJpYXQiOjE3Mzk2NDQzNjgsImp0aSI6IjgwOGRmYzI5ZTA1NTQ0YWI5MWYzMzMwY2Q0NzA2ZTJiIiwidXNlcl9pZCI6N30.NqDOD2MiltDm78FJB6PZqD2OYtz_8h4LtpFl6jgv-fo"
+    ]
+  },
+  "timestamp": "2025-02-15T18:32:48.224Z"
+}
+Files: {}
+
+2025-02-15 18:32:48,226 - INFO - Incoming Request:
+Method: POST
+Path: /api/logs/
+Headers: {
+  "Host": "localhost:8000",
+  "Connection": "keep-alive",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ0NjY4LCJpYXQiOjE3Mzk2NDQzNjgsImp0aSI6IjgwOGRmYzI5ZTA1NTQ0YWI5MWYzMzMwY2Q0NzA2ZTJiIiwidXNlcl9pZCI6N30.NqDOD2MiltDm78FJB6PZqD2OYtz_8h4LtpFl6jgv-fo",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "application/json, text/plain, */*",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Origin": "http://localhost:9000",
+  "Sec-Fetch-Site": "same-site",
+  "Sec-Fetch-Mode": "cors",
+  "Sec-Fetch-Dest": "empty",
+  "Referer": "http://localhost:9000/",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Content-Type": "application/json",
+  "Content-Length": "1270"
+}
+GET Data: {}
+POST Data: {
+  "level": "DEBUG",
+  "message": "Response from api.post:",
+  "meta": {
+    "args": [
+      {
+        "data": {
+          "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTczMDc2OCwiaWF0IjoxNzM5NjQ0MzY4LCJqdGkiOiI1MTFmOGI2NjViYmI0NTA5YjRlYWYwY2M2ZjZiYjk5ZCIsInVzZXJfaWQiOjd9.6kehqn-Ddh5C7ZKlReiC-qS9gqcnx96xV2iHQrON5LQ",
+          "access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ0NjY4LCJpYXQiOjE3Mzk2NDQzNjgsImp0aSI6IjgwOGRmYzI5ZTA1NTQ0YWI5MWYzMzMwY2Q0NzA2ZTJiIiwidXNlcl9pZCI6N30.NqDOD2MiltDm78FJB6PZqD2OYtz_8h4LtpFl6jgv-fo"
+        },
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "content-length": "483",
+          "content-type": "application/json"
+        },
+        "config": {
+          "transitional": {
+            "silentJSONParsing": true,
+            "forcedJSONParsing": true,
+            "clarifyTimeoutError": false
+          },
+          "adapter": [
+            "xhr",
+            "http",
+            "fetch"
+          ],
+          "transformRequest": [
+            null
+          ],
+          "transformResponse": [
+            null
+          ],
+          "timeout": 10000,
+          "xsrfCookieName": "XSRF-TOKEN",
+          "xsrfHeaderName": "X-XSRF-TOKEN",
+          "maxContentLength": -1,
+          "maxBodyLength": -1,
+          "env": {},
+          "headers": {
+            "Accept": "application/json, text/plain, */*",
+            "Content-Type": "application/json"
+          },
+          "baseURL": "http://localhost:8000",
+          "method": "post",
+          "url": "/api/token/",
+          "data": "{\"username\":\"rzitek\",\"password\":\"hXYSC&nc%K3ePzxWy6E5\"}"
+        },
+        "request": {}
+      }
+    ]
+  },
+  "timestamp": "2025-02-15T18:32:48.223Z"
+}
+Files: {}
+
+2025-02-15 18:32:48,226 - INFO - Incoming Request:
+Method: POST
+Path: /api/logs/
+Headers: {
+  "Host": "localhost:8000",
+  "Connection": "keep-alive",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ0NjY4LCJpYXQiOjE3Mzk2NDQzNjgsImp0aSI6IjgwOGRmYzI5ZTA1NTQ0YWI5MWYzMzMwY2Q0NzA2ZTJiIiwidXNlcl9pZCI6N30.NqDOD2MiltDm78FJB6PZqD2OYtz_8h4LtpFl6jgv-fo",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "application/json, text/plain, */*",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Origin": "http://localhost:9000",
+  "Sec-Fetch-Site": "same-site",
+  "Sec-Fetch-Mode": "cors",
+  "Sec-Fetch-Dest": "empty",
+  "Referer": "http://localhost:9000/",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Content-Type": "application/json",
+  "Content-Length": "337"
+}
+GET Data: {}
+POST Data: {
+  "level": "DEBUG",
+  "message": "this.refreshToken:",
+  "meta": {
+    "args": [
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTczMDc2OCwiaWF0IjoxNzM5NjQ0MzY4LCJqdGkiOiI1MTFmOGI2NjViYmI0NTA5YjRlYWYwY2M2ZjZiYjk5ZCIsInVzZXJfaWQiOjd9.6kehqn-Ddh5C7ZKlReiC-qS9gqcnx96xV2iHQrON5LQ"
+    ]
+  },
+  "timestamp": "2025-02-15T18:32:48.224Z"
+}
+Files: {}
+
+2025-02-15 18:32:48,227 - INFO - Incoming Request:
+Method: POST
+Path: /api/logs/
+Headers: {
+  "Host": "localhost:8000",
+  "Connection": "keep-alive",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ0NjY4LCJpYXQiOjE3Mzk2NDQzNjgsImp0aSI6IjgwOGRmYzI5ZTA1NTQ0YWI5MWYzMzMwY2Q0NzA2ZTJiIiwidXNlcl9pZCI6N30.NqDOD2MiltDm78FJB6PZqD2OYtz_8h4LtpFl6jgv-fo",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "application/json, text/plain, */*",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Origin": "http://localhost:9000",
+  "Sec-Fetch-Site": "same-site",
+  "Sec-Fetch-Mode": "cors",
+  "Sec-Fetch-Dest": "empty",
+  "Referer": "http://localhost:9000/",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Content-Type": "application/json",
+  "Content-Length": "125"
+}
+GET Data: {}
+POST Data: {
+  "level": "DEBUG",
+  "message": "About to call api.get to get profile.",
+  "meta": {
+    "args": []
+  },
+  "timestamp": "2025-02-15T18:32:48.224Z"
+}
+Files: {}
+
+2025-02-15 18:32:48,227 - INFO - Incoming Request:
+Method: GET
+Path: /api/profile/
+Headers: {
+  "Host": "localhost:8000",
+  "Connection": "keep-alive",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ0NjY4LCJpYXQiOjE3Mzk2NDQzNjgsImp0aSI6IjgwOGRmYzI5ZTA1NTQ0YWI5MWYzMzMwY2Q0NzA2ZTJiIiwidXNlcl9pZCI6N30.NqDOD2MiltDm78FJB6PZqD2OYtz_8h4LtpFl6jgv-fo",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "application/json, text/plain, */*",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Origin": "http://localhost:9000",
+  "Sec-Fetch-Site": "same-site",
+  "Sec-Fetch-Mode": "cors",
+  "Sec-Fetch-Dest": "empty",
+  "Referer": "http://localhost:9000/",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Content-Type": "text/plain",
+  "Content-Length": ""
+}
+GET Data: {}
+POST Data: {}
+Files: {}
+
+2025-02-15 18:32:48,237 - WARNING - Bad Request: /api/logs/
+2025-02-15 18:32:48,239 - WARNING - Bad Request: /api/logs/
+2025-02-15 18:32:48,239 - WARNING - Bad Request: /api/logs/
+2025-02-15 18:32:48,241 - WARNING - Bad Request: /api/logs/
+2025-02-15 18:32:48,244 - INFO - Incoming Request:
+Method: POST
+Path: /api/logs/
+Headers: {
+  "Host": "localhost:8000",
+  "Connection": "keep-alive",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ0NjY4LCJpYXQiOjE3Mzk2NDQzNjgsImp0aSI6IjgwOGRmYzI5ZTA1NTQ0YWI5MWYzMzMwY2Q0NzA2ZTJiIiwidXNlcl9pZCI6N30.NqDOD2MiltDm78FJB6PZqD2OYtz_8h4LtpFl6jgv-fo",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "application/json, text/plain, */*",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Origin": "http://localhost:9000",
+  "Sec-Fetch-Site": "same-site",
+  "Sec-Fetch-Mode": "cors",
+  "Sec-Fetch-Dest": "empty",
+  "Referer": "http://localhost:9000/",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Content-Type": "application/json",
+  "Content-Length": "120"
+}
+GET Data: {}
+POST Data: {
+  "level": "DEBUG",
+  "message": "After login isAuthenticated:",
+  "meta": {
+    "args": [
+      true
+    ]
+  },
+  "timestamp": "2025-02-15T18:32:48.242Z"
+}
+Files: {}
+
+2025-02-15 18:32:48,244 - INFO - Incoming Request:
+Method: POST
+Path: /api/logs/
+Headers: {
+  "Host": "localhost:8000",
+  "Connection": "keep-alive",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ0NjY4LCJpYXQiOjE3Mzk2NDQzNjgsImp0aSI6IjgwOGRmYzI5ZTA1NTQ0YWI5MWYzMzMwY2Q0NzA2ZTJiIiwidXNlcl9pZCI6N30.NqDOD2MiltDm78FJB6PZqD2OYtz_8h4LtpFl6jgv-fo",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "application/json, text/plain, */*",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Origin": "http://localhost:9000",
+  "Sec-Fetch-Site": "same-site",
+  "Sec-Fetch-Mode": "cors",
+  "Sec-Fetch-Dest": "empty",
+  "Referer": "http://localhost:9000/",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Content-Type": "application/json",
+  "Content-Length": "1027"
+}
+GET Data: {}
+POST Data: {
+  "level": "DEBUG",
+  "message": "Response from api.get:",
+  "meta": {
+    "args": [
+      {
+        "data": {
+          "username": "rzitek",
+          "first_name": "Radek",
+          "last_name": "Zitek",
+          "email": "radek.zitek@proton.me"
+        },
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "content-length": "94",
+          "content-type": "application/json"
+        },
+        "config": {
+          "transitional": {
+            "silentJSONParsing": true,
+            "forcedJSONParsing": true,
+            "clarifyTimeoutError": false
+          },
+          "adapter": [
+            "xhr",
+            "http",
+            "fetch"
+          ],
+          "transformRequest": [
+            null
+          ],
+          "transformResponse": [
+            null
+          ],
+          "timeout": 10000,
+          "xsrfCookieName": "XSRF-TOKEN",
+          "xsrfHeaderName": "X-XSRF-TOKEN",
+          "maxContentLength": -1,
+          "maxBodyLength": -1,
+          "env": {},
+          "headers": {
+            "Accept": "application/json, text/plain, */*",
+            "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ0NjY4LCJpYXQiOjE3Mzk2NDQzNjgsImp0aSI6IjgwOGRmYzI5ZTA1NTQ0YWI5MWYzMzMwY2Q0NzA2ZTJiIiwidXNlcl9pZCI6N30.NqDOD2MiltDm78FJB6PZqD2OYtz_8h4LtpFl6jgv-fo"
+          },
+          "baseURL": "http://localhost:8000",
+          "method": "get",
+          "url": "/api/profile/"
+        },
+        "request": {}
+      }
+    ]
+  },
+  "timestamp": "2025-02-15T18:32:48.241Z"
+}
+Files: {}
+
+2025-02-15 18:32:48,255 - WARNING - Bad Request: /api/logs/
+2025-02-15 18:32:48,255 - WARNING - Bad Request: /api/logs/
+2025-02-15 18:33:16,562 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/settings.py changed, reloading.
+2025-02-15 18:33:16,765 - INFO - Watching for file changes with StatReloader
+2025-02-15 18:33:21,963 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/settings.py changed, reloading.
+2025-02-15 18:33:22,174 - INFO - Watching for file changes with StatReloader
+2025-02-15 18:33:42,296 - INFO - Incoming Request:
+Method: POST
+Path: /api/logs/
+Headers: {
+  "Host": "localhost:8000",
+  "Connection": "keep-alive",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "application/json, text/plain, */*",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Origin": "http://localhost:9000",
+  "Sec-Fetch-Site": "same-site",
+  "Sec-Fetch-Mode": "cors",
+  "Sec-Fetch-Dest": "empty",
+  "Referer": "http://localhost:9000/",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Content-Type": "application/json",
+  "Content-Length": "140"
+}
+GET Data: {}
+POST Data: {
+  "level": "DEBUG",
+  "message": "Goin to handle login:",
+  "meta": {
+    "args": [
+      "rzitek",
+      "hXYSC&nc%K3ePzxWy6E5"
+    ]
+  },
+  "timestamp": "2025-02-15T18:33:42.293Z"
+}
+Files: {}
+
+2025-02-15 18:33:42,297 - INFO - Incoming Request:
+Method: POST
+Path: /api/token/
+Headers: {
+  "Host": "localhost:8000",
+  "Connection": "keep-alive",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "application/json, text/plain, */*",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Origin": "http://localhost:9000",
+  "Sec-Fetch-Site": "same-site",
+  "Sec-Fetch-Mode": "cors",
+  "Sec-Fetch-Dest": "empty",
+  "Referer": "http://localhost:9000/",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Content-Type": "application/json",
+  "Content-Length": "55"
+}
+GET Data: {}
+POST Data: {
+  "username": "rzitek",
+  "password": "hXYSC&nc%K3ePzxWy6E5"
+}
+Files: {}
+
+2025-02-15 18:33:42,297 - INFO - Incoming Request:
+Method: POST
+Path: /api/logs/
+Headers: {
+  "Host": "localhost:8000",
+  "Connection": "keep-alive",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "application/json, text/plain, */*",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Origin": "http://localhost:9000",
+  "Sec-Fetch-Site": "same-site",
+  "Sec-Fetch-Mode": "cors",
+  "Sec-Fetch-Dest": "empty",
+  "Referer": "http://localhost:9000/",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Content-Type": "application/json",
+  "Content-Length": "169"
+}
+GET Data: {}
+POST Data: {
+  "level": "DEBUG",
+  "message": "About to call api.post with username and password:",
+  "meta": {
+    "args": [
+      "rzitek",
+      "hXYSC&nc%K3ePzxWy6E5"
+    ]
+  },
+  "timestamp": "2025-02-15T18:33:42.294Z"
+}
+Files: {}
+
+2025-02-15 18:33:42,302 - WARNING - Bad Request: /api/logs/
+2025-02-15 18:33:42,302 - WARNING - Bad Request: /api/logs/
+2025-02-15 18:33:42,512 - INFO - Incoming Request:
+Method: POST
+Path: /api/logs/
+Headers: {
+  "Host": "localhost:8000",
+  "Connection": "keep-alive",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ0NzIyLCJpYXQiOjE3Mzk2NDQ0MjIsImp0aSI6ImJiNzYwZTY0MTkyNDQ2YTE5NDlkNjdiODYxZTdiMDI3IiwidXNlcl9pZCI6N30.aGaFRZdQOyf8SxfwmOu4jivZnQPMTeYAhHLYPu1C7P4",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "application/json, text/plain, */*",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Origin": "http://localhost:9000",
+  "Sec-Fetch-Site": "same-site",
+  "Sec-Fetch-Mode": "cors",
+  "Sec-Fetch-Dest": "empty",
+  "Referer": "http://localhost:9000/",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Content-Type": "application/json",
+  "Content-Length": "335"
+}
+GET Data: {}
+POST Data: {
+  "level": "DEBUG",
+  "message": "this.accessToken:",
+  "meta": {
+    "args": [
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ0NzIyLCJpYXQiOjE3Mzk2NDQ0MjIsImp0aSI6ImJiNzYwZTY0MTkyNDQ2YTE5NDlkNjdiODYxZTdiMDI3IiwidXNlcl9pZCI6N30.aGaFRZdQOyf8SxfwmOu4jivZnQPMTeYAhHLYPu1C7P4"
+    ]
+  },
+  "timestamp": "2025-02-15T18:33:42.510Z"
+}
+Files: {}
+
+2025-02-15 18:33:42,513 - INFO - Incoming Request:
+Method: POST
+Path: /api/logs/
+Headers: {
+  "Host": "localhost:8000",
+  "Connection": "keep-alive",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ0NzIyLCJpYXQiOjE3Mzk2NDQ0MjIsImp0aSI6ImJiNzYwZTY0MTkyNDQ2YTE5NDlkNjdiODYxZTdiMDI3IiwidXNlcl9pZCI6N30.aGaFRZdQOyf8SxfwmOu4jivZnQPMTeYAhHLYPu1C7P4",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "application/json, text/plain, */*",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Origin": "http://localhost:9000",
+  "Sec-Fetch-Site": "same-site",
+  "Sec-Fetch-Mode": "cors",
+  "Sec-Fetch-Dest": "empty",
+  "Referer": "http://localhost:9000/",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Content-Type": "application/json",
+  "Content-Length": "337"
+}
+GET Data: {}
+POST Data: {
+  "level": "DEBUG",
+  "message": "this.refreshToken:",
+  "meta": {
+    "args": [
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTczMDgyMiwiaWF0IjoxNzM5NjQ0NDIyLCJqdGkiOiI2MDlmZjgwM2NjZGI0MjgxYTg1MGY4ZDA0NGY5YTgxNiIsInVzZXJfaWQiOjd9.nBbcRWH3FOATK9GxKxVhQfjpGJmtJNY8MwTm5zp1tDQ"
+    ]
+  },
+  "timestamp": "2025-02-15T18:33:42.510Z"
+}
+Files: {}
+
+2025-02-15 18:33:42,513 - INFO - Incoming Request:
+Method: POST
+Path: /api/logs/
+Headers: {
+  "Host": "localhost:8000",
+  "Connection": "keep-alive",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ0NzIyLCJpYXQiOjE3Mzk2NDQ0MjIsImp0aSI6ImJiNzYwZTY0MTkyNDQ2YTE5NDlkNjdiODYxZTdiMDI3IiwidXNlcl9pZCI6N30.aGaFRZdQOyf8SxfwmOu4jivZnQPMTeYAhHLYPu1C7P4",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "application/json, text/plain, */*",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Origin": "http://localhost:9000",
+  "Sec-Fetch-Site": "same-site",
+  "Sec-Fetch-Mode": "cors",
+  "Sec-Fetch-Dest": "empty",
+  "Referer": "http://localhost:9000/",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Content-Type": "application/json",
+  "Content-Length": "1270"
+}
+GET Data: {}
+POST Data: {
+  "level": "DEBUG",
+  "message": "Response from api.post:",
+  "meta": {
+    "args": [
+      {
+        "data": {
+          "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTczMDgyMiwiaWF0IjoxNzM5NjQ0NDIyLCJqdGkiOiI2MDlmZjgwM2NjZGI0MjgxYTg1MGY4ZDA0NGY5YTgxNiIsInVzZXJfaWQiOjd9.nBbcRWH3FOATK9GxKxVhQfjpGJmtJNY8MwTm5zp1tDQ",
+          "access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ0NzIyLCJpYXQiOjE3Mzk2NDQ0MjIsImp0aSI6ImJiNzYwZTY0MTkyNDQ2YTE5NDlkNjdiODYxZTdiMDI3IiwidXNlcl9pZCI6N30.aGaFRZdQOyf8SxfwmOu4jivZnQPMTeYAhHLYPu1C7P4"
+        },
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "content-length": "483",
+          "content-type": "application/json"
+        },
+        "config": {
+          "transitional": {
+            "silentJSONParsing": true,
+            "forcedJSONParsing": true,
+            "clarifyTimeoutError": false
+          },
+          "adapter": [
+            "xhr",
+            "http",
+            "fetch"
+          ],
+          "transformRequest": [
+            null
+          ],
+          "transformResponse": [
+            null
+          ],
+          "timeout": 10000,
+          "xsrfCookieName": "XSRF-TOKEN",
+          "xsrfHeaderName": "X-XSRF-TOKEN",
+          "maxContentLength": -1,
+          "maxBodyLength": -1,
+          "env": {},
+          "headers": {
+            "Accept": "application/json, text/plain, */*",
+            "Content-Type": "application/json"
+          },
+          "baseURL": "http://localhost:8000",
+          "method": "post",
+          "url": "/api/token/",
+          "data": "{\"username\":\"rzitek\",\"password\":\"hXYSC&nc%K3ePzxWy6E5\"}"
+        },
+        "request": {}
+      }
+    ]
+  },
+  "timestamp": "2025-02-15T18:33:42.510Z"
+}
+Files: {}
+
+2025-02-15 18:33:42,513 - INFO - Incoming Request:
+Method: POST
+Path: /api/logs/
+Headers: {
+  "Host": "localhost:8000",
+  "Connection": "keep-alive",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ0NzIyLCJpYXQiOjE3Mzk2NDQ0MjIsImp0aSI6ImJiNzYwZTY0MTkyNDQ2YTE5NDlkNjdiODYxZTdiMDI3IiwidXNlcl9pZCI6N30.aGaFRZdQOyf8SxfwmOu4jivZnQPMTeYAhHLYPu1C7P4",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "application/json, text/plain, */*",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Origin": "http://localhost:9000",
+  "Sec-Fetch-Site": "same-site",
+  "Sec-Fetch-Mode": "cors",
+  "Sec-Fetch-Dest": "empty",
+  "Referer": "http://localhost:9000/",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Content-Type": "application/json",
+  "Content-Length": "125"
+}
+GET Data: {}
+POST Data: {
+  "level": "DEBUG",
+  "message": "About to call api.get to get profile.",
+  "meta": {
+    "args": []
+  },
+  "timestamp": "2025-02-15T18:33:42.511Z"
+}
+Files: {}
+
+2025-02-15 18:33:42,514 - INFO - Incoming Request:
+Method: GET
+Path: /api/profile/
+Headers: {
+  "Host": "localhost:8000",
+  "Connection": "keep-alive",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ0NzIyLCJpYXQiOjE3Mzk2NDQ0MjIsImp0aSI6ImJiNzYwZTY0MTkyNDQ2YTE5NDlkNjdiODYxZTdiMDI3IiwidXNlcl9pZCI6N30.aGaFRZdQOyf8SxfwmOu4jivZnQPMTeYAhHLYPu1C7P4",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "application/json, text/plain, */*",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Origin": "http://localhost:9000",
+  "Sec-Fetch-Site": "same-site",
+  "Sec-Fetch-Mode": "cors",
+  "Sec-Fetch-Dest": "empty",
+  "Referer": "http://localhost:9000/",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Content-Type": "text/plain",
+  "Content-Length": ""
+}
+GET Data: {}
+POST Data: {}
+Files: {}
+
+2025-02-15 18:33:42,523 - WARNING - Bad Request: /api/logs/
+2025-02-15 18:33:42,524 - WARNING - Bad Request: /api/logs/
+2025-02-15 18:33:42,527 - WARNING - Bad Request: /api/logs/
+2025-02-15 18:33:42,527 - WARNING - Bad Request: /api/logs/
+2025-02-15 18:33:42,530 - INFO - Incoming Request:
+Method: POST
+Path: /api/logs/
+Headers: {
+  "Host": "localhost:8000",
+  "Connection": "keep-alive",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ0NzIyLCJpYXQiOjE3Mzk2NDQ0MjIsImp0aSI6ImJiNzYwZTY0MTkyNDQ2YTE5NDlkNjdiODYxZTdiMDI3IiwidXNlcl9pZCI6N30.aGaFRZdQOyf8SxfwmOu4jivZnQPMTeYAhHLYPu1C7P4",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "application/json, text/plain, */*",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Origin": "http://localhost:9000",
+  "Sec-Fetch-Site": "same-site",
+  "Sec-Fetch-Mode": "cors",
+  "Sec-Fetch-Dest": "empty",
+  "Referer": "http://localhost:9000/",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Content-Type": "application/json",
+  "Content-Length": "1027"
+}
+GET Data: {}
+POST Data: {
+  "level": "DEBUG",
+  "message": "Response from api.get:",
+  "meta": {
+    "args": [
+      {
+        "data": {
+          "username": "rzitek",
+          "first_name": "Radek",
+          "last_name": "Zitek",
+          "email": "radek.zitek@proton.me"
+        },
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "content-length": "94",
+          "content-type": "application/json"
+        },
+        "config": {
+          "transitional": {
+            "silentJSONParsing": true,
+            "forcedJSONParsing": true,
+            "clarifyTimeoutError": false
+          },
+          "adapter": [
+            "xhr",
+            "http",
+            "fetch"
+          ],
+          "transformRequest": [
+            null
+          ],
+          "transformResponse": [
+            null
+          ],
+          "timeout": 10000,
+          "xsrfCookieName": "XSRF-TOKEN",
+          "xsrfHeaderName": "X-XSRF-TOKEN",
+          "maxContentLength": -1,
+          "maxBodyLength": -1,
+          "env": {},
+          "headers": {
+            "Accept": "application/json, text/plain, */*",
+            "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ0NzIyLCJpYXQiOjE3Mzk2NDQ0MjIsImp0aSI6ImJiNzYwZTY0MTkyNDQ2YTE5NDlkNjdiODYxZTdiMDI3IiwidXNlcl9pZCI6N30.aGaFRZdQOyf8SxfwmOu4jivZnQPMTeYAhHLYPu1C7P4"
+          },
+          "baseURL": "http://localhost:8000",
+          "method": "get",
+          "url": "/api/profile/"
+        },
+        "request": {}
+      }
+    ]
+  },
+  "timestamp": "2025-02-15T18:33:42.529Z"
+}
+Files: {}
+
+2025-02-15 18:33:42,531 - INFO - Incoming Request:
+Method: POST
+Path: /api/logs/
+Headers: {
+  "Host": "localhost:8000",
+  "Connection": "keep-alive",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ0NzIyLCJpYXQiOjE3Mzk2NDQ0MjIsImp0aSI6ImJiNzYwZTY0MTkyNDQ2YTE5NDlkNjdiODYxZTdiMDI3IiwidXNlcl9pZCI6N30.aGaFRZdQOyf8SxfwmOu4jivZnQPMTeYAhHLYPu1C7P4",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "application/json, text/plain, */*",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Origin": "http://localhost:9000",
+  "Sec-Fetch-Site": "same-site",
+  "Sec-Fetch-Mode": "cors",
+  "Sec-Fetch-Dest": "empty",
+  "Referer": "http://localhost:9000/",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Content-Type": "application/json",
+  "Content-Length": "120"
+}
+GET Data: {}
+POST Data: {
+  "level": "DEBUG",
+  "message": "After login isAuthenticated:",
+  "meta": {
+    "args": [
+      true
+    ]
+  },
+  "timestamp": "2025-02-15T18:33:42.530Z"
+}
+Files: {}
+
+2025-02-15 18:33:42,540 - WARNING - Bad Request: /api/logs/
+2025-02-15 18:33:42,540 - WARNING - Bad Request: /api/logs/
+2025-02-15 18:34:45,854 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/settings.py changed, reloading.
+2025-02-15 18:34:46,053 - INFO - Watching for file changes with StatReloader
+2025-02-15 18:43:57,047 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/serializers.py changed, reloading.
+2025-02-15 18:43:57,244 - INFO - Watching for file changes with StatReloader
+2025-02-15 18:45:45,487 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/serializers.py changed, reloading.
+2025-02-15 18:45:45,690 - INFO - Watching for file changes with StatReloader
+2025-02-15 18:46:01,073 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/serializers.py changed, reloading.
+2025-02-15 18:46:01,265 - INFO - Watching for file changes with StatReloader
+2025-02-15 18:46:07,434 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/serializers.py changed, reloading.
+2025-02-15 18:46:07,639 - INFO - Watching for file changes with StatReloader
+2025-02-15 18:47:55,698 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/serializers.py changed, reloading.
+2025-02-15 18:47:55,907 - INFO - Watching for file changes with StatReloader
+2025-02-15 18:47:56,993 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/serializers.py changed, reloading.
+2025-02-15 18:47:57,205 - INFO - Watching for file changes with StatReloader
+2025-02-15 18:47:59,306 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/serializers.py changed, reloading.
+2025-02-15 18:47:59,504 - INFO - Watching for file changes with StatReloader
+2025-02-15 18:48:03,677 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/serializers.py changed, reloading.
+2025-02-15 18:48:03,869 - INFO - Watching for file changes with StatReloader
+2025-02-15 18:48:08,047 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/serializers.py changed, reloading.
+2025-02-15 18:48:08,241 - INFO - Watching for file changes with StatReloader
+2025-02-15 18:48:10,332 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/serializers.py changed, reloading.
+2025-02-15 18:48:10,528 - INFO - Watching for file changes with StatReloader
+2025-02-15 18:50:36,192 - INFO - Watching for file changes with StatReloader
+2025-02-15 18:52:19,843 - INFO - This is a log message.
+2025-02-15 18:57:35,560 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/serializers.py changed, reloading.
+2025-02-15 18:57:35,787 - INFO - Watching for file changes with StatReloader
+2025-02-15 18:57:37,888 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/serializers.py changed, reloading.
+2025-02-15 18:57:38,074 - INFO - Watching for file changes with StatReloader
+2025-02-15 18:57:45,883 - INFO - Watching for file changes with StatReloader
+2025-02-15 18:57:58,182 - DEBUG - After login isAuthenticated:
+2025-02-15 18:58:38,201 - DEBUG - Goin to handle login:
+2025-02-15 18:58:38,202 - DEBUG - About to call api.post with username and password:
+2025-02-15 18:58:38,422 - DEBUG - this.accessToken:
+2025-02-15 18:58:38,422 - DEBUG - Response from api.post:
+2025-02-15 18:58:38,425 - DEBUG - this.refreshToken:
+2025-02-15 18:58:38,426 - DEBUG - About to call api.get to get profile.
+2025-02-15 18:58:38,439 - DEBUG - Response from api.get:
+2025-02-15 18:58:38,439 - DEBUG - After login isAuthenticated:
+2025-02-15 19:02:54,781 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/settings.py changed, reloading.
+2025-02-15 19:02:54,995 - INFO - Watching for file changes with StatReloader +
+2025-02-15 19:02:56,124 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/settings.py changed, reloading. +
+2025-02-15 19:02:56,335 - INFO - Watching for file changes with StatReloader -
+2025-02-15 19:03:02,494 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/settings.py changed, reloading. -
+2025-02-15 19:03:15,342 - DEBUG - Goin to handle login: - {'args': ['rzitek', 'hXYSC&nc%K3ePzxWy6E5']}
+2025-02-15 19:03:15,343 - DEBUG - About to call api.post with username and password: - {'args': ['rzitek', 'hXYSC&nc%K3ePzxWy6E5']}
+2025-02-15 19:03:15,576 - DEBUG - this.accessToken: - {'args': ['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ2NDk1LCJpYXQiOjE3Mzk2NDYxOTUsImp0aSI6IjcxYWMxOGM4ZjhiNTRmZjM4ODRkMGFkYTE5NjZjNGJkIiwidXNlcl9pZCI6N30.typ3475DZVSSfA5xC9Y-f8OFjwX5oCoqyEVtVR79niE']}
+2025-02-15 19:03:15,585 - DEBUG - this.refreshToken: - {'args': ['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTczMjU5NSwiaWF0IjoxNzM5NjQ2MTk1LCJqdGkiOiJmZDU0YWI4MTcwN2I0OWEyYWRlZGI2YTQwZWE3NDE0NCIsInVzZXJfaWQiOjd9.EM8LgCVIZLOh0IcASpgA_6bmY-L298IN11JTolwsm4Q']}
+2025-02-15 19:03:15,588 - DEBUG - Response from api.post: - {'args': [{'data': {'refresh': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTczMjU5NSwiaWF0IjoxNzM5NjQ2MTk1LCJqdGkiOiJmZDU0YWI4MTcwN2I0OWEyYWRlZGI2YTQwZWE3NDE0NCIsInVzZXJfaWQiOjd9.EM8LgCVIZLOh0IcASpgA_6bmY-L298IN11JTolwsm4Q', 'access': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ2NDk1LCJpYXQiOjE3Mzk2NDYxOTUsImp0aSI6IjcxYWMxOGM4ZjhiNTRmZjM4ODRkMGFkYTE5NjZjNGJkIiwidXNlcl9pZCI6N30.typ3475DZVSSfA5xC9Y-f8OFjwX5oCoqyEVtVR79niE'}, 'status': 200, 'statusText': 'OK', 'headers': {'content-length': '483', 'content-type': 'application/json'}, 'config': {'transitional': {'silentJSONParsing': True, 'forcedJSONParsing': True, 'clarifyTimeoutError': False}, 'adapter': ['xhr', 'http', 'fetch'], 'transformRequest': [None], 'transformResponse': [None], 'timeout': 10000, 'xsrfCookieName': 'XSRF-TOKEN', 'xsrfHeaderName': 'X-XSRF-TOKEN', 'maxContentLength': -1, 'maxBodyLength': -1, 'env': {}, 'headers': {'Accept': 'application/json, text/plain, */*', 'Content-Type': 'application/json'}, 'baseURL': 'http://localhost:8000', 'method': 'post', 'url': '/api/token/', 'data': '{"username":"rzitek","password":"hXYSC&nc%K3ePzxWy6E5"}'}, 'request': {}}]}
+2025-02-15 19:03:15,589 - DEBUG - About to call api.get to get profile. - {'args': []}
+2025-02-15 19:03:15,608 - DEBUG - Response from api.get: - {'args': [{'data': {'username': 'rzitek', 'first_name': 'Radek', 'last_name': 'Zitek', 'email': 'radek.zitek@proton.me'}, 'status': 200, 'statusText': 'OK', 'headers': {'content-length': '94', 'content-type': 'application/json'}, 'config': {'transitional': {'silentJSONParsing': True, 'forcedJSONParsing': True, 'clarifyTimeoutError': False}, 'adapter': ['xhr', 'http', 'fetch'], 'transformRequest': [None], 'transformResponse': [None], 'timeout': 10000, 'xsrfCookieName': 'XSRF-TOKEN', 'xsrfHeaderName': 'X-XSRF-TOKEN', 'maxContentLength': -1, 'maxBodyLength': -1, 'env': {}, 'headers': {'Accept': 'application/json, text/plain, */*', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ2NDk1LCJpYXQiOjE3Mzk2NDYxOTUsImp0aSI6IjcxYWMxOGM4ZjhiNTRmZjM4ODRkMGFkYTE5NjZjNGJkIiwidXNlcl9pZCI6N30.typ3475DZVSSfA5xC9Y-f8OFjwX5oCoqyEVtVR79niE'}, 'baseURL': 'http://localhost:8000', 'method': 'get', 'url': '/api/profile/'}, 'request': {}}]}
+2025-02-15 19:03:15,610 - DEBUG - After login isAuthenticated: - {'args': [True]}
+2025-02-15 19:04:08,942 - DEBUG - Going to handle update profile: - {'args': ['RadekK', 'Zitek', 'radek.zitek@proton.me']}
+2025-02-15 19:04:08,950 - DEBUG - About to call api.put with firstname, lastname, and email: - {'args': [{'first_name': 'RadekK', 'last_name': 'Zitek', 'email': 'radek.zitek@proton.me'}]}
+2025-02-15 19:04:09,007 - DEBUG - Update successful: - {'args': [{'data': {'first_name': 'RadekK', 'last_name': 'Zitek', 'email': 'radek.zitek@proton.me'}, 'status': 200, 'statusText': 'OK', 'headers': {'content-length': '75', 'content-type': 'application/json'}, 'config': {'transitional': {'silentJSONParsing': True, 'forcedJSONParsing': True, 'clarifyTimeoutError': False}, 'adapter': ['xhr', 'http', 'fetch'], 'transformRequest': [None], 'transformResponse': [None], 'timeout': 10000, 'xsrfCookieName': 'XSRF-TOKEN', 'xsrfHeaderName': 'X-XSRF-TOKEN', 'maxContentLength': -1, 'maxBodyLength': -1, 'env': {}, 'headers': {'Accept': 'application/json, text/plain, */*', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ2NDk1LCJpYXQiOjE3Mzk2NDYxOTUsImp0aSI6IjcxYWMxOGM4ZjhiNTRmZjM4ODRkMGFkYTE5NjZjNGJkIiwidXNlcl9pZCI6N30.typ3475DZVSSfA5xC9Y-f8OFjwX5oCoqyEVtVR79niE'}, 'baseURL': 'http://localhost:8000', 'method': 'put', 'url': '/api/profile/update/', 'data': '{"first_name":"RadekK","last_name":"Zitek","email":"radek.zitek@proton.me"}'}, 'request': {}}]}
+2025-02-15 19:04:16,760 - DEBUG - Going to handle update profile: - {'args': ['Radek', 'Zitek', 'radek.zitek@proton.me']}
+2025-02-15 19:04:16,761 - DEBUG - About to call api.put with firstname, lastname, and email: - {'args': [{'first_name': 'Radek', 'last_name': 'Zitek', 'email': 'radek.zitek@proton.me'}]}
+2025-02-15 19:04:16,773 - DEBUG - Update successful: - {'args': [{'data': {'first_name': 'Radek', 'last_name': 'Zitek', 'email': 'radek.zitek@proton.me'}, 'status': 200, 'statusText': 'OK', 'headers': {'content-length': '74', 'content-type': 'application/json'}, 'config': {'transitional': {'silentJSONParsing': True, 'forcedJSONParsing': True, 'clarifyTimeoutError': False}, 'adapter': ['xhr', 'http', 'fetch'], 'transformRequest': [None], 'transformResponse': [None], 'timeout': 10000, 'xsrfCookieName': 'XSRF-TOKEN', 'xsrfHeaderName': 'X-XSRF-TOKEN', 'maxContentLength': -1, 'maxBodyLength': -1, 'env': {}, 'headers': {'Accept': 'application/json, text/plain, */*', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ2NDk1LCJpYXQiOjE3Mzk2NDYxOTUsImp0aSI6IjcxYWMxOGM4ZjhiNTRmZjM4ODRkMGFkYTE5NjZjNGJkIiwidXNlcl9pZCI6N30.typ3475DZVSSfA5xC9Y-f8OFjwX5oCoqyEVtVR79niE'}, 'baseURL': 'http://localhost:8000', 'method': 'put', 'url': '/api/profile/update/', 'data': '{"first_name":"Radek","last_name":"Zitek","email":"radek.zitek@proton.me"}'}, 'request': {}}]}

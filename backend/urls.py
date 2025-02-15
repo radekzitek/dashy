@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.urls import path
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
-from .views import UserRegistrationView, UserProfileUpdateAPIView, UserProfileAPIView
+from .views import UserRegistrationView, UserProfileUpdateAPIView, UserProfileAPIView, LogEntryAPIView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -28,4 +28,5 @@ urlpatterns = [
     path('api/register/', UserRegistrationView.as_view(), name='register'),
     path('api/profile/', UserProfileAPIView.as_view(), name='user-profile'),
     path('api/profile/update/', UserProfileUpdateAPIView.as_view(), name='user-profile-update'),
+    path('api/logs/', LogEntryAPIView.as_view(), name='log-entry'),
 ]

@@ -3,6 +3,8 @@ import { defineBoot } from '#q-app/wrappers'
 import axios, { type AxiosInstance } from 'axios'
 import { useAuthStore } from 'src/stores/auth'
 
+// import log from '../services/logger'
+
 declare module 'vue' {
   interface ComponentCustomProperties {
     $axios: AxiosInstance
@@ -28,6 +30,7 @@ api.interceptors.request.use(
   (config) => {
     const authStore = useAuthStore()
     if (authStore.accessToken) {
+      // log.debug('Interceptor: Attaching access token to request.')
       config.headers.Authorization = `Bearer ${authStore.accessToken}`
     }
     return config
@@ -48,6 +51,7 @@ api.interceptors.response.use(
     const authStore = useAuthStore()
     const originalRequest = error.config
     if (error.response.status === 401 && !originalRequest._retry && authStore.refreshToken) {
+      // log.debug('Interceptor: Handling 401 response to refresh token.')
       originalRequest._retry = true
       await authStore.refreshAccessToken()
       originalRequest.headers.Authorization = `Bearer ${authStore.accessToken}`
