@@ -99,6 +99,15 @@ export const useAuthStore = defineStore('auth', {
       } catch (error) {
         throw new Error('Failed to fetch user profile', error as Error);
       }
+    },
+    async changePassword(old_password: string, new_password: string) {
+      try {
+        log.debug('About to call api.post with old_password and new_password:', { old_password, new_password });
+        await api.post('/api/password/change/', { old_password, new_password });
+        log.debug('Password change successful');
+      } catch (error) {
+        throw new Error('Password change failed', error as Error)
+      }
     }
   },
 

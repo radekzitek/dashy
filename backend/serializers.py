@@ -45,5 +45,9 @@ class LogEntrySerializer(serializers.Serializer):
     level = serializers.ChoiceField(choices=LEVEL_CHOICES, default='INFO')
     message = serializers.CharField()
     meta = serializers.DictField(child=serializers.JSONField(), required=False)
-    # meta = serializers.CharField(required=False)
     timestamp = serializers.DateTimeField(required=False)
+
+
+class ChangePasswordSerializer(serializers.Serializer):
+    old_password = serializers.CharField(required=True, write_only=True)
+    new_password = serializers.CharField(required=True, write_only=True)

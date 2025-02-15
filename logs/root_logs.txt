@@ -1,5 +1,6 @@
-2025-02-15 18:32:40,811 - INFO - Watching for file changes with StatReloader
-2025-02-15 18:32:48,011 - INFO - Incoming Request:
+2025-02-15 19:50:59,314 - INFO - Watching for file changes with StatReloader
+2025-02-15 19:51:05,326 - INFO - Watching for file changes with StatReloader
+2025-02-15 19:51:35,547 - INFO - Incoming Request:
 Method: POST
 Path: /api/logs/
 Headers: {
@@ -30,11 +31,11 @@ POST Data: {
       "hXYSC&nc%K3ePzxWy6E5"
     ]
   },
-  "timestamp": "2025-02-15T18:32:48.007Z"
+  "timestamp": "2025-02-15T19:51:35.534Z"
 }
 Files: {}
 
-2025-02-15 18:32:48,011 - INFO - Incoming Request:
+2025-02-15 19:51:35,547 - INFO - Incoming Request:
 Method: POST
 Path: /api/logs/
 Headers: {
@@ -65,11 +66,11 @@ POST Data: {
       "hXYSC&nc%K3ePzxWy6E5"
     ]
   },
-  "timestamp": "2025-02-15T18:32:48.008Z"
+  "timestamp": "2025-02-15T19:51:35.539Z"
 }
 Files: {}
 
-2025-02-15 18:32:48,012 - INFO - Incoming Request:
+2025-02-15 19:51:35,548 - INFO - Incoming Request:
 Method: POST
 Path: /api/token/
 Headers: {
@@ -97,16 +98,16 @@ POST Data: {
 }
 Files: {}
 
-2025-02-15 18:32:48,016 - WARNING - Bad Request: /api/logs/
-2025-02-15 18:32:48,017 - WARNING - Bad Request: /api/logs/
-2025-02-15 18:32:48,226 - INFO - Incoming Request:
+2025-02-15 19:51:35,550 - DEBUG - Goin to handle login:
+2025-02-15 19:51:35,551 - DEBUG - About to call api.post with username and password:
+2025-02-15 19:51:35,764 - INFO - Incoming Request:
 Method: POST
 Path: /api/logs/
 Headers: {
   "Host": "localhost:8000",
   "Connection": "keep-alive",
   "Sec-Ch-Ua-Platform": "\"Linux\"",
-  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ0NjY4LCJpYXQiOjE3Mzk2NDQzNjgsImp0aSI6IjgwOGRmYzI5ZTA1NTQ0YWI5MWYzMzMwY2Q0NzA2ZTJiIiwidXNlcl9pZCI6N30.NqDOD2MiltDm78FJB6PZqD2OYtz_8h4LtpFl6jgv-fo",
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ5Mzk1LCJpYXQiOjE3Mzk2NDkwOTUsImp0aSI6ImM1MTdlMDM0NWZlMTRkZWViZmQxMjQwZjMxY2YzYWM3IiwidXNlcl9pZCI6N30.tPXjlFC-7HpDztQjlLNOzmL41S87HqNm_vyRgiNIcak",
   "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
   "Accept": "application/json, text/plain, */*",
   "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
@@ -127,21 +128,21 @@ POST Data: {
   "message": "this.accessToken:",
   "meta": {
     "args": [
-      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ0NjY4LCJpYXQiOjE3Mzk2NDQzNjgsImp0aSI6IjgwOGRmYzI5ZTA1NTQ0YWI5MWYzMzMwY2Q0NzA2ZTJiIiwidXNlcl9pZCI6N30.NqDOD2MiltDm78FJB6PZqD2OYtz_8h4LtpFl6jgv-fo"
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ5Mzk1LCJpYXQiOjE3Mzk2NDkwOTUsImp0aSI6ImM1MTdlMDM0NWZlMTRkZWViZmQxMjQwZjMxY2YzYWM3IiwidXNlcl9pZCI6N30.tPXjlFC-7HpDztQjlLNOzmL41S87HqNm_vyRgiNIcak"
     ]
   },
-  "timestamp": "2025-02-15T18:32:48.224Z"
+  "timestamp": "2025-02-15T19:51:35.761Z"
 }
 Files: {}
 
-2025-02-15 18:32:48,226 - INFO - Incoming Request:
+2025-02-15 19:51:35,764 - INFO - Incoming Request:
 Method: POST
 Path: /api/logs/
 Headers: {
   "Host": "localhost:8000",
   "Connection": "keep-alive",
   "Sec-Ch-Ua-Platform": "\"Linux\"",
-  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ0NjY4LCJpYXQiOjE3Mzk2NDQzNjgsImp0aSI6IjgwOGRmYzI5ZTA1NTQ0YWI5MWYzMzMwY2Q0NzA2ZTJiIiwidXNlcl9pZCI6N30.NqDOD2MiltDm78FJB6PZqD2OYtz_8h4LtpFl6jgv-fo",
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ5Mzk1LCJpYXQiOjE3Mzk2NDkwOTUsImp0aSI6ImM1MTdlMDM0NWZlMTRkZWViZmQxMjQwZjMxY2YzYWM3IiwidXNlcl9pZCI6N30.tPXjlFC-7HpDztQjlLNOzmL41S87HqNm_vyRgiNIcak",
   "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
   "Accept": "application/json, text/plain, */*",
   "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
@@ -164,8 +165,8 @@ POST Data: {
     "args": [
       {
         "data": {
-          "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTczMDc2OCwiaWF0IjoxNzM5NjQ0MzY4LCJqdGkiOiI1MTFmOGI2NjViYmI0NTA5YjRlYWYwY2M2ZjZiYjk5ZCIsInVzZXJfaWQiOjd9.6kehqn-Ddh5C7ZKlReiC-qS9gqcnx96xV2iHQrON5LQ",
-          "access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ0NjY4LCJpYXQiOjE3Mzk2NDQzNjgsImp0aSI6IjgwOGRmYzI5ZTA1NTQ0YWI5MWYzMzMwY2Q0NzA2ZTJiIiwidXNlcl9pZCI6N30.NqDOD2MiltDm78FJB6PZqD2OYtz_8h4LtpFl6jgv-fo"
+          "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTczNTQ5NSwiaWF0IjoxNzM5NjQ5MDk1LCJqdGkiOiIwMWUwMDBmMzE1OGQ0NWQ2OTNlNDA1ZTlmNmEzODYyNyIsInVzZXJfaWQiOjd9.OAMB7JNk6JDGtaKxNeJYfZjWB-7LYjj4QuBNlZgMoFU",
+          "access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ5Mzk1LCJpYXQiOjE3Mzk2NDkwOTUsImp0aSI6ImM1MTdlMDM0NWZlMTRkZWViZmQxMjQwZjMxY2YzYWM3IiwidXNlcl9pZCI6N30.tPXjlFC-7HpDztQjlLNOzmL41S87HqNm_vyRgiNIcak"
         },
         "status": 200,
         "statusText": "OK",
@@ -209,18 +210,18 @@ POST Data: {
       }
     ]
   },
-  "timestamp": "2025-02-15T18:32:48.223Z"
+  "timestamp": "2025-02-15T19:51:35.761Z"
 }
 Files: {}
 
-2025-02-15 18:32:48,226 - INFO - Incoming Request:
+2025-02-15 19:51:35,764 - INFO - Incoming Request:
 Method: POST
 Path: /api/logs/
 Headers: {
   "Host": "localhost:8000",
   "Connection": "keep-alive",
   "Sec-Ch-Ua-Platform": "\"Linux\"",
-  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ0NjY4LCJpYXQiOjE3Mzk2NDQzNjgsImp0aSI6IjgwOGRmYzI5ZTA1NTQ0YWI5MWYzMzMwY2Q0NzA2ZTJiIiwidXNlcl9pZCI6N30.NqDOD2MiltDm78FJB6PZqD2OYtz_8h4LtpFl6jgv-fo",
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ5Mzk1LCJpYXQiOjE3Mzk2NDkwOTUsImp0aSI6ImM1MTdlMDM0NWZlMTRkZWViZmQxMjQwZjMxY2YzYWM3IiwidXNlcl9pZCI6N30.tPXjlFC-7HpDztQjlLNOzmL41S87HqNm_vyRgiNIcak",
   "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
   "Accept": "application/json, text/plain, */*",
   "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
@@ -241,21 +242,21 @@ POST Data: {
   "message": "this.refreshToken:",
   "meta": {
     "args": [
-      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTczMDc2OCwiaWF0IjoxNzM5NjQ0MzY4LCJqdGkiOiI1MTFmOGI2NjViYmI0NTA5YjRlYWYwY2M2ZjZiYjk5ZCIsInVzZXJfaWQiOjd9.6kehqn-Ddh5C7ZKlReiC-qS9gqcnx96xV2iHQrON5LQ"
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTczNTQ5NSwiaWF0IjoxNzM5NjQ5MDk1LCJqdGkiOiIwMWUwMDBmMzE1OGQ0NWQ2OTNlNDA1ZTlmNmEzODYyNyIsInVzZXJfaWQiOjd9.OAMB7JNk6JDGtaKxNeJYfZjWB-7LYjj4QuBNlZgMoFU"
     ]
   },
-  "timestamp": "2025-02-15T18:32:48.224Z"
+  "timestamp": "2025-02-15T19:51:35.761Z"
 }
 Files: {}
 
-2025-02-15 18:32:48,227 - INFO - Incoming Request:
+2025-02-15 19:51:35,765 - INFO - Incoming Request:
 Method: POST
 Path: /api/logs/
 Headers: {
   "Host": "localhost:8000",
   "Connection": "keep-alive",
   "Sec-Ch-Ua-Platform": "\"Linux\"",
-  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ0NjY4LCJpYXQiOjE3Mzk2NDQzNjgsImp0aSI6IjgwOGRmYzI5ZTA1NTQ0YWI5MWYzMzMwY2Q0NzA2ZTJiIiwidXNlcl9pZCI6N30.NqDOD2MiltDm78FJB6PZqD2OYtz_8h4LtpFl6jgv-fo",
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ5Mzk1LCJpYXQiOjE3Mzk2NDkwOTUsImp0aSI6ImM1MTdlMDM0NWZlMTRkZWViZmQxMjQwZjMxY2YzYWM3IiwidXNlcl9pZCI6N30.tPXjlFC-7HpDztQjlLNOzmL41S87HqNm_vyRgiNIcak",
   "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
   "Accept": "application/json, text/plain, */*",
   "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
@@ -277,18 +278,18 @@ POST Data: {
   "meta": {
     "args": []
   },
-  "timestamp": "2025-02-15T18:32:48.224Z"
+  "timestamp": "2025-02-15T19:51:35.762Z"
 }
 Files: {}
 
-2025-02-15 18:32:48,227 - INFO - Incoming Request:
+2025-02-15 19:51:35,765 - INFO - Incoming Request:
 Method: GET
 Path: /api/profile/
 Headers: {
   "Host": "localhost:8000",
   "Connection": "keep-alive",
   "Sec-Ch-Ua-Platform": "\"Linux\"",
-  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ0NjY4LCJpYXQiOjE3Mzk2NDQzNjgsImp0aSI6IjgwOGRmYzI5ZTA1NTQ0YWI5MWYzMzMwY2Q0NzA2ZTJiIiwidXNlcl9pZCI6N30.NqDOD2MiltDm78FJB6PZqD2OYtz_8h4LtpFl6jgv-fo",
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ5Mzk1LCJpYXQiOjE3Mzk2NDkwOTUsImp0aSI6ImM1MTdlMDM0NWZlMTRkZWViZmQxMjQwZjMxY2YzYWM3IiwidXNlcl9pZCI6N30.tPXjlFC-7HpDztQjlLNOzmL41S87HqNm_vyRgiNIcak",
   "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
   "Accept": "application/json, text/plain, */*",
   "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
@@ -307,53 +308,18 @@ GET Data: {}
 POST Data: {}
 Files: {}
 
-2025-02-15 18:32:48,237 - WARNING - Bad Request: /api/logs/
-2025-02-15 18:32:48,239 - WARNING - Bad Request: /api/logs/
-2025-02-15 18:32:48,239 - WARNING - Bad Request: /api/logs/
-2025-02-15 18:32:48,241 - WARNING - Bad Request: /api/logs/
-2025-02-15 18:32:48,244 - INFO - Incoming Request:
+2025-02-15 19:51:35,774 - DEBUG - this.accessToken:
+2025-02-15 19:51:35,774 - DEBUG - Response from api.post:
+2025-02-15 19:51:35,776 - DEBUG - this.refreshToken:
+2025-02-15 19:51:35,777 - DEBUG - About to call api.get to get profile.
+2025-02-15 19:51:35,781 - INFO - Incoming Request:
 Method: POST
 Path: /api/logs/
 Headers: {
   "Host": "localhost:8000",
   "Connection": "keep-alive",
   "Sec-Ch-Ua-Platform": "\"Linux\"",
-  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ0NjY4LCJpYXQiOjE3Mzk2NDQzNjgsImp0aSI6IjgwOGRmYzI5ZTA1NTQ0YWI5MWYzMzMwY2Q0NzA2ZTJiIiwidXNlcl9pZCI6N30.NqDOD2MiltDm78FJB6PZqD2OYtz_8h4LtpFl6jgv-fo",
-  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
-  "Accept": "application/json, text/plain, */*",
-  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
-  "Sec-Ch-Ua-Mobile": "?0",
-  "Origin": "http://localhost:9000",
-  "Sec-Fetch-Site": "same-site",
-  "Sec-Fetch-Mode": "cors",
-  "Sec-Fetch-Dest": "empty",
-  "Referer": "http://localhost:9000/",
-  "Accept-Encoding": "gzip, deflate, br, zstd",
-  "Accept-Language": "en-US,en;q=0.9",
-  "Content-Type": "application/json",
-  "Content-Length": "120"
-}
-GET Data: {}
-POST Data: {
-  "level": "DEBUG",
-  "message": "After login isAuthenticated:",
-  "meta": {
-    "args": [
-      true
-    ]
-  },
-  "timestamp": "2025-02-15T18:32:48.242Z"
-}
-Files: {}
-
-2025-02-15 18:32:48,244 - INFO - Incoming Request:
-Method: POST
-Path: /api/logs/
-Headers: {
-  "Host": "localhost:8000",
-  "Connection": "keep-alive",
-  "Sec-Ch-Ua-Platform": "\"Linux\"",
-  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ0NjY4LCJpYXQiOjE3Mzk2NDQzNjgsImp0aSI6IjgwOGRmYzI5ZTA1NTQ0YWI5MWYzMzMwY2Q0NzA2ZTJiIiwidXNlcl9pZCI6N30.NqDOD2MiltDm78FJB6PZqD2OYtz_8h4LtpFl6jgv-fo",
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ5Mzk1LCJpYXQiOjE3Mzk2NDkwOTUsImp0aSI6ImM1MTdlMDM0NWZlMTRkZWViZmQxMjQwZjMxY2YzYWM3IiwidXNlcl9pZCI6N30.tPXjlFC-7HpDztQjlLNOzmL41S87HqNm_vyRgiNIcak",
   "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
   "Accept": "application/json, text/plain, */*",
   "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
@@ -412,7 +378,7 @@ POST Data: {
           "env": {},
           "headers": {
             "Accept": "application/json, text/plain, */*",
-            "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ0NjY4LCJpYXQiOjE3Mzk2NDQzNjgsImp0aSI6IjgwOGRmYzI5ZTA1NTQ0YWI5MWYzMzMwY2Q0NzA2ZTJiIiwidXNlcl9pZCI6N30.NqDOD2MiltDm78FJB6PZqD2OYtz_8h4LtpFl6jgv-fo"
+            "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ5Mzk1LCJpYXQiOjE3Mzk2NDkwOTUsImp0aSI6ImM1MTdlMDM0NWZlMTRkZWViZmQxMjQwZjMxY2YzYWM3IiwidXNlcl9pZCI6N30.tPXjlFC-7HpDztQjlLNOzmL41S87HqNm_vyRgiNIcak"
           },
           "baseURL": "http://localhost:8000",
           "method": "get",
@@ -422,17 +388,843 @@ POST Data: {
       }
     ]
   },
-  "timestamp": "2025-02-15T18:32:48.241Z"
+  "timestamp": "2025-02-15T19:51:35.779Z"
 }
 Files: {}
 
-2025-02-15 18:32:48,255 - WARNING - Bad Request: /api/logs/
-2025-02-15 18:32:48,255 - WARNING - Bad Request: /api/logs/
-2025-02-15 18:33:16,562 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/settings.py changed, reloading.
-2025-02-15 18:33:16,765 - INFO - Watching for file changes with StatReloader
-2025-02-15 18:33:21,963 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/settings.py changed, reloading.
-2025-02-15 18:33:22,174 - INFO - Watching for file changes with StatReloader
-2025-02-15 18:33:42,296 - INFO - Incoming Request:
+2025-02-15 19:51:35,782 - INFO - Incoming Request:
+Method: POST
+Path: /api/logs/
+Headers: {
+  "Host": "localhost:8000",
+  "Connection": "keep-alive",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ5Mzk1LCJpYXQiOjE3Mzk2NDkwOTUsImp0aSI6ImM1MTdlMDM0NWZlMTRkZWViZmQxMjQwZjMxY2YzYWM3IiwidXNlcl9pZCI6N30.tPXjlFC-7HpDztQjlLNOzmL41S87HqNm_vyRgiNIcak",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "application/json, text/plain, */*",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Origin": "http://localhost:9000",
+  "Sec-Fetch-Site": "same-site",
+  "Sec-Fetch-Mode": "cors",
+  "Sec-Fetch-Dest": "empty",
+  "Referer": "http://localhost:9000/",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Content-Type": "application/json",
+  "Content-Length": "120"
+}
+GET Data: {}
+POST Data: {
+  "level": "DEBUG",
+  "message": "After login isAuthenticated:",
+  "meta": {
+    "args": [
+      true
+    ]
+  },
+  "timestamp": "2025-02-15T19:51:35.780Z"
+}
+Files: {}
+
+2025-02-15 19:51:35,790 - DEBUG - Response from api.get:
+2025-02-15 19:51:35,790 - DEBUG - After login isAuthenticated:
+2025-02-15 19:52:19,179 - INFO - Incoming Request:
+Method: POST
+Path: /api/logs/
+Headers: {
+  "Host": "localhost:8000",
+  "Connection": "keep-alive",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ5Mzk1LCJpYXQiOjE3Mzk2NDkwOTUsImp0aSI6ImM1MTdlMDM0NWZlMTRkZWViZmQxMjQwZjMxY2YzYWM3IiwidXNlcl9pZCI6N30.tPXjlFC-7HpDztQjlLNOzmL41S87HqNm_vyRgiNIcak",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "application/json, text/plain, */*",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Origin": "http://localhost:9000",
+  "Sec-Fetch-Site": "same-site",
+  "Sec-Fetch-Mode": "cors",
+  "Sec-Fetch-Dest": "empty",
+  "Referer": "http://localhost:9000/",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Content-Type": "application/json",
+  "Content-Length": "153"
+}
+GET Data: {}
+POST Data: {
+  "level": "DEBUG",
+  "message": "Going to handle change password:",
+  "meta": {
+    "args": [
+      "hXYSC&nc%K3ePzxWy6E5",
+      "user1234"
+    ]
+  },
+  "timestamp": "2025-02-15T19:52:19.168Z"
+}
+Files: {}
+
+2025-02-15 19:52:19,180 - INFO - Incoming Request:
+Method: POST
+Path: /api/logs/
+Headers: {
+  "Host": "localhost:8000",
+  "Connection": "keep-alive",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ5Mzk1LCJpYXQiOjE3Mzk2NDkwOTUsImp0aSI6ImM1MTdlMDM0NWZlMTRkZWViZmQxMjQwZjMxY2YzYWM3IiwidXNlcl9pZCI6N30.tPXjlFC-7HpDztQjlLNOzmL41S87HqNm_vyRgiNIcak",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "application/json, text/plain, */*",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Origin": "http://localhost:9000",
+  "Sec-Fetch-Site": "same-site",
+  "Sec-Fetch-Mode": "cors",
+  "Sec-Fetch-Dest": "empty",
+  "Referer": "http://localhost:9000/",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Content-Type": "application/json",
+  "Content-Length": "211"
+}
+GET Data: {}
+POST Data: {
+  "level": "DEBUG",
+  "message": "About to call api.post with old_password and new_password:",
+  "meta": {
+    "args": [
+      {
+        "old_password": "hXYSC&nc%K3ePzxWy6E5",
+        "new_password": "user1234"
+      }
+    ]
+  },
+  "timestamp": "2025-02-15T19:52:19.170Z"
+}
+Files: {}
+
+2025-02-15 19:52:19,181 - INFO - Incoming Request:
+Method: POST
+Path: /api/password/change/
+Headers: {
+  "Host": "localhost:8000",
+  "Connection": "keep-alive",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ5Mzk1LCJpYXQiOjE3Mzk2NDkwOTUsImp0aSI6ImM1MTdlMDM0NWZlMTRkZWViZmQxMjQwZjMxY2YzYWM3IiwidXNlcl9pZCI6N30.tPXjlFC-7HpDztQjlLNOzmL41S87HqNm_vyRgiNIcak",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "application/json, text/plain, */*",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Origin": "http://localhost:9000",
+  "Sec-Fetch-Site": "same-site",
+  "Sec-Fetch-Mode": "cors",
+  "Sec-Fetch-Dest": "empty",
+  "Referer": "http://localhost:9000/",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Content-Type": "application/json",
+  "Content-Length": "65"
+}
+GET Data: {}
+POST Data: {
+  "old_password": "hXYSC&nc%K3ePzxWy6E5",
+  "new_password": "user1234"
+}
+Files: {}
+
+2025-02-15 19:52:19,191 - DEBUG - About to call api.post with old_password and new_password:
+2025-02-15 19:52:19,192 - DEBUG - Going to handle change password:
+2025-02-15 19:52:19,194 - DEBUG - Received password change request: {'old_password': 'hXYSC&nc%K3ePzxWy6E5', 'new_password': 'user1234'}
+2025-02-15 19:52:19,195 - WARNING - Bad Request: /api/password/change/
+2025-02-15 19:53:13,842 - INFO - Incoming Request:
+Method: GET
+Path: /api/password/change
+Headers: {
+  "Host": "127.0.0.1:8000",
+  "Connection": "keep-alive",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "Upgrade-Insecure-Requests": "1",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+  "Sec-Fetch-Site": "none",
+  "Sec-Fetch-Mode": "navigate",
+  "Sec-Fetch-User": "?1",
+  "Sec-Fetch-Dest": "document",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Cookie": "csrftoken=nmS0AV2izshv5TQ5FAjBYzfA8IUQ9YbE; sessionid=k3fmsy5fbqxl968wozogebhvioblznzs",
+  "Content-Type": "text/plain",
+  "Content-Length": ""
+}
+GET Data: {}
+POST Data: {}
+Files: {}
+
+2025-02-15 19:53:13,849 - INFO - Incoming Request:
+Method: GET
+Path: /api/password/change/
+Headers: {
+  "Host": "127.0.0.1:8000",
+  "Connection": "keep-alive",
+  "Upgrade-Insecure-Requests": "1",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+  "Sec-Fetch-Site": "none",
+  "Sec-Fetch-Mode": "navigate",
+  "Sec-Fetch-User": "?1",
+  "Sec-Fetch-Dest": "document",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Cookie": "csrftoken=nmS0AV2izshv5TQ5FAjBYzfA8IUQ9YbE; sessionid=k3fmsy5fbqxl968wozogebhvioblznzs",
+  "Content-Type": "text/plain",
+  "Content-Length": ""
+}
+GET Data: {}
+POST Data: {}
+Files: {}
+
+2025-02-15 19:53:13,857 - WARNING - Unauthorized: /api/password/change/
+2025-02-15 19:53:31,484 - INFO - Incoming Request:
+Method: GET
+Path: /api/password/change/
+Headers: {
+  "Host": "127.0.0.1:8000",
+  "Connection": "keep-alive",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "Upgrade-Insecure-Requests": "1",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+  "Sec-Fetch-Site": "none",
+  "Sec-Fetch-Mode": "navigate",
+  "Sec-Fetch-User": "?1",
+  "Sec-Fetch-Dest": "document",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Cookie": "csrftoken=nmS0AV2izshv5TQ5FAjBYzfA8IUQ9YbE; sessionid=k3fmsy5fbqxl968wozogebhvioblznzs",
+  "Content-Type": "text/plain",
+  "Content-Length": ""
+}
+GET Data: {}
+POST Data: {}
+Files: {}
+
+2025-02-15 19:53:31,486 - WARNING - Unauthorized: /api/password/change/
+2025-02-15 19:57:24,032 - INFO - Incoming Request:
+Method: GET
+Path: /api/token
+Headers: {
+  "Host": "127.0.0.1:8000",
+  "Connection": "keep-alive",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "Upgrade-Insecure-Requests": "1",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+  "Sec-Fetch-Site": "none",
+  "Sec-Fetch-Mode": "navigate",
+  "Sec-Fetch-User": "?1",
+  "Sec-Fetch-Dest": "document",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Cookie": "csrftoken=nmS0AV2izshv5TQ5FAjBYzfA8IUQ9YbE; sessionid=k3fmsy5fbqxl968wozogebhvioblznzs",
+  "Content-Type": "text/plain",
+  "Content-Length": ""
+}
+GET Data: {}
+POST Data: {}
+Files: {}
+
+2025-02-15 19:57:24,036 - INFO - Incoming Request:
+Method: GET
+Path: /api/token/
+Headers: {
+  "Host": "127.0.0.1:8000",
+  "Connection": "keep-alive",
+  "Upgrade-Insecure-Requests": "1",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+  "Sec-Fetch-Site": "none",
+  "Sec-Fetch-Mode": "navigate",
+  "Sec-Fetch-User": "?1",
+  "Sec-Fetch-Dest": "document",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Cookie": "csrftoken=nmS0AV2izshv5TQ5FAjBYzfA8IUQ9YbE; sessionid=k3fmsy5fbqxl968wozogebhvioblznzs",
+  "Content-Type": "text/plain",
+  "Content-Length": ""
+}
+GET Data: {}
+POST Data: {}
+Files: {}
+
+2025-02-15 19:57:24,042 - WARNING - Method Not Allowed: /api/token/
+2025-02-15 19:58:07,101 - INFO - Incoming Request:
+Method: POST
+Path: /api/token/
+Headers: {
+  "Host": "127.0.0.1:8000",
+  "Connection": "keep-alive",
+  "Cache-Control": "max-age=0",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "Origin": "http://127.0.0.1:8000",
+  "Upgrade-Insecure-Requests": "1",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+  "Sec-Fetch-Site": "same-origin",
+  "Sec-Fetch-Mode": "navigate",
+  "Sec-Fetch-User": "?1",
+  "Sec-Fetch-Dest": "document",
+  "Referer": "http://127.0.0.1:8000/api/token/",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Cookie": "csrftoken=nmS0AV2izshv5TQ5FAjBYzfA8IUQ9YbE; sessionid=k3fmsy5fbqxl968wozogebhvioblznzs",
+  "Content-Type": "multipart/form-data; boundary=----WebKitFormBoundaryibpRN9YcBoINgW2F",
+  "Content-Length": "430"
+}
+GET Data: {}
+POST Data: {
+  "csrfmiddlewaretoken": [
+    "6GNCOvXUkvzcme9zwC4wrWcp2dfwtkUwjSvsegP2JNGxhXPu12dXflhP0LZcs8V0"
+  ],
+  "username": [
+    "rzitek"
+  ],
+  "password": [
+    "hXYSC&nc%K3ePzxWy6E5"
+  ]
+}
+Files: {}
+
+2025-02-15 19:58:14,165 - INFO - Incoming Request:
+Method: OPTIONS
+Path: /api/token/
+Headers: {
+  "Host": "127.0.0.1:8000",
+  "Connection": "keep-alive",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "X-Requested-With": "XMLHttpRequest",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "text/html; q=1.0, */*",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Origin": "http://127.0.0.1:8000",
+  "Sec-Fetch-Site": "same-origin",
+  "Sec-Fetch-Mode": "cors",
+  "Sec-Fetch-Dest": "empty",
+  "Referer": "http://127.0.0.1:8000/api/token/",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Cookie": "csrftoken=nmS0AV2izshv5TQ5FAjBYzfA8IUQ9YbE; sessionid=k3fmsy5fbqxl968wozogebhvioblznzs",
+  "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+  "Content-Length": ""
+}
+GET Data: {}
+POST Data: {}
+Files: {}
+
+2025-02-15 19:58:17,265 - INFO - Incoming Request:
+Method: OPTIONS
+Path: /api/token/
+Headers: {
+  "Host": "127.0.0.1:8000",
+  "Connection": "keep-alive",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "X-Requested-With": "XMLHttpRequest",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "text/html; q=1.0, */*",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Origin": "http://127.0.0.1:8000",
+  "Sec-Fetch-Site": "same-origin",
+  "Sec-Fetch-Mode": "cors",
+  "Sec-Fetch-Dest": "empty",
+  "Referer": "http://127.0.0.1:8000/api/token/",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Cookie": "csrftoken=nmS0AV2izshv5TQ5FAjBYzfA8IUQ9YbE; sessionid=k3fmsy5fbqxl968wozogebhvioblznzs",
+  "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+  "Content-Length": ""
+}
+GET Data: {}
+POST Data: {}
+Files: {}
+
+2025-02-15 19:58:19,323 - INFO - Incoming Request:
+Method: OPTIONS
+Path: /api/token/
+Headers: {
+  "Host": "127.0.0.1:8000",
+  "Connection": "keep-alive",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "X-Requested-With": "XMLHttpRequest",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "text/html; q=1.0, */*",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Origin": "http://127.0.0.1:8000",
+  "Sec-Fetch-Site": "same-origin",
+  "Sec-Fetch-Mode": "cors",
+  "Sec-Fetch-Dest": "empty",
+  "Referer": "http://127.0.0.1:8000/api/token/",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Cookie": "csrftoken=nmS0AV2izshv5TQ5FAjBYzfA8IUQ9YbE; sessionid=k3fmsy5fbqxl968wozogebhvioblznzs",
+  "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+  "Content-Length": ""
+}
+GET Data: {}
+POST Data: {}
+Files: {}
+
+2025-02-15 19:58:29,247 - INFO - Incoming Request:
+Method: GET
+Path: /api/password/change/
+Headers: {
+  "Host": "127.0.0.1:8000",
+  "Connection": "keep-alive",
+  "Upgrade-Insecure-Requests": "1",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+  "Sec-Fetch-Site": "none",
+  "Sec-Fetch-Mode": "navigate",
+  "Sec-Fetch-User": "?1",
+  "Sec-Fetch-Dest": "document",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Cookie": "csrftoken=nmS0AV2izshv5TQ5FAjBYzfA8IUQ9YbE; sessionid=k3fmsy5fbqxl968wozogebhvioblznzs",
+  "Content-Type": "text/plain",
+  "Content-Length": ""
+}
+GET Data: {}
+POST Data: {}
+Files: {}
+
+2025-02-15 19:58:29,249 - WARNING - Unauthorized: /api/password/change/
+2025-02-15 19:58:40,365 - INFO - Incoming Request:
+Method: GET
+Path: /api/password/change/
+Headers: {
+  "Host": "127.0.0.1:8000",
+  "Connection": "keep-alive",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "Upgrade-Insecure-Requests": "1",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+  "Sec-Fetch-Site": "same-origin",
+  "Sec-Fetch-Mode": "navigate",
+  "Sec-Fetch-User": "?1",
+  "Sec-Fetch-Dest": "document",
+  "Referer": "http://127.0.0.1:8000/api/password/change/",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Cookie": "csrftoken=nmS0AV2izshv5TQ5FAjBYzfA8IUQ9YbE; sessionid=k3fmsy5fbqxl968wozogebhvioblznzs",
+  "Content-Type": "text/plain",
+  "Content-Length": ""
+}
+GET Data: {}
+POST Data: {}
+Files: {}
+
+2025-02-15 19:58:40,370 - WARNING - Unauthorized: /api/password/change/
+2025-02-15 19:59:06,054 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/serializers.py changed, reloading.
+2025-02-15 19:59:06,258 - INFO - Watching for file changes with StatReloader
+2025-02-15 19:59:17,584 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/serializers.py changed, reloading.
+2025-02-15 19:59:17,769 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:00:21,120 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/serializers.py changed, reloading.
+2025-02-15 20:00:21,315 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:00:56,075 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:00:56,278 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:01:12,720 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:01:12,931 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:01:14,061 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:01:14,249 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:01:23,518 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:01:23,710 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:01:27,901 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:01:28,093 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:01:35,354 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:01:35,546 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:01:44,825 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:01:45,015 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:02:19,841 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:02:20,045 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:02:22,174 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:02:22,370 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:02:23,451 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:02:23,641 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:02:25,741 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:02:25,930 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:02:29,085 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:02:29,270 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:02:45,690 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:02:45,880 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:03:08,334 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/serializers.py changed, reloading.
+2025-02-15 20:03:08,537 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:03:11,699 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/serializers.py changed, reloading.
+2025-02-15 20:03:11,891 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:03:22,157 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/serializers.py changed, reloading.
+2025-02-15 20:03:22,351 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:03:35,671 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:03:35,872 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:03:55,302 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:03:55,506 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:03:57,584 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:03:57,778 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:04:00,887 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:04:01,067 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:04:19,393 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:04:34,785 - INFO - Incoming Request:
+Method: POST
+Path: /api/logs/
+Headers: {
+  "Host": "localhost:8000",
+  "Connection": "keep-alive",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ5Mzk1LCJpYXQiOjE3Mzk2NDkwOTUsImp0aSI6ImM1MTdlMDM0NWZlMTRkZWViZmQxMjQwZjMxY2YzYWM3IiwidXNlcl9pZCI6N30.tPXjlFC-7HpDztQjlLNOzmL41S87HqNm_vyRgiNIcak",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "application/json, text/plain, */*",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Origin": "http://localhost:9000",
+  "Sec-Fetch-Site": "same-site",
+  "Sec-Fetch-Mode": "cors",
+  "Sec-Fetch-Dest": "empty",
+  "Referer": "http://localhost:9000/",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Content-Type": "application/json",
+  "Content-Length": "153"
+}
+GET Data: {}
+POST Data: {
+  "level": "DEBUG",
+  "message": "Going to handle change password:",
+  "meta": {
+    "args": [
+      "hXYSC&nc%K3ePzxWy6E5",
+      "user1234"
+    ]
+  },
+  "timestamp": "2025-02-15T20:04:34.778Z"
+}
+Files: {}
+
+2025-02-15 20:04:34,786 - INFO - Incoming Request:
+Method: POST
+Path: /api/logs/
+Headers: {
+  "Host": "localhost:8000",
+  "Connection": "keep-alive",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ5Mzk1LCJpYXQiOjE3Mzk2NDkwOTUsImp0aSI6ImM1MTdlMDM0NWZlMTRkZWViZmQxMjQwZjMxY2YzYWM3IiwidXNlcl9pZCI6N30.tPXjlFC-7HpDztQjlLNOzmL41S87HqNm_vyRgiNIcak",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "application/json, text/plain, */*",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Origin": "http://localhost:9000",
+  "Sec-Fetch-Site": "same-site",
+  "Sec-Fetch-Mode": "cors",
+  "Sec-Fetch-Dest": "empty",
+  "Referer": "http://localhost:9000/",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Content-Type": "application/json",
+  "Content-Length": "211"
+}
+GET Data: {}
+POST Data: {
+  "level": "DEBUG",
+  "message": "About to call api.post with old_password and new_password:",
+  "meta": {
+    "args": [
+      {
+        "old_password": "hXYSC&nc%K3ePzxWy6E5",
+        "new_password": "user1234"
+      }
+    ]
+  },
+  "timestamp": "2025-02-15T20:04:34.780Z"
+}
+Files: {}
+
+2025-02-15 20:04:34,787 - INFO - Incoming Request:
+Method: POST
+Path: /api/password/change/
+Headers: {
+  "Host": "localhost:8000",
+  "Connection": "keep-alive",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ5Mzk1LCJpYXQiOjE3Mzk2NDkwOTUsImp0aSI6ImM1MTdlMDM0NWZlMTRkZWViZmQxMjQwZjMxY2YzYWM3IiwidXNlcl9pZCI6N30.tPXjlFC-7HpDztQjlLNOzmL41S87HqNm_vyRgiNIcak",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "application/json, text/plain, */*",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Origin": "http://localhost:9000",
+  "Sec-Fetch-Site": "same-site",
+  "Sec-Fetch-Mode": "cors",
+  "Sec-Fetch-Dest": "empty",
+  "Referer": "http://localhost:9000/",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Content-Type": "application/json",
+  "Content-Length": "65"
+}
+GET Data: {}
+POST Data: {
+  "old_password": "hXYSC&nc%K3ePzxWy6E5",
+  "new_password": "user1234"
+}
+Files: {}
+
+2025-02-15 20:04:34,797 - WARNING - Unauthorized: /api/logs/
+2025-02-15 20:04:34,798 - WARNING - Unauthorized: /api/logs/
+2025-02-15 20:04:34,799 - WARNING - Unauthorized: /api/password/change/
+2025-02-15 20:04:34,805 - INFO - Incoming Request:
+Method: POST
+Path: /api/token/refresh/
+Headers: {
+  "Host": "localhost:8000",
+  "Connection": "keep-alive",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ5Mzk1LCJpYXQiOjE3Mzk2NDkwOTUsImp0aSI6ImM1MTdlMDM0NWZlMTRkZWViZmQxMjQwZjMxY2YzYWM3IiwidXNlcl9pZCI6N30.tPXjlFC-7HpDztQjlLNOzmL41S87HqNm_vyRgiNIcak",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "application/json, text/plain, */*",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Origin": "http://localhost:9000",
+  "Sec-Fetch-Site": "same-site",
+  "Sec-Fetch-Mode": "cors",
+  "Sec-Fetch-Dest": "empty",
+  "Referer": "http://localhost:9000/",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Content-Type": "application/json",
+  "Content-Length": "243"
+}
+GET Data: {}
+POST Data: {
+  "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTczNTQ5NSwiaWF0IjoxNzM5NjQ5MDk1LCJqdGkiOiIwMWUwMDBmMzE1OGQ0NWQ2OTNlNDA1ZTlmNmEzODYyNyIsInVzZXJfaWQiOjd9.OAMB7JNk6JDGtaKxNeJYfZjWB-7LYjj4QuBNlZgMoFU"
+}
+Files: {}
+
+2025-02-15 20:04:34,806 - INFO - Incoming Request:
+Method: POST
+Path: /api/token/refresh/
+Headers: {
+  "Host": "localhost:8000",
+  "Connection": "keep-alive",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ5Mzk1LCJpYXQiOjE3Mzk2NDkwOTUsImp0aSI6ImM1MTdlMDM0NWZlMTRkZWViZmQxMjQwZjMxY2YzYWM3IiwidXNlcl9pZCI6N30.tPXjlFC-7HpDztQjlLNOzmL41S87HqNm_vyRgiNIcak",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "application/json, text/plain, */*",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Origin": "http://localhost:9000",
+  "Sec-Fetch-Site": "same-site",
+  "Sec-Fetch-Mode": "cors",
+  "Sec-Fetch-Dest": "empty",
+  "Referer": "http://localhost:9000/",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Content-Type": "application/json",
+  "Content-Length": "243"
+}
+GET Data: {}
+POST Data: {
+  "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTczNTQ5NSwiaWF0IjoxNzM5NjQ5MDk1LCJqdGkiOiIwMWUwMDBmMzE1OGQ0NWQ2OTNlNDA1ZTlmNmEzODYyNyIsInVzZXJfaWQiOjd9.OAMB7JNk6JDGtaKxNeJYfZjWB-7LYjj4QuBNlZgMoFU"
+}
+Files: {}
+
+2025-02-15 20:04:34,808 - INFO - Incoming Request:
+Method: POST
+Path: /api/token/refresh/
+Headers: {
+  "Host": "localhost:8000",
+  "Connection": "keep-alive",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ5Mzk1LCJpYXQiOjE3Mzk2NDkwOTUsImp0aSI6ImM1MTdlMDM0NWZlMTRkZWViZmQxMjQwZjMxY2YzYWM3IiwidXNlcl9pZCI6N30.tPXjlFC-7HpDztQjlLNOzmL41S87HqNm_vyRgiNIcak",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "application/json, text/plain, */*",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Origin": "http://localhost:9000",
+  "Sec-Fetch-Site": "same-site",
+  "Sec-Fetch-Mode": "cors",
+  "Sec-Fetch-Dest": "empty",
+  "Referer": "http://localhost:9000/",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Content-Type": "application/json",
+  "Content-Length": "243"
+}
+GET Data: {}
+POST Data: {
+  "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTczNTQ5NSwiaWF0IjoxNzM5NjQ5MDk1LCJqdGkiOiIwMWUwMDBmMzE1OGQ0NWQ2OTNlNDA1ZTlmNmEzODYyNyIsInVzZXJfaWQiOjd9.OAMB7JNk6JDGtaKxNeJYfZjWB-7LYjj4QuBNlZgMoFU"
+}
+Files: {}
+
+2025-02-15 20:04:34,863 - INFO - Incoming Request:
+Method: POST
+Path: /api/logs/
+Headers: {
+  "Host": "localhost:8000",
+  "Connection": "keep-alive",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjUwMTc0LCJpYXQiOjE3Mzk2NDkwOTUsImp0aSI6ImY0MDU4ZWVjM2FiODRmNGM4MTljNzAwYmZlMGEwZWQzIiwidXNlcl9pZCI6N30.axqIvdSFCOkk3lDvS5C5w6mHJuU6XZQFH9bB37beKI0",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "application/json, text/plain, */*",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Origin": "http://localhost:9000",
+  "Sec-Fetch-Site": "same-site",
+  "Sec-Fetch-Mode": "cors",
+  "Sec-Fetch-Dest": "empty",
+  "Referer": "http://localhost:9000/",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Content-Type": "application/json",
+  "Content-Length": "211"
+}
+GET Data: {}
+POST Data: {
+  "level": "DEBUG",
+  "message": "About to call api.post with old_password and new_password:",
+  "meta": {
+    "args": [
+      {
+        "old_password": "hXYSC&nc%K3ePzxWy6E5",
+        "new_password": "user1234"
+      }
+    ]
+  },
+  "timestamp": "2025-02-15T20:04:34.780Z"
+}
+Files: {}
+
+2025-02-15 20:04:34,864 - INFO - Incoming Request:
+Method: POST
+Path: /api/password/change/
+Headers: {
+  "Host": "localhost:8000",
+  "Connection": "keep-alive",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjUwMTc0LCJpYXQiOjE3Mzk2NDkwOTUsImp0aSI6ImNmOGM3ZjgzMGVhNDRlOWFhMjQ1NjUwNzllYmE2ZmM5IiwidXNlcl9pZCI6N30.PmWB3lVIrMMrDUqlvCWYLm15BQ4DwicPPJWIofmZOYQ",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "application/json, text/plain, */*",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Origin": "http://localhost:9000",
+  "Sec-Fetch-Site": "same-site",
+  "Sec-Fetch-Mode": "cors",
+  "Sec-Fetch-Dest": "empty",
+  "Referer": "http://localhost:9000/",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Content-Type": "application/json",
+  "Content-Length": "65"
+}
+GET Data: {}
+POST Data: {
+  "old_password": "hXYSC&nc%K3ePzxWy6E5",
+  "new_password": "user1234"
+}
+Files: {}
+
+2025-02-15 20:04:34,865 - INFO - Incoming Request:
+Method: POST
+Path: /api/logs/
+Headers: {
+  "Host": "localhost:8000",
+  "Connection": "keep-alive",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjUwMTc0LCJpYXQiOjE3Mzk2NDkwOTUsImp0aSI6IjRjYzAxZWU3YWJhODRhMTY5N2JhNjFhNDU2ZjgyNDQ5IiwidXNlcl9pZCI6N30.5unjmHCu1QgEB7gLvivuKuH32dXd7LROjftco3f_0UA",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "application/json, text/plain, */*",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Origin": "http://localhost:9000",
+  "Sec-Fetch-Site": "same-site",
+  "Sec-Fetch-Mode": "cors",
+  "Sec-Fetch-Dest": "empty",
+  "Referer": "http://localhost:9000/",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Content-Type": "application/json",
+  "Content-Length": "153"
+}
+GET Data: {}
+POST Data: {
+  "level": "DEBUG",
+  "message": "Going to handle change password:",
+  "meta": {
+    "args": [
+      "hXYSC&nc%K3ePzxWy6E5",
+      "user1234"
+    ]
+  },
+  "timestamp": "2025-02-15T20:04:34.778Z"
+}
+Files: {}
+
+2025-02-15 20:04:34,875 - DEBUG - About to call api.post with old_password and new_password:
+2025-02-15 20:04:34,877 - DEBUG - Going to handle change password:
+2025-02-15 20:04:34,877 - DEBUG - Received password change request: {'old_password': 'hXYSC&nc%K3ePzxWy6E5', 'new_password': 'user1234'}
+2025-02-15 20:04:34,878 - DEBUG - Validated data: {'old_password': 'hXYSC&nc%K3ePzxWy6E5', 'new_password': 'user1234'}
+2025-02-15 20:04:34,878 - DEBUG - old_password: hXYSC&nc%K3ePzxWy6E5
+2025-02-15 20:04:34,878 - DEBUG - new_password: user1234
+2025-02-15 20:04:35,322 - INFO - Incoming Request:
+Method: POST
+Path: /api/logs/
+Headers: {
+  "Host": "localhost:8000",
+  "Connection": "keep-alive",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjUwMTc0LCJpYXQiOjE3Mzk2NDkwOTUsImp0aSI6ImNmOGM3ZjgzMGVhNDRlOWFhMjQ1NjUwNzllYmE2ZmM5IiwidXNlcl9pZCI6N30.PmWB3lVIrMMrDUqlvCWYLm15BQ4DwicPPJWIofmZOYQ",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "application/json, text/plain, */*",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Origin": "http://localhost:9000",
+  "Sec-Fetch-Site": "same-site",
+  "Sec-Fetch-Mode": "cors",
+  "Sec-Fetch-Dest": "empty",
+  "Referer": "http://localhost:9000/",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Content-Type": "application/json",
+  "Content-Length": "114"
+}
+GET Data: {}
+POST Data: {
+  "level": "DEBUG",
+  "message": "Password change successful",
+  "meta": {
+    "args": []
+  },
+  "timestamp": "2025-02-15T20:04:35.317Z"
+}
+Files: {}
+
+2025-02-15 20:04:35,337 - DEBUG - Password change successful
+2025-02-15 20:05:33,501 - INFO - Incoming Request:
 Method: POST
 Path: /api/logs/
 Headers: {
@@ -463,39 +1255,11 @@ POST Data: {
       "hXYSC&nc%K3ePzxWy6E5"
     ]
   },
-  "timestamp": "2025-02-15T18:33:42.293Z"
+  "timestamp": "2025-02-15T20:05:33.494Z"
 }
 Files: {}
 
-2025-02-15 18:33:42,297 - INFO - Incoming Request:
-Method: POST
-Path: /api/token/
-Headers: {
-  "Host": "localhost:8000",
-  "Connection": "keep-alive",
-  "Sec-Ch-Ua-Platform": "\"Linux\"",
-  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
-  "Accept": "application/json, text/plain, */*",
-  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
-  "Sec-Ch-Ua-Mobile": "?0",
-  "Origin": "http://localhost:9000",
-  "Sec-Fetch-Site": "same-site",
-  "Sec-Fetch-Mode": "cors",
-  "Sec-Fetch-Dest": "empty",
-  "Referer": "http://localhost:9000/",
-  "Accept-Encoding": "gzip, deflate, br, zstd",
-  "Accept-Language": "en-US,en;q=0.9",
-  "Content-Type": "application/json",
-  "Content-Length": "55"
-}
-GET Data: {}
-POST Data: {
-  "username": "rzitek",
-  "password": "hXYSC&nc%K3ePzxWy6E5"
-}
-Files: {}
-
-2025-02-15 18:33:42,297 - INFO - Incoming Request:
+2025-02-15 20:05:33,501 - INFO - Incoming Request:
 Method: POST
 Path: /api/logs/
 Headers: {
@@ -526,20 +1290,149 @@ POST Data: {
       "hXYSC&nc%K3ePzxWy6E5"
     ]
   },
-  "timestamp": "2025-02-15T18:33:42.294Z"
+  "timestamp": "2025-02-15T20:05:33.496Z"
 }
 Files: {}
 
-2025-02-15 18:33:42,302 - WARNING - Bad Request: /api/logs/
-2025-02-15 18:33:42,302 - WARNING - Bad Request: /api/logs/
-2025-02-15 18:33:42,512 - INFO - Incoming Request:
+2025-02-15 20:05:33,502 - INFO - Incoming Request:
+Method: POST
+Path: /api/token/
+Headers: {
+  "Host": "localhost:8000",
+  "Connection": "keep-alive",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "application/json, text/plain, */*",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Origin": "http://localhost:9000",
+  "Sec-Fetch-Site": "same-site",
+  "Sec-Fetch-Mode": "cors",
+  "Sec-Fetch-Dest": "empty",
+  "Referer": "http://localhost:9000/",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Content-Type": "application/json",
+  "Content-Length": "55"
+}
+GET Data: {}
+POST Data: {
+  "username": "rzitek",
+  "password": "hXYSC&nc%K3ePzxWy6E5"
+}
+Files: {}
+
+2025-02-15 20:05:33,503 - DEBUG - Goin to handle login:
+2025-02-15 20:05:33,503 - DEBUG - About to call api.post with username and password:
+2025-02-15 20:05:33,708 - WARNING - Unauthorized: /api/token/
+2025-02-15 20:05:44,288 - INFO - Incoming Request:
 Method: POST
 Path: /api/logs/
 Headers: {
   "Host": "localhost:8000",
   "Connection": "keep-alive",
   "Sec-Ch-Ua-Platform": "\"Linux\"",
-  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ0NzIyLCJpYXQiOjE3Mzk2NDQ0MjIsImp0aSI6ImJiNzYwZTY0MTkyNDQ2YTE5NDlkNjdiODYxZTdiMDI3IiwidXNlcl9pZCI6N30.aGaFRZdQOyf8SxfwmOu4jivZnQPMTeYAhHLYPu1C7P4",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "application/json, text/plain, */*",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Origin": "http://localhost:9000",
+  "Sec-Fetch-Site": "same-site",
+  "Sec-Fetch-Mode": "cors",
+  "Sec-Fetch-Dest": "empty",
+  "Referer": "http://localhost:9000/",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Content-Type": "application/json",
+  "Content-Length": "128"
+}
+GET Data: {}
+POST Data: {
+  "level": "DEBUG",
+  "message": "Goin to handle login:",
+  "meta": {
+    "args": [
+      "rzitek",
+      "user1234"
+    ]
+  },
+  "timestamp": "2025-02-15T20:05:44.279Z"
+}
+Files: {}
+
+2025-02-15 20:05:44,289 - INFO - Incoming Request:
+Method: POST
+Path: /api/logs/
+Headers: {
+  "Host": "localhost:8000",
+  "Connection": "keep-alive",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "application/json, text/plain, */*",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Origin": "http://localhost:9000",
+  "Sec-Fetch-Site": "same-site",
+  "Sec-Fetch-Mode": "cors",
+  "Sec-Fetch-Dest": "empty",
+  "Referer": "http://localhost:9000/",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Content-Type": "application/json",
+  "Content-Length": "157"
+}
+GET Data: {}
+POST Data: {
+  "level": "DEBUG",
+  "message": "About to call api.post with username and password:",
+  "meta": {
+    "args": [
+      "rzitek",
+      "user1234"
+    ]
+  },
+  "timestamp": "2025-02-15T20:05:44.280Z"
+}
+Files: {}
+
+2025-02-15 20:05:44,290 - INFO - Incoming Request:
+Method: POST
+Path: /api/token/
+Headers: {
+  "Host": "localhost:8000",
+  "Connection": "keep-alive",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+  "Accept": "application/json, text/plain, */*",
+  "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Origin": "http://localhost:9000",
+  "Sec-Fetch-Site": "same-site",
+  "Sec-Fetch-Mode": "cors",
+  "Sec-Fetch-Dest": "empty",
+  "Referer": "http://localhost:9000/",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Content-Type": "application/json",
+  "Content-Length": "43"
+}
+GET Data: {}
+POST Data: {
+  "username": "rzitek",
+  "password": "user1234"
+}
+Files: {}
+
+2025-02-15 20:05:44,293 - DEBUG - Goin to handle login:
+2025-02-15 20:05:44,293 - DEBUG - About to call api.post with username and password:
+2025-02-15 20:05:44,499 - INFO - Incoming Request:
+Method: POST
+Path: /api/logs/
+Headers: {
+  "Host": "localhost:8000",
+  "Connection": "keep-alive",
+  "Sec-Ch-Ua-Platform": "\"Linux\"",
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjUwMjQ0LCJpYXQiOjE3Mzk2NDk5NDQsImp0aSI6ImRhOTRlYWVkMTQ0ZDQ0MTBhY2YwNWRkZGIwMjIyYzAzIiwidXNlcl9pZCI6N30.DKHFbFY-CZbDH5NkDr-SQWNT72SV_nyhqKSCXQSazZg",
   "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
   "Accept": "application/json, text/plain, */*",
   "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
@@ -560,21 +1453,21 @@ POST Data: {
   "message": "this.accessToken:",
   "meta": {
     "args": [
-      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ0NzIyLCJpYXQiOjE3Mzk2NDQ0MjIsImp0aSI6ImJiNzYwZTY0MTkyNDQ2YTE5NDlkNjdiODYxZTdiMDI3IiwidXNlcl9pZCI6N30.aGaFRZdQOyf8SxfwmOu4jivZnQPMTeYAhHLYPu1C7P4"
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjUwMjQ0LCJpYXQiOjE3Mzk2NDk5NDQsImp0aSI6ImRhOTRlYWVkMTQ0ZDQ0MTBhY2YwNWRkZGIwMjIyYzAzIiwidXNlcl9pZCI6N30.DKHFbFY-CZbDH5NkDr-SQWNT72SV_nyhqKSCXQSazZg"
     ]
   },
-  "timestamp": "2025-02-15T18:33:42.510Z"
+  "timestamp": "2025-02-15T20:05:44.497Z"
 }
 Files: {}
 
-2025-02-15 18:33:42,513 - INFO - Incoming Request:
+2025-02-15 20:05:44,500 - INFO - Incoming Request:
 Method: POST
 Path: /api/logs/
 Headers: {
   "Host": "localhost:8000",
   "Connection": "keep-alive",
   "Sec-Ch-Ua-Platform": "\"Linux\"",
-  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ0NzIyLCJpYXQiOjE3Mzk2NDQ0MjIsImp0aSI6ImJiNzYwZTY0MTkyNDQ2YTE5NDlkNjdiODYxZTdiMDI3IiwidXNlcl9pZCI6N30.aGaFRZdQOyf8SxfwmOu4jivZnQPMTeYAhHLYPu1C7P4",
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjUwMjQ0LCJpYXQiOjE3Mzk2NDk5NDQsImp0aSI6ImRhOTRlYWVkMTQ0ZDQ0MTBhY2YwNWRkZGIwMjIyYzAzIiwidXNlcl9pZCI6N30.DKHFbFY-CZbDH5NkDr-SQWNT72SV_nyhqKSCXQSazZg",
   "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
   "Accept": "application/json, text/plain, */*",
   "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
@@ -595,21 +1488,21 @@ POST Data: {
   "message": "this.refreshToken:",
   "meta": {
     "args": [
-      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTczMDgyMiwiaWF0IjoxNzM5NjQ0NDIyLCJqdGkiOiI2MDlmZjgwM2NjZGI0MjgxYTg1MGY4ZDA0NGY5YTgxNiIsInVzZXJfaWQiOjd9.nBbcRWH3FOATK9GxKxVhQfjpGJmtJNY8MwTm5zp1tDQ"
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTczNjM0NCwiaWF0IjoxNzM5NjQ5OTQ0LCJqdGkiOiJhOWE0NWZmZjZhNzQ0MDc4OThhM2E4YzIzNzc2MjcxNCIsInVzZXJfaWQiOjd9.9sCW0XFkqYY9HxxEdohGwj4LZYtG8HW7r467r_x_2JI"
     ]
   },
-  "timestamp": "2025-02-15T18:33:42.510Z"
+  "timestamp": "2025-02-15T20:05:44.497Z"
 }
 Files: {}
 
-2025-02-15 18:33:42,513 - INFO - Incoming Request:
+2025-02-15 20:05:44,500 - INFO - Incoming Request:
 Method: POST
 Path: /api/logs/
 Headers: {
   "Host": "localhost:8000",
   "Connection": "keep-alive",
   "Sec-Ch-Ua-Platform": "\"Linux\"",
-  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ0NzIyLCJpYXQiOjE3Mzk2NDQ0MjIsImp0aSI6ImJiNzYwZTY0MTkyNDQ2YTE5NDlkNjdiODYxZTdiMDI3IiwidXNlcl9pZCI6N30.aGaFRZdQOyf8SxfwmOu4jivZnQPMTeYAhHLYPu1C7P4",
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjUwMjQ0LCJpYXQiOjE3Mzk2NDk5NDQsImp0aSI6ImRhOTRlYWVkMTQ0ZDQ0MTBhY2YwNWRkZGIwMjIyYzAzIiwidXNlcl9pZCI6N30.DKHFbFY-CZbDH5NkDr-SQWNT72SV_nyhqKSCXQSazZg",
   "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
   "Accept": "application/json, text/plain, */*",
   "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
@@ -622,7 +1515,7 @@ Headers: {
   "Accept-Encoding": "gzip, deflate, br, zstd",
   "Accept-Language": "en-US,en;q=0.9",
   "Content-Type": "application/json",
-  "Content-Length": "1270"
+  "Content-Length": "1258"
 }
 GET Data: {}
 POST Data: {
@@ -632,8 +1525,8 @@ POST Data: {
     "args": [
       {
         "data": {
-          "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTczMDgyMiwiaWF0IjoxNzM5NjQ0NDIyLCJqdGkiOiI2MDlmZjgwM2NjZGI0MjgxYTg1MGY4ZDA0NGY5YTgxNiIsInVzZXJfaWQiOjd9.nBbcRWH3FOATK9GxKxVhQfjpGJmtJNY8MwTm5zp1tDQ",
-          "access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ0NzIyLCJpYXQiOjE3Mzk2NDQ0MjIsImp0aSI6ImJiNzYwZTY0MTkyNDQ2YTE5NDlkNjdiODYxZTdiMDI3IiwidXNlcl9pZCI6N30.aGaFRZdQOyf8SxfwmOu4jivZnQPMTeYAhHLYPu1C7P4"
+          "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTczNjM0NCwiaWF0IjoxNzM5NjQ5OTQ0LCJqdGkiOiJhOWE0NWZmZjZhNzQ0MDc4OThhM2E4YzIzNzc2MjcxNCIsInVzZXJfaWQiOjd9.9sCW0XFkqYY9HxxEdohGwj4LZYtG8HW7r467r_x_2JI",
+          "access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjUwMjQ0LCJpYXQiOjE3Mzk2NDk5NDQsImp0aSI6ImRhOTRlYWVkMTQ0ZDQ0MTBhY2YwNWRkZGIwMjIyYzAzIiwidXNlcl9pZCI6N30.DKHFbFY-CZbDH5NkDr-SQWNT72SV_nyhqKSCXQSazZg"
         },
         "status": 200,
         "statusText": "OK",
@@ -671,24 +1564,24 @@ POST Data: {
           "baseURL": "http://localhost:8000",
           "method": "post",
           "url": "/api/token/",
-          "data": "{\"username\":\"rzitek\",\"password\":\"hXYSC&nc%K3ePzxWy6E5\"}"
+          "data": "{\"username\":\"rzitek\",\"password\":\"user1234\"}"
         },
         "request": {}
       }
     ]
   },
-  "timestamp": "2025-02-15T18:33:42.510Z"
+  "timestamp": "2025-02-15T20:05:44.497Z"
 }
 Files: {}
 
-2025-02-15 18:33:42,513 - INFO - Incoming Request:
+2025-02-15 20:05:44,501 - INFO - Incoming Request:
 Method: POST
 Path: /api/logs/
 Headers: {
   "Host": "localhost:8000",
   "Connection": "keep-alive",
   "Sec-Ch-Ua-Platform": "\"Linux\"",
-  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ0NzIyLCJpYXQiOjE3Mzk2NDQ0MjIsImp0aSI6ImJiNzYwZTY0MTkyNDQ2YTE5NDlkNjdiODYxZTdiMDI3IiwidXNlcl9pZCI6N30.aGaFRZdQOyf8SxfwmOu4jivZnQPMTeYAhHLYPu1C7P4",
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjUwMjQ0LCJpYXQiOjE3Mzk2NDk5NDQsImp0aSI6ImRhOTRlYWVkMTQ0ZDQ0MTBhY2YwNWRkZGIwMjIyYzAzIiwidXNlcl9pZCI6N30.DKHFbFY-CZbDH5NkDr-SQWNT72SV_nyhqKSCXQSazZg",
   "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
   "Accept": "application/json, text/plain, */*",
   "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
@@ -710,18 +1603,18 @@ POST Data: {
   "meta": {
     "args": []
   },
-  "timestamp": "2025-02-15T18:33:42.511Z"
+  "timestamp": "2025-02-15T20:05:44.498Z"
 }
 Files: {}
 
-2025-02-15 18:33:42,514 - INFO - Incoming Request:
+2025-02-15 20:05:44,501 - INFO - Incoming Request:
 Method: GET
 Path: /api/profile/
 Headers: {
   "Host": "localhost:8000",
   "Connection": "keep-alive",
   "Sec-Ch-Ua-Platform": "\"Linux\"",
-  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ0NzIyLCJpYXQiOjE3Mzk2NDQ0MjIsImp0aSI6ImJiNzYwZTY0MTkyNDQ2YTE5NDlkNjdiODYxZTdiMDI3IiwidXNlcl9pZCI6N30.aGaFRZdQOyf8SxfwmOu4jivZnQPMTeYAhHLYPu1C7P4",
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjUwMjQ0LCJpYXQiOjE3Mzk2NDk5NDQsImp0aSI6ImRhOTRlYWVkMTQ0ZDQ0MTBhY2YwNWRkZGIwMjIyYzAzIiwidXNlcl9pZCI6N30.DKHFbFY-CZbDH5NkDr-SQWNT72SV_nyhqKSCXQSazZg",
   "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
   "Accept": "application/json, text/plain, */*",
   "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
@@ -740,18 +1633,18 @@ GET Data: {}
 POST Data: {}
 Files: {}
 
-2025-02-15 18:33:42,523 - WARNING - Bad Request: /api/logs/
-2025-02-15 18:33:42,524 - WARNING - Bad Request: /api/logs/
-2025-02-15 18:33:42,527 - WARNING - Bad Request: /api/logs/
-2025-02-15 18:33:42,527 - WARNING - Bad Request: /api/logs/
-2025-02-15 18:33:42,530 - INFO - Incoming Request:
+2025-02-15 20:05:44,511 - DEBUG - this.accessToken:
+2025-02-15 20:05:44,512 - DEBUG - this.refreshToken:
+2025-02-15 20:05:44,514 - DEBUG - About to call api.get to get profile.
+2025-02-15 20:05:44,515 - DEBUG - Response from api.post:
+2025-02-15 20:05:44,522 - INFO - Incoming Request:
 Method: POST
 Path: /api/logs/
 Headers: {
   "Host": "localhost:8000",
   "Connection": "keep-alive",
   "Sec-Ch-Ua-Platform": "\"Linux\"",
-  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ0NzIyLCJpYXQiOjE3Mzk2NDQ0MjIsImp0aSI6ImJiNzYwZTY0MTkyNDQ2YTE5NDlkNjdiODYxZTdiMDI3IiwidXNlcl9pZCI6N30.aGaFRZdQOyf8SxfwmOu4jivZnQPMTeYAhHLYPu1C7P4",
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjUwMjQ0LCJpYXQiOjE3Mzk2NDk5NDQsImp0aSI6ImRhOTRlYWVkMTQ0ZDQ0MTBhY2YwNWRkZGIwMjIyYzAzIiwidXNlcl9pZCI6N30.DKHFbFY-CZbDH5NkDr-SQWNT72SV_nyhqKSCXQSazZg",
   "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
   "Accept": "application/json, text/plain, */*",
   "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
@@ -810,7 +1703,7 @@ POST Data: {
           "env": {},
           "headers": {
             "Accept": "application/json, text/plain, */*",
-            "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ0NzIyLCJpYXQiOjE3Mzk2NDQ0MjIsImp0aSI6ImJiNzYwZTY0MTkyNDQ2YTE5NDlkNjdiODYxZTdiMDI3IiwidXNlcl9pZCI6N30.aGaFRZdQOyf8SxfwmOu4jivZnQPMTeYAhHLYPu1C7P4"
+            "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjUwMjQ0LCJpYXQiOjE3Mzk2NDk5NDQsImp0aSI6ImRhOTRlYWVkMTQ0ZDQ0MTBhY2YwNWRkZGIwMjIyYzAzIiwidXNlcl9pZCI6N30.DKHFbFY-CZbDH5NkDr-SQWNT72SV_nyhqKSCXQSazZg"
           },
           "baseURL": "http://localhost:8000",
           "method": "get",
@@ -820,18 +1713,18 @@ POST Data: {
       }
     ]
   },
-  "timestamp": "2025-02-15T18:33:42.529Z"
+  "timestamp": "2025-02-15T20:05:44.520Z"
 }
 Files: {}
 
-2025-02-15 18:33:42,531 - INFO - Incoming Request:
+2025-02-15 20:05:44,523 - INFO - Incoming Request:
 Method: POST
 Path: /api/logs/
 Headers: {
   "Host": "localhost:8000",
   "Connection": "keep-alive",
   "Sec-Ch-Ua-Platform": "\"Linux\"",
-  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ0NzIyLCJpYXQiOjE3Mzk2NDQ0MjIsImp0aSI6ImJiNzYwZTY0MTkyNDQ2YTE5NDlkNjdiODYxZTdiMDI3IiwidXNlcl9pZCI6N30.aGaFRZdQOyf8SxfwmOu4jivZnQPMTeYAhHLYPu1C7P4",
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjUwMjQ0LCJpYXQiOjE3Mzk2NDk5NDQsImp0aSI6ImRhOTRlYWVkMTQ0ZDQ0MTBhY2YwNWRkZGIwMjIyYzAzIiwidXNlcl9pZCI6N30.DKHFbFY-CZbDH5NkDr-SQWNT72SV_nyhqKSCXQSazZg",
   "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
   "Accept": "application/json, text/plain, */*",
   "Sec-Ch-Ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
@@ -855,66 +1748,16 @@ POST Data: {
       true
     ]
   },
-  "timestamp": "2025-02-15T18:33:42.530Z"
+  "timestamp": "2025-02-15T20:05:44.521Z"
 }
 Files: {}
 
-2025-02-15 18:33:42,540 - WARNING - Bad Request: /api/logs/
-2025-02-15 18:33:42,540 - WARNING - Bad Request: /api/logs/
-2025-02-15 18:34:45,854 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/settings.py changed, reloading.
-2025-02-15 18:34:46,053 - INFO - Watching for file changes with StatReloader
-2025-02-15 18:43:57,047 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/serializers.py changed, reloading.
-2025-02-15 18:43:57,244 - INFO - Watching for file changes with StatReloader
-2025-02-15 18:45:45,487 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/serializers.py changed, reloading.
-2025-02-15 18:45:45,690 - INFO - Watching for file changes with StatReloader
-2025-02-15 18:46:01,073 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/serializers.py changed, reloading.
-2025-02-15 18:46:01,265 - INFO - Watching for file changes with StatReloader
-2025-02-15 18:46:07,434 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/serializers.py changed, reloading.
-2025-02-15 18:46:07,639 - INFO - Watching for file changes with StatReloader
-2025-02-15 18:47:55,698 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/serializers.py changed, reloading.
-2025-02-15 18:47:55,907 - INFO - Watching for file changes with StatReloader
-2025-02-15 18:47:56,993 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/serializers.py changed, reloading.
-2025-02-15 18:47:57,205 - INFO - Watching for file changes with StatReloader
-2025-02-15 18:47:59,306 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/serializers.py changed, reloading.
-2025-02-15 18:47:59,504 - INFO - Watching for file changes with StatReloader
-2025-02-15 18:48:03,677 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/serializers.py changed, reloading.
-2025-02-15 18:48:03,869 - INFO - Watching for file changes with StatReloader
-2025-02-15 18:48:08,047 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/serializers.py changed, reloading.
-2025-02-15 18:48:08,241 - INFO - Watching for file changes with StatReloader
-2025-02-15 18:48:10,332 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/serializers.py changed, reloading.
-2025-02-15 18:48:10,528 - INFO - Watching for file changes with StatReloader
-2025-02-15 18:50:36,192 - INFO - Watching for file changes with StatReloader
-2025-02-15 18:52:19,843 - INFO - This is a log message.
-2025-02-15 18:57:35,560 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/serializers.py changed, reloading.
-2025-02-15 18:57:35,787 - INFO - Watching for file changes with StatReloader
-2025-02-15 18:57:37,888 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/serializers.py changed, reloading.
-2025-02-15 18:57:38,074 - INFO - Watching for file changes with StatReloader
-2025-02-15 18:57:45,883 - INFO - Watching for file changes with StatReloader
-2025-02-15 18:57:58,182 - DEBUG - After login isAuthenticated:
-2025-02-15 18:58:38,201 - DEBUG - Goin to handle login:
-2025-02-15 18:58:38,202 - DEBUG - About to call api.post with username and password:
-2025-02-15 18:58:38,422 - DEBUG - this.accessToken:
-2025-02-15 18:58:38,422 - DEBUG - Response from api.post:
-2025-02-15 18:58:38,425 - DEBUG - this.refreshToken:
-2025-02-15 18:58:38,426 - DEBUG - About to call api.get to get profile.
-2025-02-15 18:58:38,439 - DEBUG - Response from api.get:
-2025-02-15 18:58:38,439 - DEBUG - After login isAuthenticated:
-2025-02-15 19:02:54,781 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/settings.py changed, reloading.
-2025-02-15 19:02:54,995 - INFO - Watching for file changes with StatReloader +
-2025-02-15 19:02:56,124 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/settings.py changed, reloading. +
-2025-02-15 19:02:56,335 - INFO - Watching for file changes with StatReloader -
-2025-02-15 19:03:02,494 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/settings.py changed, reloading. -
-2025-02-15 19:03:15,342 - DEBUG - Goin to handle login: - {'args': ['rzitek', 'hXYSC&nc%K3ePzxWy6E5']}
-2025-02-15 19:03:15,343 - DEBUG - About to call api.post with username and password: - {'args': ['rzitek', 'hXYSC&nc%K3ePzxWy6E5']}
-2025-02-15 19:03:15,576 - DEBUG - this.accessToken: - {'args': ['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ2NDk1LCJpYXQiOjE3Mzk2NDYxOTUsImp0aSI6IjcxYWMxOGM4ZjhiNTRmZjM4ODRkMGFkYTE5NjZjNGJkIiwidXNlcl9pZCI6N30.typ3475DZVSSfA5xC9Y-f8OFjwX5oCoqyEVtVR79niE']}
-2025-02-15 19:03:15,585 - DEBUG - this.refreshToken: - {'args': ['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTczMjU5NSwiaWF0IjoxNzM5NjQ2MTk1LCJqdGkiOiJmZDU0YWI4MTcwN2I0OWEyYWRlZGI2YTQwZWE3NDE0NCIsInVzZXJfaWQiOjd9.EM8LgCVIZLOh0IcASpgA_6bmY-L298IN11JTolwsm4Q']}
-2025-02-15 19:03:15,588 - DEBUG - Response from api.post: - {'args': [{'data': {'refresh': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTczMjU5NSwiaWF0IjoxNzM5NjQ2MTk1LCJqdGkiOiJmZDU0YWI4MTcwN2I0OWEyYWRlZGI2YTQwZWE3NDE0NCIsInVzZXJfaWQiOjd9.EM8LgCVIZLOh0IcASpgA_6bmY-L298IN11JTolwsm4Q', 'access': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ2NDk1LCJpYXQiOjE3Mzk2NDYxOTUsImp0aSI6IjcxYWMxOGM4ZjhiNTRmZjM4ODRkMGFkYTE5NjZjNGJkIiwidXNlcl9pZCI6N30.typ3475DZVSSfA5xC9Y-f8OFjwX5oCoqyEVtVR79niE'}, 'status': 200, 'statusText': 'OK', 'headers': {'content-length': '483', 'content-type': 'application/json'}, 'config': {'transitional': {'silentJSONParsing': True, 'forcedJSONParsing': True, 'clarifyTimeoutError': False}, 'adapter': ['xhr', 'http', 'fetch'], 'transformRequest': [None], 'transformResponse': [None], 'timeout': 10000, 'xsrfCookieName': 'XSRF-TOKEN', 'xsrfHeaderName': 'X-XSRF-TOKEN', 'maxContentLength': -1, 'maxBodyLength': -1, 'env': {}, 'headers': {'Accept': 'application/json, text/plain, */*', 'Content-Type': 'application/json'}, 'baseURL': 'http://localhost:8000', 'method': 'post', 'url': '/api/token/', 'data': '{"username":"rzitek","password":"hXYSC&nc%K3ePzxWy6E5"}'}, 'request': {}}]}
-2025-02-15 19:03:15,589 - DEBUG - About to call api.get to get profile. - {'args': []}
-2025-02-15 19:03:15,608 - DEBUG - Response from api.get: - {'args': [{'data': {'username': 'rzitek', 'first_name': 'Radek', 'last_name': 'Zitek', 'email': 'radek.zitek@proton.me'}, 'status': 200, 'statusText': 'OK', 'headers': {'content-length': '94', 'content-type': 'application/json'}, 'config': {'transitional': {'silentJSONParsing': True, 'forcedJSONParsing': True, 'clarifyTimeoutError': False}, 'adapter': ['xhr', 'http', 'fetch'], 'transformRequest': [None], 'transformResponse': [None], 'timeout': 10000, 'xsrfCookieName': 'XSRF-TOKEN', 'xsrfHeaderName': 'X-XSRF-TOKEN', 'maxContentLength': -1, 'maxBodyLength': -1, 'env': {}, 'headers': {'Accept': 'application/json, text/plain, */*', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ2NDk1LCJpYXQiOjE3Mzk2NDYxOTUsImp0aSI6IjcxYWMxOGM4ZjhiNTRmZjM4ODRkMGFkYTE5NjZjNGJkIiwidXNlcl9pZCI6N30.typ3475DZVSSfA5xC9Y-f8OFjwX5oCoqyEVtVR79niE'}, 'baseURL': 'http://localhost:8000', 'method': 'get', 'url': '/api/profile/'}, 'request': {}}]}
-2025-02-15 19:03:15,610 - DEBUG - After login isAuthenticated: - {'args': [True]}
-2025-02-15 19:04:08,942 - DEBUG - Going to handle update profile: - {'args': ['RadekK', 'Zitek', 'radek.zitek@proton.me']}
-2025-02-15 19:04:08,950 - DEBUG - About to call api.put with firstname, lastname, and email: - {'args': [{'first_name': 'RadekK', 'last_name': 'Zitek', 'email': 'radek.zitek@proton.me'}]}
-2025-02-15 19:04:09,007 - DEBUG - Update successful: - {'args': [{'data': {'first_name': 'RadekK', 'last_name': 'Zitek', 'email': 'radek.zitek@proton.me'}, 'status': 200, 'statusText': 'OK', 'headers': {'content-length': '75', 'content-type': 'application/json'}, 'config': {'transitional': {'silentJSONParsing': True, 'forcedJSONParsing': True, 'clarifyTimeoutError': False}, 'adapter': ['xhr', 'http', 'fetch'], 'transformRequest': [None], 'transformResponse': [None], 'timeout': 10000, 'xsrfCookieName': 'XSRF-TOKEN', 'xsrfHeaderName': 'X-XSRF-TOKEN', 'maxContentLength': -1, 'maxBodyLength': -1, 'env': {}, 'headers': {'Accept': 'application/json, text/plain, */*', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ2NDk1LCJpYXQiOjE3Mzk2NDYxOTUsImp0aSI6IjcxYWMxOGM4ZjhiNTRmZjM4ODRkMGFkYTE5NjZjNGJkIiwidXNlcl9pZCI6N30.typ3475DZVSSfA5xC9Y-f8OFjwX5oCoqyEVtVR79niE'}, 'baseURL': 'http://localhost:8000', 'method': 'put', 'url': '/api/profile/update/', 'data': '{"first_name":"RadekK","last_name":"Zitek","email":"radek.zitek@proton.me"}'}, 'request': {}}]}
-2025-02-15 19:04:16,760 - DEBUG - Going to handle update profile: - {'args': ['Radek', 'Zitek', 'radek.zitek@proton.me']}
-2025-02-15 19:04:16,761 - DEBUG - About to call api.put with firstname, lastname, and email: - {'args': [{'first_name': 'Radek', 'last_name': 'Zitek', 'email': 'radek.zitek@proton.me'}]}
-2025-02-15 19:04:16,773 - DEBUG - Update successful: - {'args': [{'data': {'first_name': 'Radek', 'last_name': 'Zitek', 'email': 'radek.zitek@proton.me'}, 'status': 200, 'statusText': 'OK', 'headers': {'content-length': '74', 'content-type': 'application/json'}, 'config': {'transitional': {'silentJSONParsing': True, 'forcedJSONParsing': True, 'clarifyTimeoutError': False}, 'adapter': ['xhr', 'http', 'fetch'], 'transformRequest': [None], 'transformResponse': [None], 'timeout': 10000, 'xsrfCookieName': 'XSRF-TOKEN', 'xsrfHeaderName': 'X-XSRF-TOKEN', 'maxContentLength': -1, 'maxBodyLength': -1, 'env': {}, 'headers': {'Accept': 'application/json, text/plain, */*', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ2NDk1LCJpYXQiOjE3Mzk2NDYxOTUsImp0aSI6IjcxYWMxOGM4ZjhiNTRmZjM4ODRkMGFkYTE5NjZjNGJkIiwidXNlcl9pZCI6N30.typ3475DZVSSfA5xC9Y-f8OFjwX5oCoqyEVtVR79niE'}, 'baseURL': 'http://localhost:8000', 'method': 'put', 'url': '/api/profile/update/', 'data': '{"first_name":"Radek","last_name":"Zitek","email":"radek.zitek@proton.me"}'}, 'request': {}}]}
+2025-02-15 20:05:44,530 - DEBUG - Response from api.get:
+2025-02-15 20:05:44,531 - DEBUG - After login isAuthenticated:
+2025-02-15 20:07:26,883 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/settings.py changed, reloading.
+2025-02-15 20:07:27,086 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:07:35,382 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/settings.py changed, reloading.
+2025-02-15 20:07:35,580 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:07:38,731 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/settings.py changed, reloading.
+2025-02-15 20:07:38,928 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:07:40,651 - INFO - Watching for file changes with StatReloader

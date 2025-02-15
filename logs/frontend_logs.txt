@@ -1,24 +1,48 @@
-2025-02-15 18:52:19,843 - INFO - This is a log message.
-2025-02-15 18:57:58,182 - DEBUG - After login isAuthenticated:
-2025-02-15 18:58:38,201 - DEBUG - Goin to handle login:
-2025-02-15 18:58:38,202 - DEBUG - About to call api.post with username and password:
-2025-02-15 18:58:38,422 - DEBUG - this.accessToken:
-2025-02-15 18:58:38,422 - DEBUG - Response from api.post:
-2025-02-15 18:58:38,425 - DEBUG - this.refreshToken:
-2025-02-15 18:58:38,426 - DEBUG - About to call api.get to get profile.
-2025-02-15 18:58:38,439 - DEBUG - Response from api.get:
-2025-02-15 18:58:38,439 - DEBUG - After login isAuthenticated:
-2025-02-15 19:03:15,342 - DEBUG - Goin to handle login: - {'args': ['rzitek', 'hXYSC&nc%K3ePzxWy6E5']}
-2025-02-15 19:03:15,343 - DEBUG - About to call api.post with username and password: - {'args': ['rzitek', 'hXYSC&nc%K3ePzxWy6E5']}
-2025-02-15 19:03:15,576 - DEBUG - this.accessToken: - {'args': ['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ2NDk1LCJpYXQiOjE3Mzk2NDYxOTUsImp0aSI6IjcxYWMxOGM4ZjhiNTRmZjM4ODRkMGFkYTE5NjZjNGJkIiwidXNlcl9pZCI6N30.typ3475DZVSSfA5xC9Y-f8OFjwX5oCoqyEVtVR79niE']}
-2025-02-15 19:03:15,585 - DEBUG - this.refreshToken: - {'args': ['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTczMjU5NSwiaWF0IjoxNzM5NjQ2MTk1LCJqdGkiOiJmZDU0YWI4MTcwN2I0OWEyYWRlZGI2YTQwZWE3NDE0NCIsInVzZXJfaWQiOjd9.EM8LgCVIZLOh0IcASpgA_6bmY-L298IN11JTolwsm4Q']}
-2025-02-15 19:03:15,588 - DEBUG - Response from api.post: - {'args': [{'data': {'refresh': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTczMjU5NSwiaWF0IjoxNzM5NjQ2MTk1LCJqdGkiOiJmZDU0YWI4MTcwN2I0OWEyYWRlZGI2YTQwZWE3NDE0NCIsInVzZXJfaWQiOjd9.EM8LgCVIZLOh0IcASpgA_6bmY-L298IN11JTolwsm4Q', 'access': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ2NDk1LCJpYXQiOjE3Mzk2NDYxOTUsImp0aSI6IjcxYWMxOGM4ZjhiNTRmZjM4ODRkMGFkYTE5NjZjNGJkIiwidXNlcl9pZCI6N30.typ3475DZVSSfA5xC9Y-f8OFjwX5oCoqyEVtVR79niE'}, 'status': 200, 'statusText': 'OK', 'headers': {'content-length': '483', 'content-type': 'application/json'}, 'config': {'transitional': {'silentJSONParsing': True, 'forcedJSONParsing': True, 'clarifyTimeoutError': False}, 'adapter': ['xhr', 'http', 'fetch'], 'transformRequest': [None], 'transformResponse': [None], 'timeout': 10000, 'xsrfCookieName': 'XSRF-TOKEN', 'xsrfHeaderName': 'X-XSRF-TOKEN', 'maxContentLength': -1, 'maxBodyLength': -1, 'env': {}, 'headers': {'Accept': 'application/json, text/plain, */*', 'Content-Type': 'application/json'}, 'baseURL': 'http://localhost:8000', 'method': 'post', 'url': '/api/token/', 'data': '{"username":"rzitek","password":"hXYSC&nc%K3ePzxWy6E5"}'}, 'request': {}}]}
-2025-02-15 19:03:15,589 - DEBUG - About to call api.get to get profile. - {'args': []}
-2025-02-15 19:03:15,608 - DEBUG - Response from api.get: - {'args': [{'data': {'username': 'rzitek', 'first_name': 'Radek', 'last_name': 'Zitek', 'email': 'radek.zitek@proton.me'}, 'status': 200, 'statusText': 'OK', 'headers': {'content-length': '94', 'content-type': 'application/json'}, 'config': {'transitional': {'silentJSONParsing': True, 'forcedJSONParsing': True, 'clarifyTimeoutError': False}, 'adapter': ['xhr', 'http', 'fetch'], 'transformRequest': [None], 'transformResponse': [None], 'timeout': 10000, 'xsrfCookieName': 'XSRF-TOKEN', 'xsrfHeaderName': 'X-XSRF-TOKEN', 'maxContentLength': -1, 'maxBodyLength': -1, 'env': {}, 'headers': {'Accept': 'application/json, text/plain, */*', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ2NDk1LCJpYXQiOjE3Mzk2NDYxOTUsImp0aSI6IjcxYWMxOGM4ZjhiNTRmZjM4ODRkMGFkYTE5NjZjNGJkIiwidXNlcl9pZCI6N30.typ3475DZVSSfA5xC9Y-f8OFjwX5oCoqyEVtVR79niE'}, 'baseURL': 'http://localhost:8000', 'method': 'get', 'url': '/api/profile/'}, 'request': {}}]}
-2025-02-15 19:03:15,610 - DEBUG - After login isAuthenticated: - {'args': [True]}
-2025-02-15 19:04:08,942 - DEBUG - Going to handle update profile: - {'args': ['RadekK', 'Zitek', 'radek.zitek@proton.me']}
-2025-02-15 19:04:08,950 - DEBUG - About to call api.put with firstname, lastname, and email: - {'args': [{'first_name': 'RadekK', 'last_name': 'Zitek', 'email': 'radek.zitek@proton.me'}]}
-2025-02-15 19:04:09,007 - DEBUG - Update successful: - {'args': [{'data': {'first_name': 'RadekK', 'last_name': 'Zitek', 'email': 'radek.zitek@proton.me'}, 'status': 200, 'statusText': 'OK', 'headers': {'content-length': '75', 'content-type': 'application/json'}, 'config': {'transitional': {'silentJSONParsing': True, 'forcedJSONParsing': True, 'clarifyTimeoutError': False}, 'adapter': ['xhr', 'http', 'fetch'], 'transformRequest': [None], 'transformResponse': [None], 'timeout': 10000, 'xsrfCookieName': 'XSRF-TOKEN', 'xsrfHeaderName': 'X-XSRF-TOKEN', 'maxContentLength': -1, 'maxBodyLength': -1, 'env': {}, 'headers': {'Accept': 'application/json, text/plain, */*', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ2NDk1LCJpYXQiOjE3Mzk2NDYxOTUsImp0aSI6IjcxYWMxOGM4ZjhiNTRmZjM4ODRkMGFkYTE5NjZjNGJkIiwidXNlcl9pZCI6N30.typ3475DZVSSfA5xC9Y-f8OFjwX5oCoqyEVtVR79niE'}, 'baseURL': 'http://localhost:8000', 'method': 'put', 'url': '/api/profile/update/', 'data': '{"first_name":"RadekK","last_name":"Zitek","email":"radek.zitek@proton.me"}'}, 'request': {}}]}
-2025-02-15 19:04:16,760 - DEBUG - Going to handle update profile: - {'args': ['Radek', 'Zitek', 'radek.zitek@proton.me']}
-2025-02-15 19:04:16,761 - DEBUG - About to call api.put with firstname, lastname, and email: - {'args': [{'first_name': 'Radek', 'last_name': 'Zitek', 'email': 'radek.zitek@proton.me'}]}
-2025-02-15 19:04:16,773 - DEBUG - Update successful: - {'args': [{'data': {'first_name': 'Radek', 'last_name': 'Zitek', 'email': 'radek.zitek@proton.me'}, 'status': 200, 'statusText': 'OK', 'headers': {'content-length': '74', 'content-type': 'application/json'}, 'config': {'transitional': {'silentJSONParsing': True, 'forcedJSONParsing': True, 'clarifyTimeoutError': False}, 'adapter': ['xhr', 'http', 'fetch'], 'transformRequest': [None], 'transformResponse': [None], 'timeout': 10000, 'xsrfCookieName': 'XSRF-TOKEN', 'xsrfHeaderName': 'X-XSRF-TOKEN', 'maxContentLength': -1, 'maxBodyLength': -1, 'env': {}, 'headers': {'Accept': 'application/json, text/plain, */*', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjQ2NDk1LCJpYXQiOjE3Mzk2NDYxOTUsImp0aSI6IjcxYWMxOGM4ZjhiNTRmZjM4ODRkMGFkYTE5NjZjNGJkIiwidXNlcl9pZCI6N30.typ3475DZVSSfA5xC9Y-f8OFjwX5oCoqyEVtVR79niE'}, 'baseURL': 'http://localhost:8000', 'method': 'put', 'url': '/api/profile/update/', 'data': '{"first_name":"Radek","last_name":"Zitek","email":"radek.zitek@proton.me"}'}, 'request': {}}]}
+2025-02-15 19:51:35,550 - DEBUG - Goin to handle login:
+2025-02-15 19:51:35,551 - DEBUG - About to call api.post with username and password:
+2025-02-15 19:51:35,774 - DEBUG - this.accessToken:
+2025-02-15 19:51:35,774 - DEBUG - Response from api.post:
+2025-02-15 19:51:35,776 - DEBUG - this.refreshToken:
+2025-02-15 19:51:35,777 - DEBUG - About to call api.get to get profile.
+2025-02-15 19:51:35,790 - DEBUG - Response from api.get:
+2025-02-15 19:51:35,790 - DEBUG - After login isAuthenticated:
+2025-02-15 19:52:19,191 - DEBUG - About to call api.post with old_password and new_password:
+2025-02-15 19:52:19,192 - DEBUG - Going to handle change password:
+2025-02-15 20:04:34,875 - DEBUG - About to call api.post with old_password and new_password:
+2025-02-15 20:04:34,877 - DEBUG - Going to handle change password:
+2025-02-15 20:04:35,337 - DEBUG - Password change successful
+2025-02-15 20:05:33,503 - DEBUG - Goin to handle login:
+2025-02-15 20:05:33,503 - DEBUG - About to call api.post with username and password:
+2025-02-15 20:05:44,293 - DEBUG - Goin to handle login:
+2025-02-15 20:05:44,293 - DEBUG - About to call api.post with username and password:
+2025-02-15 20:05:44,511 - DEBUG - this.accessToken:
+2025-02-15 20:05:44,512 - DEBUG - this.refreshToken:
+2025-02-15 20:05:44,514 - DEBUG - About to call api.get to get profile.
+2025-02-15 20:05:44,515 - DEBUG - Response from api.post:
+2025-02-15 20:05:44,530 - DEBUG - Response from api.get:
+2025-02-15 20:05:44,531 - DEBUG - After login isAuthenticated:
+2025-02-15 20:08:00,458 - DEBUG - Goin to handle login:
+2025-02-15 20:08:00,458 - DEBUG - About to call api.post with username and password:
+2025-02-15 20:08:00,685 - DEBUG - Response from api.post:
+2025-02-15 20:08:00,685 - DEBUG - this.accessToken:
+2025-02-15 20:08:00,687 - DEBUG - this.refreshToken:
+2025-02-15 20:08:00,688 - DEBUG - About to call api.get to get profile.
+2025-02-15 20:08:00,705 - DEBUG - Response from api.get:
+2025-02-15 20:08:00,705 - DEBUG - After login isAuthenticated:
+2025-02-15 20:08:09,620 - DEBUG - About to call api.put with firstname, lastname, and email:
+2025-02-15 20:08:09,620 - DEBUG - Going to handle update profile:
+2025-02-15 20:08:09,639 - DEBUG - Update successful:
+2025-02-15 20:08:16,290 - DEBUG - Going to handle update profile:
+2025-02-15 20:08:16,290 - DEBUG - About to call api.put with firstname, lastname, and email:
+2025-02-15 20:08:16,307 - DEBUG - Update successful:
+2025-02-15 20:08:32,623 - DEBUG - Going to handle change password:
+2025-02-15 20:08:32,623 - DEBUG - About to call api.post with old_password and new_password:
+2025-02-15 20:08:33,033 - DEBUG - Password change successful
+2025-02-15 20:08:39,978 - DEBUG - Goin to handle login:
+2025-02-15 20:08:39,979 - DEBUG - About to call api.post with username and password:
+2025-02-15 20:08:40,196 - DEBUG - Response from api.post:
+2025-02-15 20:08:40,197 - DEBUG - this.accessToken:
+2025-02-15 20:08:40,197 - DEBUG - this.refreshToken:
+2025-02-15 20:08:40,199 - DEBUG - About to call api.get to get profile.
+2025-02-15 20:08:40,218 - DEBUG - Response from api.get:
+2025-02-15 20:08:40,218 - DEBUG - After login isAuthenticated:

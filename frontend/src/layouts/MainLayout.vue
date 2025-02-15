@@ -25,7 +25,7 @@
                   <q-item-label>Change your profile</q-item-label>
                 </q-item-section>
               </q-item>
-              <q-item v-if="isAuthenticated" clickable v-ripple>
+              <q-item v-if="isAuthenticated" clickable v-ripple @click="$router.push('/settings/change')">
                 <q-item-section avatar>
                   <q-icon name="settings" />
                 </q-item-section>

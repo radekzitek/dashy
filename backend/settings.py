@@ -33,7 +33,7 @@ LOGGING = {
 
     'formatters': {
         'text': {
-            'format': '{asctime} - {levelname} - {message} - {meta}',
+            'format': '{asctime} - {levelname} - {message}',
             'style': '{',
         },
         'json': {
@@ -106,7 +106,7 @@ LOGGING = {
             # You can choose which handler to use; here, both handlers are attached.
             'handlers': ['frontend_file_text', 'frontend_file_json'],
             'level': 'DEBUG',
-            'propagate': True,
+            'propagate': False,
         },
         'django.request': {
             'handlers': ['django_request_text'],
@@ -116,7 +116,7 @@ LOGGING = {
         'backend_logger': {
             'handlers': ['backend_file_text', 'backend_file_json'],
             'level': 'DEBUG',
-            'filters': ['exclude_frontend'],
+            # 'filters': ['exclude_frontend'],
             'propagate': False,
         },
         # Optionally, you can configure the root logger (if you want all logs to be captured by the backend)
