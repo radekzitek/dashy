@@ -46,7 +46,7 @@ LOGGING = {
         'django_request_text': {
             'level': 'DEBUG',
             'class': 'logging.handlers.RotatingFileHandler',
-            'filename': os.path.join(BASE_DIR, 'logs/django_request_logs.txt'),
+            'filename': os.path.join(BASE_DIR, 'logs/django_request.log'),
             'maxBytes': 1024 * 1024 * 5,  # 5 MB
             'backupCount': 5,
             'formatter': 'text',
@@ -54,7 +54,7 @@ LOGGING = {
         'root_file_text': {
             'level': 'DEBUG',
             'class': 'logging.handlers.RotatingFileHandler',
-            'filename': os.path.join(BASE_DIR, 'logs/root_logs.txt'),
+            'filename': os.path.join(BASE_DIR, 'logs/root.log'),
             'maxBytes': 1024 * 1024 * 5,  # 5 MB
             'backupCount': 5,
             'formatter': 'text',
@@ -62,7 +62,7 @@ LOGGING = {
         'root_file_json': {
             'level': 'DEBUG',
             'class': 'logging.handlers.RotatingFileHandler',
-            'filename': os.path.join(BASE_DIR, 'logs/root_logs.json'),
+            'filename': os.path.join(BASE_DIR, 'logs/root_json.log'),
             'maxBytes': 1024 * 1024 * 5,
             'backupCount': 5,
             'formatter': 'json',
@@ -70,7 +70,7 @@ LOGGING = {
         'backend_file_text': {
             'level': 'DEBUG',
             'class': 'logging.handlers.RotatingFileHandler',
-            'filename': os.path.join(BASE_DIR, 'logs/backend_logs.txt'),
+            'filename': os.path.join(BASE_DIR, 'logs/backend.log'),
             'maxBytes': 1024 * 1024 * 5,  # 5 MB
             'backupCount': 5,
             'formatter': 'text',
@@ -78,7 +78,7 @@ LOGGING = {
         'backend_file_json': {
             'level': 'DEBUG',
             'class': 'logging.handlers.RotatingFileHandler',
-            'filename': os.path.join(BASE_DIR, 'logs/backend_logs.json'),
+            'filename': os.path.join(BASE_DIR, 'logs/backend_json.log'),
             'maxBytes': 1024 * 1024 * 5,
             'backupCount': 5,
             'formatter': 'json',
@@ -86,7 +86,7 @@ LOGGING = {
         'frontend_file_text': {
             'level': 'DEBUG',
             'class': 'logging.handlers.RotatingFileHandler',
-            'filename': os.path.join(BASE_DIR, 'logs/frontend_logs.txt'),
+            'filename': os.path.join(BASE_DIR, 'logs/frontend.log'),
             'maxBytes': 1024 * 1024 * 5,  # 5 MB
             'backupCount': 5,
             'formatter': 'text',
@@ -94,7 +94,7 @@ LOGGING = {
         'frontend_file_json': {
             'level': 'DEBUG',
             'class': 'logging.handlers.RotatingFileHandler',
-            'filename': os.path.join(BASE_DIR, 'logs/frontend_logs.json'),
+            'filename': os.path.join(BASE_DIR, 'logs/frontend_json.log'),
             'maxBytes': 1024 * 1024 * 5,
             'backupCount': 5,
             'formatter': 'json',
