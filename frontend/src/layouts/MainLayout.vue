@@ -16,7 +16,7 @@
                   <q-item-label>Switch color theme</q-item-label>
                 </q-item-section>
               </q-item>
-              <q-item v-if="isAuthenticated" clickable v-ripple>
+              <q-item v-if="isAuthenticated" clickable v-ripple  @click="$router.push('/profile/update')">
                 <q-item-section avatar>
                   <q-icon name="face" />
                 </q-item-section>

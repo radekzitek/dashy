@@ -66,6 +66,21 @@ export const useAuthStore = defineStore('auth', {
         throw new Error('Registration failed', error as Error)
       } 
     },
+    async updateProfile(first_name: string, last_name: string, email: string) {
+      try {
+        console.log('About to call api.put with firstname, lastname, and email:', { first_name, last_name, email });
+        const response = await api.put('/api/profile/update/', { first_name, last_name, email });
+        console.log('Update successful:', response);
+        this.first_name = response.data.first_name;
+        localStorage.setItem('first_name', this.first_name as string);
+        this.last_name = response.data.last_name;
+        localStorage.setItem('last_name', this.last_name as string);
+        this.email = response.data.email;
+        localStorage.setItem('email', this.email as string);
+      } catch (error) {
+        throw new Error('Update failed', error as Error)
+      } 
+    },
     async profile() {
       try {
         console.log('About to call api.get to get profile.');

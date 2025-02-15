@@ -1,6 +1,6 @@
 <template>
   <q-page class="q-pa-lg">
-    <q-card v-if="!isAuthenticated" bordered flat class="my-card q-mx-auto">
+    <q-card v-if="!isAuthenticated" bordered elevated class="my-card q-mx-auto">
       <q-img src="images/lab.jpg">
         <div class="text-h5 absolute-bottom text-right">Home</div>
       </q-img>
