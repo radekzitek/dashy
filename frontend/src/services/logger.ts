@@ -11,7 +11,7 @@ interface LogMeta {
 
 // Function to send log messages to the backend logging endpoint
 function sendLog(level: string, message: string, meta: LogMeta = {}): void {
-  console.log('Sending log:', level, message, meta)
+  // console.log('Sending log:', level, message, meta)
     api
     .post('/api/logs/', {
       level,

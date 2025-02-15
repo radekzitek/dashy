@@ -106,6 +106,7 @@ export const useAuthStore = defineStore('auth', {
         await api.post('/api/password/change/', { old_password, new_password });
         log.debug('Password change successful');
       } catch (error) {
+        log.error('Password change failed:', error);
         throw new Error('Password change failed', error as Error)
       }
     }

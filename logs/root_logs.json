@@ -141,3 +141,109 @@
 {"asctime": "2025-02-15 20:07:38,731", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/settings.py changed, reloading.", "meta": null}
 {"asctime": "2025-02-15 20:07:38,928", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
 {"asctime": "2025-02-15 20:07:40,651", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:09:58,322", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:09:58,524", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:10:00,665", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:10:00,877", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:10:02,012", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:10:02,195", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:10:05,375", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:10:05,585", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:10:09,755", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:10:09,957", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:10:14,126", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:10:14,312", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:10:16,460", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:10:16,684", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:10:17,814", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:10:18,000", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:10:21,130", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:10:21,321", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:10:27,552", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:10:27,743", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:12:11,817", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:12:12,014", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:12:14,158", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:12:14,364", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:12:19,557", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:12:19,748", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:12:21,894", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:12:22,093", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:12:25,256", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:12:25,458", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:12:37,767", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:12:37,958", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:12:41,126", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:12:41,320", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:12:44,424", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:12:44,611", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:12:49,823", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:12:50,025", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:12:51,160", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:12:51,355", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:12:56,545", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:12:56,746", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:13:07,022", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:13:07,224", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:13:08,364", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:13:08,547", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:13:14,804", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:13:14,991", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:13:22,233", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:13:22,428", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:13:25,584", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:13:25,796", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:13:29,975", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:13:30,164", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:13:36,392", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:13:36,584", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:13:38,717", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:13:38,909", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:13:43,092", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:13:43,292", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:13:54,599", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:13:54,794", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:13:55,937", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:13:56,124", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:14:22,677", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:14:22,871", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:14:26,031", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:14:26,243", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:14:27,378", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:14:27,564", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:14:31,759", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:14:31,968", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:14:47,349", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:14:47,532", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:14:53,749", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:14:53,942", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:14:57,098", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:14:57,291", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:15:05,538", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:15:05,740", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:15:10,932", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:15:11,142", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:17:46,141", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:17:46,333", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:17:48,482", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:17:48,714", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:36:24,747", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:36:24,959", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:36:29,112", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:36:29,304", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:36:31,399", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:36:31,592", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:36:32,668", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:36:32,859", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:36:34,021", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:36:34,213", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:36:37,374", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:36:37,575", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:37:02,143", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:37:02,332", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:37:08,601", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:37:08,793", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:37:10,888", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:37:11,087", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}
+{"asctime": "2025-02-15 20:37:12,225", "levelname": "INFO", "message": "/home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.", "meta": null}
+{"asctime": "2025-02-15 20:37:12,412", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "meta": null}

@@ -7,3 +7,23 @@
 {"asctime": "2025-02-15 20:08:32,624", "levelname": "DEBUG", "message": "Validated data: {'old_password': 'user1234', 'new_password': 'akFK*@ZStTa&ZhR7Cw$f'}", "meta": null}
 {"asctime": "2025-02-15 20:08:32,625", "levelname": "DEBUG", "message": "old_password: user1234", "meta": null}
 {"asctime": "2025-02-15 20:08:32,626", "levelname": "DEBUG", "message": "new_password: akFK*@ZStTa&ZhR7Cw$f", "meta": null}
+{"asctime": "2025-02-15 20:15:43,585", "levelname": "DEBUG", "message": "Received password change request: {'old_password': 'RHjK7!JAC99W^F3an!g4', 'new_password': 'user1234'}", "meta": null}
+{"asctime": "2025-02-15 20:15:43,586", "levelname": "DEBUG", "message": "Validated data: {'old_password': 'RHjK7!JAC99W^F3an!g4', 'new_password': 'user1234'}", "meta": null}
+{"asctime": "2025-02-15 20:15:43,586", "levelname": "DEBUG", "message": "old_password: RHjK7!JAC99W^F3an!g4", "meta": null}
+{"asctime": "2025-02-15 20:15:43,586", "levelname": "DEBUG", "message": "new_password: user1234", "meta": null}
+{"asctime": "2025-02-15 20:16:35,173", "levelname": "DEBUG", "message": "Received password change request: {'old_password': 'user4563', 'new_password': 'user4321'}", "meta": null}
+{"asctime": "2025-02-15 20:16:35,173", "levelname": "DEBUG", "message": "Validated data: {'old_password': 'user4563', 'new_password': 'user4321'}", "meta": null}
+{"asctime": "2025-02-15 20:16:35,173", "levelname": "DEBUG", "message": "old_password: user4563", "meta": null}
+{"asctime": "2025-02-15 20:16:35,173", "levelname": "DEBUG", "message": "new_password: user4321", "meta": null}
+{"asctime": "2025-02-15 20:16:35,365", "levelname": "WARNING", "message": "Invalid old password: user4563", "meta": null}
+{"asctime": "2025-02-15 20:19:51,340", "levelname": "DEBUG", "message": "Received password change request: {'old_password': 'user1234', 'new_password': 'user4321'}", "meta": null}
+{"asctime": "2025-02-15 20:19:51,341", "levelname": "DEBUG", "message": "Validated data: {'old_password': 'user1234', 'new_password': 'user4321'}", "meta": null}
+{"asctime": "2025-02-15 20:20:56,139", "levelname": "DEBUG", "message": "Received password change request: {'old_password': 'user1234', 'new_password': 'Nwe%ZjUbJkM^6!XGQY8G'}", "meta": null}
+{"asctime": "2025-02-15 20:20:56,141", "levelname": "DEBUG", "message": "Validated data: {'old_password': 'user1234', 'new_password': 'Nwe%ZjUbJkM^6!XGQY8G'}", "meta": null}
+{"asctime": "2025-02-15 20:20:56,344", "levelname": "WARNING", "message": "Invalid old password: user1234", "meta": null}
+{"asctime": "2025-02-15 20:26:18,958", "levelname": "DEBUG", "message": "Received password change request: {'old_password': 'aakhskfgdkj', 'new_password': '4444444'}", "meta": null}
+{"asctime": "2025-02-15 20:26:18,960", "levelname": "DEBUG", "message": "Validated data: {'old_password': 'aakhskfgdkj', 'new_password': '4444444'}", "meta": null}
+{"asctime": "2025-02-15 20:26:19,156", "levelname": "WARNING", "message": "Invalid old password: aakhskfgdkj", "meta": null}
+{"asctime": "2025-02-15 20:31:04,875", "levelname": "DEBUG", "message": "Received password change request: {'old_password': '4444', 'new_password': '4444'}", "meta": null}
+{"asctime": "2025-02-15 20:31:04,876", "levelname": "DEBUG", "message": "Validated data: {'old_password': '4444', 'new_password': '4444'}", "meta": null}
+{"asctime": "2025-02-15 20:31:05,074", "levelname": "WARNING", "message": "Invalid old password: 4444", "meta": null}

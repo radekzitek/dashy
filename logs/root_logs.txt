@@ -1761,3 +1761,109 @@ Files: {}
 2025-02-15 20:07:38,731 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/settings.py changed, reloading.
 2025-02-15 20:07:38,928 - INFO - Watching for file changes with StatReloader
 2025-02-15 20:07:40,651 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:09:58,322 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:09:58,524 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:10:00,665 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:10:00,877 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:10:02,012 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:10:02,195 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:10:05,375 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:10:05,585 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:10:09,755 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:10:09,957 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:10:14,126 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:10:14,312 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:10:16,460 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:10:16,684 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:10:17,814 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:10:18,000 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:10:21,130 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:10:21,321 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:10:27,552 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:10:27,743 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:12:11,817 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:12:12,014 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:12:14,158 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:12:14,364 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:12:19,557 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:12:19,748 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:12:21,894 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:12:22,093 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:12:25,256 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:12:25,458 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:12:37,767 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:12:37,958 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:12:41,126 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:12:41,320 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:12:44,424 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:12:44,611 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:12:49,823 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:12:50,025 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:12:51,160 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:12:51,355 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:12:56,545 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:12:56,746 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:13:07,022 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:13:07,224 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:13:08,364 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:13:08,547 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:13:14,804 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:13:14,991 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:13:22,233 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:13:22,428 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:13:25,584 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:13:25,796 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:13:29,975 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:13:30,164 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:13:36,392 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:13:36,584 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:13:38,717 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:13:38,909 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:13:43,092 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:13:43,292 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:13:54,599 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:13:54,794 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:13:55,937 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:13:56,124 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:14:22,677 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:14:22,871 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:14:26,031 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:14:26,243 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:14:27,378 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:14:27,564 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:14:31,759 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:14:31,968 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:14:47,349 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:14:47,532 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:14:53,749 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:14:53,942 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:14:57,098 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:14:57,291 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:15:05,538 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:15:05,740 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:15:10,932 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:15:11,142 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:17:46,141 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:17:46,333 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:17:48,482 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:17:48,714 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:36:24,747 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:36:24,959 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:36:29,112 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:36:29,304 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:36:31,399 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:36:31,592 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:36:32,668 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:36:32,859 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:36:34,021 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:36:34,213 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:36:37,374 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:36:37,575 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:37:02,143 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:37:02,332 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:37:08,601 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:37:08,793 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:37:10,888 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:37:11,087 - INFO - Watching for file changes with StatReloader
+2025-02-15 20:37:12,225 - INFO - /home/radekzitek/Documents/Projects/dashy/backend/views.py changed, reloading.
+2025-02-15 20:37:12,412 - INFO - Watching for file changes with StatReloader
