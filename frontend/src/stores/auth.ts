@@ -12,6 +12,18 @@ export const useAuthStore = defineStore('auth', {
   }),
 
   actions: {
+    /**
+     * Logs in the user with the provided username and password.
+     * 
+     * This method sends a POST request to the `/api/token/` endpoint with the
+     * username and password, and stores the received access and refresh tokens
+     * in the local storage. It then calls the `profile()` method to fetch and
+     * store the user's profile information.
+     * 
+     * @param username - The username of the user to log in.
+     * @param password - The password of the user to log in.
+     * @throws {Error} If the login fails.
+     */
     async login(username: string, password: string) {
       try {
         console.log('About to call api.post with username and password:', username, password);
