@@ -15,7 +15,8 @@ export default defineConfig((ctx) => {
     boot: [
       'pinia',
       'i18n',
-      'axios'
+      'axios',
+      'sentry'
     ],
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#css
