@@ -78,34 +78,39 @@ class ChangePasswordView(APIView):
 
     def post(self, request, *args, **kwargs):
         logger = logging.getLogger("backend_logger")
-        logger.debug(f"Received password change request: {request.data}")
-        serializer = ChangePasswordSerializer(
-            data=request.data, context={"request": request}
-        )
-        if serializer.is_valid():  # Validate the serializer
-            #  validated
-            logger.debug(f"Validated data: {serializer.validated_data}")
-            # logger.debug(f"old_password: {serializer.validated_data["old_password"]}")
-            # logger.debug(f"new_password: {serializer.validated_data["new_password"]}")
-            if not request.user.check_password(
-                serializer.validated_data["old_password"]
-            ):  # Check if the old password is correct
-                # not correct
-                logger.warning(
-                    f"Invalid old password: {serializer.validated_data["old_password"]}"
+        
+        try:
+            serializer = ChangePasswordSerializer(
+                data=request.data, context={"request": request}
+            )
+            
+            if not serializer.is_valid():
+                logger.warning(f"Invalid data: {serializer.errors}")
+                return Response(
+                    serializer.errors,
+                    status=status.HTTP_400_BAD_REQUEST
                 )
+
+            if not request.user.check_password(serializer.validated_data["old_password"]):
+                logger.warning("Invalid old password provided")
                 return Response(
                     {"current_password": ["Current password is incorrect."]},
                     status=status.HTTP_400_BAD_REQUEST,
                 )
-            else:  # correct
-                new_password = serializer.validated_data["new_password"]
-                request.user.set_password(new_password)
-                request.user.save()
-                return Response(
-                    {"detail": "Password changed successfully."},
-                    status=status.HTTP_200_OK,
-                )
-        else:  # invalid
-            logger.warning(f"Invalid data: {serializer.errors}")
-            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+            new_password = serializer.validated_data["new_password"]
+            request.user.set_password(new_password)
+            request.user.save()
+            
+            logger.info(f"Password successfully changed for user: {request.user.username}")
+            return Response(
+                {"detail": "Password changed successfully."},
+                status=status.HTTP_200_OK,
+            )
+
+        except Exception as e:
+            logger.error(f"Unexpected error in password change: {str(e)}")
+            return Response(
+                {"detail": "An unexpected error occurred."},
+                status=status.HTTP_500_INTERNAL_SERVER_ERROR
+            )

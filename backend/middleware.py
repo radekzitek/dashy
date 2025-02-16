@@ -1,5 +1,6 @@
 import logging
 import json
+import time
 from django.utils.deprecation import MiddlewareMixin
 
 # Get the logger for 'django.request'
@@ -94,3 +95,76 @@ class RequestLoggingMiddleware(MiddlewareMixin):
             logger.error(f"Error logging request: {e}")
         # Continue processing the request as usual
         return None
+
+
+class ResponseLoggingMiddleware(MiddlewareMixin):
+    """
+    Middleware to log every outgoing response with timing information,
+    status codes, and response content (where appropriate).
+    """
+
+    def process_request(self, request):
+        # Store the start time in the request object
+        request.start_time = time.time()
+        return None
+
+    def process_response(self, request, response):
+        try:
+            # Calculate request duration
+            duration = time.time() - getattr(request, 'start_time', time.time())
+            
+            # Basic response info
+            status_code = response.status_code
+            content_type = response.get('Content-Type', 'unknown')
+            content_length = response.get('Content-Length', 'unknown')
+
+            # Get response content based on content type
+            response_content = ''
+            if hasattr(response, 'content'):
+                if 'application/json' in content_type:
+                    try:
+                        # Try to parse and format JSON response
+                        response_content = json.loads(response.content.decode('utf-8'))
+                        response_content = json.dumps(response_content, indent=2)
+                    except Exception as json_error:
+                        response_content = f"<failed to parse JSON: {json_error}>"
+                elif 'text' in content_type:
+                    try:
+                        # For text responses, decode the content
+                        response_content = response.content.decode('utf-8')
+                    except Exception as decode_error:
+                        response_content = f"<failed to decode content: {decode_error}>"
+                else:
+                    response_content = "<binary content>"
+
+            # Build headers dictionary
+            headers = {key: value for key, value in response.items()}
+
+            # Build the log message
+            log_message = (
+                f"Outgoing Response:\n"
+                f"Duration: {duration:.3f}s\n"
+                f"Status Code: {status_code}\n"
+                f"Content-Type: {content_type}\n"
+                f"Content-Length: {content_length}\n"
+                f"Headers: {json.dumps(headers, indent=2)}\n"
+            )
+
+            # Add response content to log if it exists
+            if response_content:
+                log_message += f"Content: {response_content}\n"
+
+            # Log at appropriate level based on status code
+            if status_code >= 500:
+                logger.error(log_message)
+            elif status_code >= 400:
+                logger.warning(log_message)
+            else:
+                logger.info(log_message)
+
+        except Exception as e:
+            # If any error occurs while logging, log the error without breaking the response flow
+            logger.error(f"Error logging response: {e}")
+
+        # Always return the response
+        return response

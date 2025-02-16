@@ -19,19 +19,19 @@ from corsheaders.defaults import default_headers
 
 import sentry_sdk
 
+# Initialize Sentry with DSN from environment variable
 sentry_sdk.init(
-    dsn="https://d43795ce5f83d335f3940f8f29e3b584@o4508824465637376.ingest.de.sentry.io/4508828221898832",
+    dsn=config("SENTRY_DSN", default=None),  # If DSN is not set, Sentry will be disabled
     # Add data like request headers and IP for users,
     # see https://docs.sentry.io/platforms/python/data-management/data-collected/ for more info
-    send_default_pii=True,
+    send_default_pii=config("SENTRY_SEND_PII", default=True, cast=bool),
     # Set traces_sample_rate to 1.0 to capture 100%
     # of transactions for tracing.
-    traces_sample_rate=1.0,
+    traces_sample_rate=config("SENTRY_SAMPLE_RATE", default=1.0, cast=float),
     _experiments={
         # Set continuous_profiling_auto_start to True
-        # to automatically start the profiler on when
-        # possible.
-        "continuous_profiling_auto_start": True,
+        # to automatically start the profiler when possible.
+        "continuous_profiling_auto_start": config("SENTRY_PROFILING", default=True, cast=bool),
     },
 )
 
@@ -151,10 +151,10 @@ LOGGING = {
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-(nj$k2g1u@wsv1ya9@nlb+d^21y3@8dca9t*ku(5yzt+v@&1g&"
+SECRET_KEY = config("SECRET_KEY", default="django-insecure-default-key-for-dev")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = config("DEBUG", default=False, cast=bool)
 
 ALLOWED_HOSTS = []
 
@@ -182,6 +182,7 @@ REST_FRAMEWORK = {
 MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",  # Add this at the top
     "backend.middleware.RequestLoggingMiddleware",
+    "backend.middleware.ResponseLoggingMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -191,11 +192,11 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:9000",
-    "https://fictional-space-lamp-9xr9pxp7qpv2x5j6-9000.app.github.dev",  # Your Quasar/Vue dev server
-    # "https://your-production-domain.com",
-]
+CORS_ALLOWED_ORIGINS = config(
+    "CORS_ALLOWED_ORIGINS",
+    default="http://localhost:9000",
+    cast=lambda v: [s.strip() for s in v.split(",")]
+)
 
 CORS_ALLOW_HEADERS = list(default_headers) + [
     "baggage",
