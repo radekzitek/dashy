@@ -1,5 +1,6 @@
 import log from 'loglevel'
 import { api } from '../boot/axios'
+import * as Sentry from '@sentry/vue'
 
 // Set the logging level (can be adjusted as needed)
 log.setLevel('debug')
@@ -12,7 +13,13 @@ interface LogMeta {
 // Function to send log messages to the backend logging endpoint
 function sendLog(level: string, message: string, meta: LogMeta = {}): void {
   // console.log('Sending log:', level, message, meta)
-    api
+  // Send log message to Sentry
+  Sentry.captureMessage(message, {
+    level: level.toLowerCase() as Sentry.SeverityLevel,
+    extra: meta,
+  })
+  // Send log to django API
+  api
     .post('/api/logs/', {
       level,
       message,

@@ -13,16 +13,16 @@
             <q-input filled v-model="password" label="Password" type="password" class="q-ma-xs" />
             <!-- Password strength feedback -->
             <div v-if="password.length > 0" class="q-ma-xs">
-              <div :class="{'text-positive': hasLength, 'text-negative': !hasLength, 'hint-text': true}">
+              <div :class="{ 'text-positive': hasLength, 'text-negative': !hasLength, 'hint-text': true }">
                 Password must be at least 8 characters long
               </div>
-              <div :class="{'text-positive': hasNumber, 'text-negative': !hasNumber, 'hint-text': true}">
+              <div :class="{ 'text-positive': hasNumber, 'text-negative': !hasNumber, 'hint-text': true }">
                 Password must include a number
               </div>
-              <div :class="{'text-positive': hasSpecialChar, 'text-negative': !hasSpecialChar, 'hint-text': true}">
+              <div :class="{ 'text-positive': hasSpecialChar, 'text-negative': !hasSpecialChar, 'hint-text': true }">
                 Password must include a special character
               </div>
-              <div :class="{'text-positive': hasUpperCase, 'text-negative': !hasUpperCase, 'hint-text': true}">
+              <div :class="{ 'text-positive': hasUpperCase, 'text-negative': !hasUpperCase, 'hint-text': true }">
                 Password must include an uppercase letter
               </div>
             </div>
@@ -42,7 +42,8 @@
         <!-- Error message if passwords do not match -->
         <div v-if="!passwordsMatch" class="text-negative q-mt-sm">Passwords do not match</div>
         <!-- Error message if password is not strong enough -->
-        <div v-if="!isPasswordStrong" class="text-negative q-mt-sm">Password must be at least 8 characters long and include a number, a special character, and an uppercase letter.</div>
+        <div v-if="!isPasswordStrong" class="text-negative q-mt-sm">Password must be at least 8 characters long and
+          include a number, a special character, and an uppercase letter.</div>
       </q-card-section>
     </q-card>
   </q-page>
@@ -53,7 +54,9 @@ import { ref, computed } from 'vue'
 import { useRouter } from 'vue-router'
 import { useAuthStore } from '../stores/auth'
 import { useUiStore } from '../stores/ui'
+import { useQuasar } from 'quasar'
 import log from '../services/logger'
+import { isAxiosError } from 'axios'
 
 // Reactive references for form fields
 const oldPassword = ref('')
@@ -68,13 +71,15 @@ const router = useRouter()
 const authStore = useAuthStore()
 const uiStore = useUiStore()
 
+const $q = useQuasar()
+
 // Computed property to check if passwords match
 const passwordsMatch = computed(() => password.value === passwordVerify.value)
 
 // Computed properties for password strength criteria
 const hasLength = computed(() => password.value.length >= 8)
 const hasNumber = computed(() => /\d/.test(password.value))
-const hasSpecialChar = computed(() => /[!@#$%^&*(),.?":{}|<>]/.test(password.value))
+const hasSpecialChar = computed(() => /[!@#$%^&*(),.?":{}|<>+-/\\]/.test(password.value))
 const hasUpperCase = computed(() => /[A-Z]/.test(password.value))
 
 // Computed property to check if password is strong
@@ -110,14 +115,35 @@ async function handleChangePassword() {
     void router.push('/')
   } catch (error: unknown) {
     console.error(error)
-    let errorMessage = 'Change failed. Please try again.' // Default message
+    let errorMessage = '';
 
-    if (error instanceof Error) {
-      errorMessage = `Change failed: ${error.message}. Please try again.`
-    } else {
-      errorMessage = `Change failed: An unexpected error occurred. Please try again.`
+    if (isAxiosError(error)) {
+      console.debug("is axios error")
+      if (error.response && error.response.status === 400) {
+        console.debug("has response")
+        console.debug(error.response.data)
+        errorMessage = 'Incorrect current password. Please try again.';
+      } else if (error instanceof Error) {
+        console.debug("is error")
+        errorMessage = `${error.message}.`;
+      }
     }
-    uiStore.setFooterText(errorMessage)
+    else {
+      console.debug("is not axios error")
+      errorMessage = `Login failed: An unexpected error occurred.`;
+    }
+
+    uiStore.setFooterText(errorMessage);
+
+    $q.dialog({
+      title: 'Chnage Failed',
+      message: errorMessage,
+      ok: {
+        label: 'OK',
+        color: 'primary'
+      }
+    })
+
   } finally {
     isLoading.value = false
   }

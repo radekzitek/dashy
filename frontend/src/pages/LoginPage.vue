@@ -9,6 +9,8 @@
         <q-input filled v-model="password" label="Password" type="password" class="q-ma-sm" />
         <q-btn color="primary" label="Login" class="q-ma-sm" @click="handleLogin" />
         <q-btn color="primary" label="Cancel" class="q-ma-sm" @click="$router.push('/')" />
+        <!-- Loading indicator -->
+        <q-spinner v-if="isLoading" color="primary" size="30px" class="q-my-md" />
       </q-card-section>
     </q-card>
   </q-page>
@@ -26,6 +28,8 @@ import { isAxiosError } from 'axios'
 const username = ref('')
 const password = ref('')
 
+const isLoading = ref(false)
+
 const router = useRouter()
 const authStore = useAuthStore()
 const uiStore = useUiStore()
@@ -33,6 +37,7 @@ const $q = useQuasar()
 
 async function handleLogin() {
   try {
+    isLoading.value = true
     log.debug('Going to handle login:', username.value, password.value)
     await authStore.login(username.value, password.value)
     log.debug('After login isAuthenticated:', authStore.isAuthenticated)
@@ -52,7 +57,7 @@ async function handleLogin() {
       } else if (error instanceof Error) {
         console.debug("is error")
         errorMessage = `${error.message}.`;
-      } 
+      }
     }
     else {
       console.debug("is not axios error")
@@ -69,6 +74,9 @@ async function handleLogin() {
         color: 'primary'
       }
     })
+
+  } finally {
+    isLoading.value = false
   }
 }
 </script>
