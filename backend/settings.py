@@ -15,114 +15,134 @@ from decouple import config
 import os
 from pythonjsonlogger import jsonlogger
 
+from corsheaders.defaults import default_headers
+
+import sentry_sdk
+
+sentry_sdk.init(
+    dsn="https://d43795ce5f83d335f3940f8f29e3b584@o4508824465637376.ingest.de.sentry.io/4508828221898832",
+    # Add data like request headers and IP for users,
+    # see https://docs.sentry.io/platforms/python/data-management/data-collected/ for more info
+    send_default_pii=True,
+    # Set traces_sample_rate to 1.0 to capture 100%
+    # of transactions for tracing.
+    traces_sample_rate=1.0,
+    _experiments={
+        # Set continuous_profiling_auto_start to True
+        # to automatically start the profiler on when
+        # possible.
+        "continuous_profiling_auto_start": True,
+    },
+)
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-
+    "version": 1,
+    "disable_existing_loggers": False,
     # Define a filter to exclude log messages from the frontend
-    'filters': {
-        'exclude_frontend': {
-            '()': 'django.utils.log.CallbackFilter',
+    "filters": {
+        "exclude_frontend": {
+            "()": "django.utils.log.CallbackFilter",
             # This lambda returns True only if the record's name does NOT start with 'frontend_logger'
-            'callback': lambda record: not record.name.startswith('frontend_logger'),
+            "callback": lambda record: not record.name.startswith("frontend_logger"),
         },
     },
-
-    'formatters': {
-        'text': {
-            'format': '{asctime} - {levelname} - {message}',
-            'style': '{',
+    "formatters": {
+        "text": {
+            "format": "{asctime} - {levelname} - {message}",
+            "style": "{",
         },
-        'json': {
-            '()': jsonlogger.JsonFormatter,
-            'fmt': '%(asctime)s %(levelname)s %(message)s %(meta)s',
-        },
-    },
-
-    'handlers': {
-        'django_request_text': {
-            'level': 'DEBUG',
-            'class': 'logging.handlers.RotatingFileHandler',
-            'filename': os.path.join(BASE_DIR, 'logs/django_request.log'),
-            'maxBytes': 1024 * 1024 * 5,  # 5 MB
-            'backupCount': 5,
-            'formatter': 'text',
-        },
-        'root_file_text': {
-            'level': 'DEBUG',
-            'class': 'logging.handlers.RotatingFileHandler',
-            'filename': os.path.join(BASE_DIR, 'logs/root.log'),
-            'maxBytes': 1024 * 1024 * 5,  # 5 MB
-            'backupCount': 5,
-            'formatter': 'text',
-        },
-        'root_file_json': {
-            'level': 'DEBUG',
-            'class': 'logging.handlers.RotatingFileHandler',
-            'filename': os.path.join(BASE_DIR, 'logs/root_json.log'),
-            'maxBytes': 1024 * 1024 * 5,
-            'backupCount': 5,
-            'formatter': 'json',
-        },
-        'backend_file_text': {
-            'level': 'DEBUG',
-            'class': 'logging.handlers.RotatingFileHandler',
-            'filename': os.path.join(BASE_DIR, 'logs/backend.log'),
-            'maxBytes': 1024 * 1024 * 5,  # 5 MB
-            'backupCount': 5,
-            'formatter': 'text',
-        },
-        'backend_file_json': {
-            'level': 'DEBUG',
-            'class': 'logging.handlers.RotatingFileHandler',
-            'filename': os.path.join(BASE_DIR, 'logs/backend_json.log'),
-            'maxBytes': 1024 * 1024 * 5,
-            'backupCount': 5,
-            'formatter': 'json',
-        },
-        'frontend_file_text': {
-            'level': 'DEBUG',
-            'class': 'logging.handlers.RotatingFileHandler',
-            'filename': os.path.join(BASE_DIR, 'logs/frontend.log'),
-            'maxBytes': 1024 * 1024 * 5,  # 5 MB
-            'backupCount': 5,
-            'formatter': 'text',
-        },
-        'frontend_file_json': {
-            'level': 'DEBUG',
-            'class': 'logging.handlers.RotatingFileHandler',
-            'filename': os.path.join(BASE_DIR, 'logs/frontend_json.log'),
-            'maxBytes': 1024 * 1024 * 5,
-            'backupCount': 5,
-            'formatter': 'json',
+        "json": {
+            "()": jsonlogger.JsonFormatter,
+            "fmt": "%(asctime)s %(levelname)s %(message)s %(meta)s",
         },
     },
-
-    'loggers': {
-        'frontend_logger': {
+    "handlers": {
+        'sentry': {
+            'level': 'DEBUG',
+            'class': 'sentry_sdk.integrations.logging.EventHandler',
+        },
+        "django_request_text": {
+            "level": "DEBUG",
+            "class": "logging.handlers.RotatingFileHandler",
+            "filename": os.path.join(BASE_DIR, "logs/django_request.log"),
+            "maxBytes": 1024 * 1024 * 5,  # 5 MB
+            "backupCount": 5,
+            "formatter": "text",
+        },
+        "root_file_text": {
+            "level": "DEBUG",
+            "class": "logging.handlers.RotatingFileHandler",
+            "filename": os.path.join(BASE_DIR, "logs/root.log"),
+            "maxBytes": 1024 * 1024 * 5,  # 5 MB
+            "backupCount": 5,
+            "formatter": "text",
+        },
+        "root_file_json": {
+            "level": "DEBUG",
+            "class": "logging.handlers.RotatingFileHandler",
+            "filename": os.path.join(BASE_DIR, "logs/root_json.log"),
+            "maxBytes": 1024 * 1024 * 5,
+            "backupCount": 5,
+            "formatter": "json",
+        },
+        "backend_file_text": {
+            "level": "DEBUG",
+            "class": "logging.handlers.RotatingFileHandler",
+            "filename": os.path.join(BASE_DIR, "logs/backend.log"),
+            "maxBytes": 1024 * 1024 * 5,  # 5 MB
+            "backupCount": 5,
+            "formatter": "text",
+        },
+        "backend_file_json": {
+            "level": "DEBUG",
+            "class": "logging.handlers.RotatingFileHandler",
+            "filename": os.path.join(BASE_DIR, "logs/backend_json.log"),
+            "maxBytes": 1024 * 1024 * 5,
+            "backupCount": 5,
+            "formatter": "json",
+        },
+        "frontend_file_text": {
+            "level": "DEBUG",
+            "class": "logging.handlers.RotatingFileHandler",
+            "filename": os.path.join(BASE_DIR, "logs/frontend.log"),
+            "maxBytes": 1024 * 1024 * 5,  # 5 MB
+            "backupCount": 5,
+            "formatter": "text",
+        },
+        "frontend_file_json": {
+            "level": "DEBUG",
+            "class": "logging.handlers.RotatingFileHandler",
+            "filename": os.path.join(BASE_DIR, "logs/frontend_json.log"),
+            "maxBytes": 1024 * 1024 * 5,
+            "backupCount": 5,
+            "formatter": "json",
+        },
+    },
+    "loggers": {
+        "frontend_logger": {
             # You can choose which handler to use; here, both handlers are attached.
-            'handlers': ['frontend_file_text', 'frontend_file_json'],
-            'level': 'DEBUG',
-            'propagate': False,
+            "handlers": ["frontend_file_text", "frontend_file_json", "sentry"],
+            "level": "DEBUG",
+            "propagate": False,
         },
-        'django.request': {
-            'handlers': ['django_request_text'],
-            'level': 'DEBUG',
-            'propagate': False,
+        "django.request": {
+            "handlers": ["django_request_text"],
+            "level": "DEBUG",
+            "propagate": False,
         },
-        'backend_logger': {
-            'handlers': ['backend_file_text', 'backend_file_json'],
-            'level': 'DEBUG',
+        "backend_logger": {
+            "handlers": ["backend_file_text", "backend_file_json", "sentry"],
+            "level": "DEBUG",
             # 'filters': ['exclude_frontend'],
-            'propagate': False,
+            "propagate": False,
         },
         # Optionally, you can configure the root logger (if you want all logs to be captured by the backend)
-        '': {
-            'handlers': ['root_file_text', 'root_file_json'],
-            'level': 'DEBUG',
+        "": {
+            "handlers": ["root_file_text", "root_file_json"],
+            "level": "DEBUG",
         },
     },
 }
@@ -148,20 +168,20 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    'rest_framework',
-    'rest_framework.authtoken',
-    'corsheaders',
+    "rest_framework",
+    "rest_framework.authtoken",
+    "corsheaders",
 ]
 
 REST_FRAMEWORK = {
-    'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    "DEFAULT_AUTHENTICATION_CLASSES": (
+        "rest_framework_simplejwt.authentication.JWTAuthentication",
     ),
 }
 
 MIDDLEWARE = [
-    'corsheaders.middleware.CorsMiddleware',  # Add this at the top
-    'backend.middleware.RequestLoggingMiddleware',
+    "corsheaders.middleware.CorsMiddleware",  # Add this at the top
+    "backend.middleware.RequestLoggingMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -175,6 +195,11 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:9000",
     "https://fictional-space-lamp-9xr9pxp7qpv2x5j6-9000.app.github.dev",  # Your Quasar/Vue dev server
     # "https://your-production-domain.com",
+]
+
+CORS_ALLOW_HEADERS = list(default_headers) + [
+    "baggage",
+    "sentry-trace",
 ]
 
 ROOT_URLCONF = "backend.urls"

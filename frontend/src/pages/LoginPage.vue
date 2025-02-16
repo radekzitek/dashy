@@ -19,7 +19,9 @@ import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { useAuthStore } from '../stores/auth'
 import { useUiStore } from '../stores/ui'
+import { useQuasar } from 'quasar'
 import log from '../services/logger'
+import { isAxiosError } from 'axios'
 
 const username = ref('')
 const password = ref('')
@@ -27,10 +29,11 @@ const password = ref('')
 const router = useRouter()
 const authStore = useAuthStore()
 const uiStore = useUiStore()
+const $q = useQuasar()
 
 async function handleLogin() {
   try {
-    log.debug('Goin to handle login:', username.value, password.value)
+    log.debug('Going to handle login:', username.value, password.value)
     await authStore.login(username.value, password.value)
     log.debug('After login isAuthenticated:', authStore.isAuthenticated)
     if (authStore.isAuthenticated) {
@@ -38,16 +41,34 @@ async function handleLogin() {
       void router.push('/')
     }
   } catch (error: unknown) {
-    console.error(error)
-    let errorMessage = 'Login failed. Please try again.'; // Default message
+    console.debug("have error", error)
+    let errorMessage = '';
 
-    if (error instanceof Error) {
-      errorMessage = `Login failed: ${error.message}. Please try again.`;
-    } else {
-      errorMessage = `Login failed: An unexpected error occurred. Please try again.`;
+    if (isAxiosError(error)) {
+      console.debug("is axios error")
+      if (error.response && error.response.status === 401) {
+        console.debug("is 401")
+        errorMessage = 'Incorrect username or password. Please try again.';
+      } else if (error instanceof Error) {
+        console.debug("is error")
+        errorMessage = `${error.message}.`;
+      } 
+    }
+    else {
+      console.debug("is not axios error")
+      errorMessage = `Login failed: An unexpected error occurred.`;
     }
 
     uiStore.setFooterText(errorMessage);
+
+    $q.dialog({
+      title: 'Login Failed',
+      message: errorMessage,
+      ok: {
+        label: 'OK',
+        color: 'primary'
+      }
+    })
   }
 }
 </script>

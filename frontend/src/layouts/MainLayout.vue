@@ -113,9 +113,10 @@ import { useQuasar } from 'quasar'
 import { useUiStore } from '../stores/ui'
 // import { useAuthStore } from '../stores/authStore'
 import { useAuthStore } from '../stores/auth'
-
+import { useRouter } from 'vue-router'
 
 const uiStore = useUiStore()
+const router = useRouter()
 
 const authStore = useAuthStore()
 const isAuthenticated = computed(() => authStore.isAuthenticated)
@@ -136,5 +137,6 @@ function toggleLeftDrawer() {
 
 function handleLogout() {
   authStore.logout()
+  router.push('/')
 }
 </script>

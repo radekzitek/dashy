@@ -95,11 +95,13 @@ export const useAuthStore = defineStore('auth', {
         localStorage.setItem('refresh_token', this.refreshToken as string);
         await this.profile();
       } catch (error) {
-        if (error instanceof Error) {
-          throw new Error(`Login failed: ${error.message}`);
-        } else {
-          throw new Error('Login failed');
-        }
+        log.error('Login failed:', error);
+        throw error
+        // if (error instanceof Error) {
+        //   throw new Error(`Login failed: ${error.message}`);
+        // }  else {
+        //   throw new Error('Login failed');
+        // }
       }
     },
     /**
