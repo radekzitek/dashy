@@ -17,7 +17,7 @@ class RequestLoggingMiddleware(MiddlewareMixin):
     def process_request(self, request):
         if not settings.DEBUG:
             return None
-            
+
         try:
             # Basic request info
             method = request.method
@@ -97,7 +97,7 @@ class RequestLoggingMiddleware(MiddlewareMixin):
         except Exception as e:
             # If any error occurs while logging, log the error without breaking the request flow
             logger.error(f"Error logging request: {e}")
-        
+
         return None
 
 
@@ -116,30 +116,30 @@ class ResponseLoggingMiddleware(MiddlewareMixin):
     def process_response(self, request, response):
         if not settings.DEBUG:
             return response
-            
+
         try:
             # Calculate request duration
-            duration = time.time() - getattr(request, 'start_time', time.time())
-            
+            duration = time.time() - getattr(request, "start_time", time.time())
+
             # Basic response info
             status_code = response.status_code
-            content_type = response.get('Content-Type', 'unknown')
-            content_length = response.get('Content-Length', 'unknown')
+            content_type = response.get("Content-Type", "unknown")
+            content_length = response.get("Content-Length", "unknown")
 
             # Get response content based on content type
-            response_content = ''
-            if hasattr(response, 'content'):
-                if 'application/json' in content_type:
+            response_content = ""
+            if hasattr(response, "content"):
+                if "application/json" in content_type:
                     try:
                         # Try to parse and format JSON response
-                        response_content = json.loads(response.content.decode('utf-8'))
+                        response_content = json.loads(response.content.decode("utf-8"))
                         response_content = json.dumps(response_content, indent=2)
                     except Exception as json_error:
                         response_content = f"<failed to parse JSON: {json_error}>"
-                elif 'text' in content_type:
+                elif "text" in content_type:
                     try:
                         # For text responses, decode the content
-                        response_content = response.content.decode('utf-8')
+                        response_content = response.content.decode("utf-8")
                     except Exception as decode_error:
                         response_content = f"<failed to decode content: {decode_error}>"
                 else:
