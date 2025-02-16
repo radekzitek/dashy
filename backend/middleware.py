@@ -2,6 +2,7 @@ import logging
 import json
 import time
 from django.utils.deprecation import MiddlewareMixin
+from django.conf import settings
 
 # Get the logger for 'django.request'
 logger = logging.getLogger("django.request")
@@ -14,6 +15,9 @@ class RequestLoggingMiddleware(MiddlewareMixin):
     """
 
     def process_request(self, request):
+        if not settings.DEBUG:
+            return None
+            
         try:
             # Basic request info
             method = request.method
@@ -69,7 +73,7 @@ class RequestLoggingMiddleware(MiddlewareMixin):
                     else:
                         post_data = raw_body
 
-            # Build the log message. For better readability, format dictionaries as JSON.
+            # Build the log message
             log_message = (
                 f"Incoming Request:\n"
                 f"Method: {method}\n"
@@ -79,7 +83,7 @@ class RequestLoggingMiddleware(MiddlewareMixin):
                 f"POST Data: "
             )
 
-            # If post_data is a dict, convert to JSON; otherwise, log as is.
+            # If post_data is a dict, convert to JSON; otherwise, log as is
             if isinstance(post_data, dict):
                 log_message += f"{json.dumps(post_data, indent=2)}\n"
             else:
@@ -93,7 +97,7 @@ class RequestLoggingMiddleware(MiddlewareMixin):
         except Exception as e:
             # If any error occurs while logging, log the error without breaking the request flow
             logger.error(f"Error logging request: {e}")
-        # Continue processing the request as usual
+        
         return None
 
 
@@ -104,11 +108,15 @@ class ResponseLoggingMiddleware(MiddlewareMixin):
     """
 
     def process_request(self, request):
-        # Store the start time in the request object
+        # Always store the start time, even if not debugging,
+        # as it's needed for the response timing
         request.start_time = time.time()
         return None
 
     def process_response(self, request, response):
+        if not settings.DEBUG:
+            return response
+            
         try:
             # Calculate request duration
             duration = time.time() - getattr(request, 'start_time', time.time())
