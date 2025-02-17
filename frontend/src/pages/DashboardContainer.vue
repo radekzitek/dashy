@@ -1,40 +1,83 @@
 <template>
     <q-page class="dashboard">
         <div class="q-gutter-md row q-ma-sm">
-            <component v-for="widget in widgets" :key="widget.id" :is="widgetRegistry[widget.type]"
-                v-bind="widget.config" class="col-12 col-md-3 col-lg-2" />
+            <component v-for="widget in widgetDisplay.widgets" :key="widget.id"
+                :is="widgetRegistry[widget.type]" v-bind="widget.config" class="col-12 col-md-3 col-lg-2">
+
+            </component>
         </div>
+        <q-btn icon="add_circle" class="floating-btn" @click="addWidget" color="primary" round fab />
     </q-page>
 </template>
 
 <script setup lang="ts">
-import type { defineComponent } from 'vue'
-import { ref } from 'vue'
-import WeatherWidget from 'src/components/WeatherWidget.vue'
-import NewsWidget from 'src/components/NewsWidget.vue'
-import CalendarWidget from 'src/components/CalendarWidget.vue'
 
-// Define a type for the widget types
-type WidgetType = 'weather' | 'news' | 'calendar'
+import { ref } from 'vue';
 
-// Define a simple widget registry mapping widget types to components
-const widgetRegistry: Record<WidgetType, ReturnType<typeof defineComponent>> = {
-    weather: WeatherWidget,
-    news: NewsWidget,
-    calendar: CalendarWidget,
+function generateUID() {
+    return 'xxxx-xxxx-4xxx-yxxx-xxxx-yyyy'.replace(/[xy]/g, function (c) {
+        const r = Math.random() * 16 | 0, v = c === 'x' ? r : (r & 0x3 | 0x8);
+        return v.toString(16);
+    });
 }
 
-// Define the widget configuration type
-interface WidgetConfig {
-    id: number
-    type: WidgetType
-    config: Record<string, unknown>
+interface Widget {
+    id: string;
+    type: string;
+    config: Record<string, any>;
 }
 
-// Example widget configuration; in a real app, this comes from state/backend
-const widgets = ref<WidgetConfig[]>([
-    { id: 1, type: 'weather', config: { location: 'New York' } },
-    { id: 2, type: 'news', config: { category: 'technology' } },
-    { id: 3, type: 'calendar', config: {} },
-])
+const widgetDisplay = {
+    widgets: ref<Widget[]>([
+        { id: generateUID(), type: 'weather', config: { /* widget specific config */ } },
+        { id: generateUID(), type: 'news', config: { /* widget specific config */ } },
+        // Add more widgets as needed
+    ])
+};
+
+import { onMounted } from 'vue';
+
+const widgetRegistry: Record<string, () => Promise<typeof import('*.vue')>> = {
+    widgetDisplay.widgets.value.forEach(widget => {
+        console.log(`Widget ID: ${widget.id}, Type: ${widget.type}`);
+    });
+});
+
+const widgetRegistry = {
+    'weather': () => import('@/components/widgets/WeatherWidget.vue'),
+    'news': () => import('@/components/widgets/NewsWidget.vue'),
+    'calendar': () => import('@/components/widgets/CalendarWidget.vue'),
+    // Add more widget types as needed
+};
+
+function addWidget() {
+    widgetDisplay.widgets.value.push({
+        id: Date.now(),
+        type: 'WidgetTypeA', // Default type, change as needed
+        config: { /* default config */ }
+    });
+}
+
 </script>
+
+<style scoped>
+.dashboard {
+    position: relative;
+}
+
+.floating-btn {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.q-ml-sm {
+    margin-left: 8px;
+}
+</style>
